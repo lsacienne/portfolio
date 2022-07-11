@@ -4,12 +4,12 @@
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import WebsiteNavigation from "@/components/WebsiteNavigation";
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    WebsiteNavigation,
   }
 }
 </script>
