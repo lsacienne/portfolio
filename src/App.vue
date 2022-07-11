@@ -17,6 +17,28 @@ export default {
 </script>
 
 <style>
+
+@font-face {
+  font-family: "SquarePeg";
+  src: local("SquarePeg"),
+  url(./fonts/SquarePeg-Regular.ttf) format("truetype");
+}
+
+main {
+  margin-left: 20vw;
+  margin-right: 20vw;
+}
+
+h1 {
+  color: black;
+  font-size: 2.5rem;
+  font-family: "SquarePeg", Helvetica,serif;
+  text-align: start;
+}
+
+html {
+  background-image: url("./assets/background.jpeg");
+}
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
