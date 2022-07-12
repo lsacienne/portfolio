@@ -1,30 +1,36 @@
 <template>
   <div class="home-page-container">
-    <div class="home-page-item name">
-      <div class="text-container">
-        <div class="smaller">
-          Bonjour, Je suis
+    <div class="widgets-container">
+      <div class="home-page-item name">
+        <div class="text-container">
+          <div class="smaller">
+            Bonjour, Je suis
+          </div>
+          Alexandre
         </div>
-        Alexandre
+      </div>
+      <div class="home-page-item time">
+        {{ time }}
       </div>
     </div>
-    <div class="home-page-item time">
-      {{ time }}
-    </div>
-  </div>
-  <div class="home-page-container">
-    <div class="home-page-item github">
-      Github :
-      <GithubList/>
+    <div class="widgets-container">
+      <div class="home-page-item github">
+        <h1>Github :</h1>
+        <GithubList/>
+      </div>
+      <div class="home-page-item presentation">
+        <HomePagePresentation/>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
 import GithubList from "@/components/GithubList";
+import HomePagePresentation from "@/components/HomePagePresentation";
 export default {
   name: "HomePage",
-  components: {GithubList},
+  components: {HomePagePresentation, GithubList},
   data() {
     return {
       time: ""
