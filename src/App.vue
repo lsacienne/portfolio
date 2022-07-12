@@ -40,7 +40,7 @@ h1 {
 }
 
 html {
-  background-image: url("./assets/background.jpeg");
+  background: url("./assets/background.jpeg") fixed;
 }
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
