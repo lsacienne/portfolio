@@ -51,11 +51,10 @@ export default {
 
 <style scoped>
 
-.home-page-container {
+.widgets-container {
   width: 100%;
-  height: 30vh;
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: row nowrap;
 }
 
 .home-page-item {
@@ -85,10 +84,25 @@ export default {
   text-align: left;
 }
 
+.github h1 {
+  font-size: 2rem;
+  font-family: Helvetica,cursive;
+  color: whitesmoke;
+}
+
 .github {
+  flex: fit-content;
   align-items: normal;
   justify-content: flex-start;
   flex-direction: column;
   text-align: start;
+  flex-grow: 5;
 }
+
+.presentation {
+  flex: min-content;
+  flex-grow: 20;
+  align-items: start;
+}
+
 </style>
