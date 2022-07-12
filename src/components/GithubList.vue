@@ -1,13 +1,13 @@
 <template>
 <div class="projectsHolder">
   <div v-for="project in fiveProjects" :key="project.id" class="projectsHolderItem">
-    <a :href="project.html_url">
-      <img src="../assets/GitHub-Mark-Light-120px-plus.png" alt="github logo"/>
+    <a :href="project.html_url" class="githubLogo">
+      <img src="../assets/GitHub-Mark-Light.svg" alt="github logo"/>
     </a>
     <div class="name">
       <a :href="project.html_url">{{project.name}}</a>
     </div>
-    <div class="date">Dernière modification: {{getGoodDateFormat(project.pushed_at)}}</div>
+    <div class="date">Dernière modification: <br/> {{getGoodDateFormat(project.pushed_at)}}</div>
   </div>
 </div>
 </template>
@@ -67,24 +67,53 @@ export default {
 
 .projectsHolder {
   display: flex;
-  flex-flow: column nowrap;
-  align-content: space-between;
+  flex-direction: column;
 }
 
 .projectsHolderItem {
   display: flex;
-  flex-flow: row wrap;
-  margin: 1rem;
+  align-items: center;
+  margin: 0.5rem;
+  justify-content: space-between;
 
-  padding: 1rem;
-  border-radius: 30px;
-  border: solid 0.3em whitesmoke;
-  font-size: 2rem;list-style: none;
+  background: #161b22;
+  padding: 0.5rem;
+  border-radius: 20px;
+  border: solid 0.1em whitesmoke;
+  font-size: 2rem;
+  list-style: none;
 }
 
+.githubLogo {
+  height: 100%;
+}
 
-.projectsHolderItem .date {
+.githubLogo img:hover {
+  filter: invert(35%) sepia(100%) saturate(774%) hue-rotate(176deg) brightness(90%) contrast(91%);
+}
+
+.name a:link {
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+.name a:visited {
+  color: #42b983;
+  text-decoration: none;
+}
+
+.name a:hover {
+  color: #1c78c0;
+}
+
+.name {
+  font-size: 1.5rem;
+}
+
+.date {
+  flex-flow:row;
   font-size: 0.8rem;
   text-align: end;
+  align-self: flex-end;
 }
 </style>
