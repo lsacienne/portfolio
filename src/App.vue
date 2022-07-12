@@ -2,16 +2,19 @@
   <main>
     <h1>Bienvenue sur le portfolio de Alexandre Viala</h1>
     <WebsiteNavigation/>
+    <HomePage/>
   </main>
 </template>
 
 <script>
+import HomePage from "@/components/HomePage";
 import WebsiteNavigation from "@/components/WebsiteNavigation";
 
 export default {
   name: 'App',
   components: {
-    WebsiteNavigation,
+    HomePage,
+    WebsiteNavigation
   }
 }
 </script>
