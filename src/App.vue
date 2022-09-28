@@ -1,8 +1,8 @@
 <template>
   <main>
     <h1>Bienvenue sur le portfolio de Alexandre Viala</h1>
-    <WebsiteNavigation/>
-    <HomePage/>
+    <WebsiteNavigation @option="(opt) => option = opt"/>
+      <HomePage v-if="option == 'home'"/>
   </main>
 </template>
 
@@ -15,6 +15,11 @@ export default {
   components: {
     HomePage,
     WebsiteNavigation
+  },
+  data() {
+    return {
+      option: 'home'
+    }
   }
 }
 </script>
