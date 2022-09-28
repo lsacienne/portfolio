@@ -93,4 +93,13 @@ export default {
   .link>a>img:hover {
     filter: invert(35%) sepia(100%) saturate(774%) hue-rotate(176deg) brightness(90%) contrast(91%);
   }
+
+  .link>a:visited {
+    color: #42b983;
+    text-decoration: none;
+  }
+
+  .link>a:hover {
+    color: #1c78c0;
+  }
 </style>
