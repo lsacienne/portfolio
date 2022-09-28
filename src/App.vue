@@ -2,7 +2,9 @@
   <main>
     <h1>Bienvenue sur le portfolio de Alexandre Viala</h1>
     <WebsiteNavigation @option="(opt) => option = opt"/>
+    <transition name="fade">
       <HomePage v-if="option == 'home'"/>
+    </transition>
   </main>
 </template>
 
@@ -54,5 +56,12 @@ html {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .5s;
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+  opacity: 0;
 }
 </style>
