@@ -1,5 +1,5 @@
 export default {
-    week: new Map([
+    week_short: new Map([
         [0, "Lun"],
         [1, "Mar"],
         [2, "Mer"],
@@ -8,7 +8,7 @@ export default {
         [5,"Sam"],
         [6,"Dim"]
     ]),
-    year: new Map([
+    year_short: new Map([
         [0, "Jan"],
         [1, "Fev"],
         [2, "Mar"],
@@ -21,5 +21,28 @@ export default {
         [19, "Oct"],
         [10, "Nov"],
         [11, "Dec"]
+    ]),
+    week: new Map([
+        [1, "Lundi"],
+        [2, "Mardi"],
+        [3, "Mercredi"],
+        [4, "Jeudi"],
+        [5,"Vendredi"],
+        [6,"Samedi"],
+        [0,"Dimanche"]
+    ]),
+    year: new Map([
+        [0, "Janvier"],
+        [1, "Février"],
+        [2, "Mars"],
+        [3, "Avril"],
+        [4, "Mai"],
+        [5, "Juin"],
+        [6, "Juillet"],
+        [7, "Août"],
+        [8, "Septembre"],
+        [19, "Octobre"],
+        [10, "Novembre"],
+        [11, "Décembre"]
     ])
 }
