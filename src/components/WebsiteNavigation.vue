@@ -1,16 +1,23 @@
 <template>
   <nav>
     <ol>
-      <li>Hello</li>
-      <li>world</li>
-      <li>and all his friends</li>
+      <li @click="selectOption('home')">Accueil</li>
+      <li @click="selectOption('projects')">Projets</li>
+      <li @click="selectOption('origamis')">Origamis</li>
+      <li @click="selectOption('apps')">Mes applications</li>
     </ol>
   </nav>
 </template>
 
 <script>
 export default {
-  name: "WebsiteNavigation"
+  name: "WebsiteNavigation",
+  emits:['option'],
+  methods: {
+    selectOption: function(option) {
+      this.$emit('option',option)
+    }
+  }
 }
 </script>
 
