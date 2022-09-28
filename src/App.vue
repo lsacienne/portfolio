@@ -32,7 +32,7 @@ main {
   margin-right: 15vw;
 }
 
-h1 {
+main>h1 {
   color: black;
   font-size: 2.5rem;
   font-family: "SquarePeg", Helvetica,serif;
