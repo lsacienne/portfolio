@@ -4,9 +4,9 @@
       <div class="home-page-item name">
         <div class="text-container">
           <div class="smaller">
-            Bonjour, Je suis
+            Bonjour, nous sommes le
           </div>
-          Alexandre
+          {{date}}
         </div>
       </div>
       <div class="home-page-item time">
@@ -27,13 +27,15 @@
 
 <script>
 import GithubList from "@/components/GithubList";
+import DateConst from "@/assets/js/DateConst";
 import HomePagePresentation from "@/components/HomePagePresentation";
 export default {
   name: "HomePage",
   components: {HomePagePresentation, GithubList},
   data() {
     return {
-      time: ""
+      time: "",
+      date: ""
     }
   },
   created() {
@@ -42,8 +44,16 @@ export default {
 
   methods: {
     getTime: function() {
-      let date = new Date();
-      this.time = date.toLocaleTimeString();
+      let cur_date = new Date();
+      this.time = cur_date.toLocaleTimeString();
+      this.date = this.getGoodDateFormat(cur_date)
+    },
+    getGoodDateFormat : function(date) {
+      console.log(date.getMonth()+" "+date.getDay())
+      return DateConst.week.get(date.getDay()) + " "
+          + date.getDate() + " "
+          + DateConst.year.get(date.getMonth()) + " "
+          + date.getFullYear();
     }
   }
 }
@@ -79,6 +89,7 @@ export default {
 }
 
 .text-container {
+  font-size: 2.5rem;
   display: flex;
   flex-direction: column;
   text-align: left;
