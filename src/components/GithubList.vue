@@ -1,47 +1,32 @@
 <template>
-<div class="projectsHolder">
+<div class="projectsHolder centered" v-if="loading">
+  <SemipolarSpinner/>
+</div>
+<div class="projectsHolder" v-else>
   <div v-for="project in fiveProjects" :key="project.id" class="projectsHolderItem">
-    <a :href="project.html_url">
-      <img src="../assets/GitHub-Mark-Light-120px-plus.png" alt="github logo"/>
+    <a :href="project.html_url" class="githubLogo">
+      <img src="../assets/GitHub-Mark-Light.svg" alt="github logo"/>
     </a>
     <div class="name">
       <a :href="project.html_url">{{project.name}}</a>
     </div>
-    <div class="date">Dernière modification: {{getGoodDateFormat(project.pushed_at)}}</div>
+    <div class="date">Dernière modification: <br/> {{getGoodDateFormat(project.pushed_at)}}</div>
   </div>
 </div>
 </template>
 
 <script>
+import DateConst from "@/assets/js/DateConst";
+import SemipolarSpinner from '@/components/SemipolarSpinner.vue'
+
 export default {
   name: "GithubList",
+  components: { SemipolarSpinner },
   data() {
     return {
       repos: [],
       user: "lsacienne",
-      week: new Map([
-        [0, "Lun"],
-        [1, "Mar"],
-        [2, "Mer"],
-        [3, "Jeu"],
-        [4,"Ven"],
-        [5,"Sam"],
-        [6,"Dim"]
-      ]),
-      year: new Map([
-        [0, "Jan"],
-        [1, "Fev"],
-        [2, "Mar"],
-        [3, "Avr"],
-        [4, "Mai"],
-        [5, "Juin"],
-        [6, "Juil"],
-        [7, "Aou"],
-        [8, "Sep"],
-        [19, "Oct"],
-        [10, "Nov"],
-        [11, "Dec"]
-      ])
+      loading: false
     }
   },
   computed: {
@@ -53,13 +38,14 @@ export default {
     getGoodDateFormat : function(date) {
       let dateDate = new Date(date);
       console.log(dateDate.getMonth()+" "+dateDate.getDay())
-      return this.week.get(dateDate.getDay()) + " "
+      return DateConst.week_short.get(dateDate.getDay()) + " "
           + dateDate.getDate() + " "
-          + this.year.get(dateDate.getMonth()) + " "
+          + DateConst.year_short.get(dateDate.getMonth()) + " "
           + dateDate.getFullYear();
     },
 
     fetchGithubApi: async function() {
+      this.loading = true;
       let response = await fetch("https://api.github.com/users/" + this.user + "/repos");
       return response.json();
     },
@@ -67,9 +53,10 @@ export default {
     getRepos: function() {
       this.fetchGithubApi().then(
           data => {
-            this.repos = data
+            this.loading = false;
+            this.repos = data;
 
-            this.repos = this.repos.sort(function(a,b){
+            this.repos = this.repos.sort(function(a,b) {
               return - (new Date(a.pushed_at) - new Date(b.pushed_at));
             })
 
@@ -79,7 +66,8 @@ export default {
     },
   },
   created() {
-    this.getRepos()
+    this.getRepos();
+    setInterval(this.getRepos, 60000);
   }
 }
 </script>
@@ -88,24 +76,58 @@ export default {
 
 .projectsHolder {
   display: flex;
-  flex-flow: column nowrap;
-  align-content: space-between;
+  flex-direction: column;
 }
 
 .projectsHolderItem {
   display: flex;
-  flex-flow: row wrap;
-  margin: 1rem;
+  align-items: center;
+  margin: 0.5rem;
+  justify-content: space-between;
 
-  padding: 1rem;
-  border-radius: 30px;
-  border: solid 0.3em whitesmoke;
-  font-size: 2rem;list-style: none;
+  background: #161b22;
+  padding: 0.5rem;
+  border-radius: 20px;
+  border: solid 0.1em whitesmoke;
+  font-size: 2rem;
+  list-style: none;
 }
 
+.githubLogo {
+  height: 100%;
+}
 
-.projectsHolderItem .date {
+.githubLogo img:hover {
+  filter: invert(35%) sepia(100%) saturate(774%) hue-rotate(176deg) brightness(90%) contrast(91%);
+}
+
+.name a:link {
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+.name a:visited {
+  color: #42b983;
+  text-decoration: none;
+}
+
+.name a:hover {
+  color: #1c78c0;
+}
+
+.name {
+  font-size: 1.5rem;
+}
+
+.date {
+  flex-flow:row;
   font-size: 0.8rem;
   text-align: end;
+  align-self: flex-end;
 }
+
+.centered {
+  align-self: center;
+}
+
 </style>

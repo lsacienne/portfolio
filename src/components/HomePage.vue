@@ -1,33 +1,41 @@
 <template>
   <div class="home-page-container">
-    <div class="home-page-item name">
-      <div class="text-container">
-        <div class="smaller">
-          Bonjour, Je suis
+    <div class="widgets-container">
+      <div class="home-page-item name">
+        <div class="text-container">
+          <div class="smaller">
+            Bonjour, nous sommes le
+          </div>
+          {{date}}
         </div>
-        Alexandre
+      </div>
+      <div class="home-page-item time">
+        {{ time }}
       </div>
     </div>
-    <div class="home-page-item time">
-      {{ time }}
-    </div>
-  </div>
-  <div class="home-page-container">
-    <div class="home-page-item github">
-      Github :
-      <GithubList/>
+    <div class="widgets-container">
+      <div class="home-page-item github">
+        <h1>Github :</h1>
+        <GithubList/>
+      </div>
+      <div class="home-page-item presentation">
+        <HomePagePresentation/>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
 import GithubList from "@/components/GithubList";
+import DateConst from "@/assets/js/DateConst";
+import HomePagePresentation from "@/components/HomePagePresentation";
 export default {
   name: "HomePage",
-  components: {GithubList},
+  components: {HomePagePresentation, GithubList},
   data() {
     return {
-      time: ""
+      time: "",
+      date: ""
     }
   },
   created() {
@@ -36,8 +44,16 @@ export default {
 
   methods: {
     getTime: function() {
-      let date = new Date();
-      this.time = date.toLocaleTimeString();
+      let cur_date = new Date();
+      this.time = cur_date.toLocaleTimeString();
+      this.date = this.getGoodDateFormat(cur_date)
+    },
+    getGoodDateFormat : function(date) {
+      console.log(date.getMonth()+" "+date.getDay())
+      return DateConst.week.get(date.getDay()) + " "
+          + date.getDate() + " "
+          + DateConst.year.get(date.getMonth()) + " "
+          + date.getFullYear();
     }
   }
 }
@@ -45,11 +61,10 @@ export default {
 
 <style scoped>
 
-.home-page-container {
+.widgets-container {
   width: 100%;
-  height: 30vh;
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: row nowrap;
 }
 
 .home-page-item {
@@ -74,15 +89,31 @@ export default {
 }
 
 .text-container {
+  font-size: 2.5rem;
   display: flex;
   flex-direction: column;
   text-align: left;
 }
 
+.github h1 {
+  font-size: 2rem;
+  font-family: Helvetica,cursive;
+  color: whitesmoke;
+}
+
 .github {
+  flex: fit-content;
   align-items: normal;
   justify-content: flex-start;
   flex-direction: column;
   text-align: start;
+  flex-grow: 5;
 }
+
+.presentation {
+  flex: min-content;
+  flex-grow: 20;
+  align-items: start;
+}
+
 </style>

@@ -1,8 +1,10 @@
 <template>
   <main>
     <h1>Bienvenue sur le portfolio de Alexandre Viala</h1>
-    <WebsiteNavigation/>
-    <HomePage/>
+    <WebsiteNavigation @option="(opt) => option = opt"/>
+    <transition name="fade">
+      <HomePage v-if="option == 'home'"/>
+    </transition>
   </main>
 </template>
 
@@ -15,6 +17,11 @@ export default {
   components: {
     HomePage,
     WebsiteNavigation
+  },
+  data() {
+    return {
+      option: 'home'
+    }
   }
 }
 </script>
@@ -28,11 +35,11 @@ export default {
 }
 
 main {
-  margin-left: 20vw;
-  margin-right: 20vw;
+  margin-left: 15vw;
+  margin-right: 15vw;
 }
 
-h1 {
+main>h1 {
   color: black;
   font-size: 2.5rem;
   font-family: "SquarePeg", Helvetica,serif;
@@ -49,5 +56,16 @@ html {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .5s;
+  opacity: 0;
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+  opacity: 0;
+}
+.fade-enter-to {
+  opacity: 1;
 }
 </style>
