@@ -1,5 +1,8 @@
 <template>
-<div class="projectsHolder">
+<div class="projectsHolder centered" v-if="loading">
+  <SemipolarSpinner/>
+</div>
+<div class="projectsHolder" v-else>
   <div v-for="project in fiveProjects" :key="project.id" class="projectsHolderItem">
     <a :href="project.html_url" class="githubLogo">
       <img src="../assets/GitHub-Mark-Light.svg" alt="github logo"/>
@@ -14,13 +17,16 @@
 
 <script>
 import DateConst from "@/assets/js/DateConst";
+import SemipolarSpinner from '@/components/SemipolarSpinner.vue'
 
 export default {
   name: "GithubList",
+  components: { SemipolarSpinner },
   data() {
     return {
       repos: [],
       user: "lsacienne",
+      loading: false
     }
   },
   computed: {
@@ -32,13 +38,14 @@ export default {
     getGoodDateFormat : function(date) {
       let dateDate = new Date(date);
       console.log(dateDate.getMonth()+" "+dateDate.getDay())
-      return DateConst.week.get(dateDate.getDay()) + " "
+      return DateConst.week_short.get(dateDate.getDay()) + " "
           + dateDate.getDate() + " "
-          + DateConst.year.get(dateDate.getMonth()) + " "
+          + DateConst.year_short.get(dateDate.getMonth()) + " "
           + dateDate.getFullYear();
     },
 
     fetchGithubApi: async function() {
+      this.loading = true;
       let response = await fetch("https://api.github.com/users/" + this.user + "/repos");
       return response.json();
     },
@@ -46,9 +53,10 @@ export default {
     getRepos: function() {
       this.fetchGithubApi().then(
           data => {
-            this.repos = data
+            this.loading = false;
+            this.repos = data;
 
-            this.repos = this.repos.sort(function(a,b){
+            this.repos = this.repos.sort(function(a,b) {
               return - (new Date(a.pushed_at) - new Date(b.pushed_at));
             })
 
@@ -117,4 +125,9 @@ export default {
   text-align: end;
   align-self: flex-end;
 }
+
+.centered {
+  align-self: center;
+}
+
 </style>
