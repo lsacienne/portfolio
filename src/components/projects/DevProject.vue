@@ -8,13 +8,7 @@
             <h2>Présentation</h2>
             <p>
                 <slot>
-                    Lors du semestre de printemps 2022, dans le cadre de mes études à
-                    l'UTBM, j'ai dû, avec un de mes camarades, réaliser une application
-                    pour smartphones Android (version 10+). Il s'agit d'une application
-                    de gestion budgétaire destinée aux étudiants.<br>
-                    Ce projet nous a permi d'adopter une méthodologie de travail complète
-                    grâce à l'utilisation de divers techniques et outils de créativité.
-                    L'APK est téléchargeable en ligne. 
+                    Description 
                 </slot>
             </p>
             <div class="row">
@@ -49,7 +43,7 @@
 <script>
 import DocumentDownloader from './DocumentDownloader.vue';
     export default {
-    name: "AndroidAppProject",
+    name: "DevProject",
     components: { DocumentDownloader },
     data() {
         return {
