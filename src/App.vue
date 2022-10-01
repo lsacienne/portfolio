@@ -5,6 +5,9 @@
     <transition name="fade" mode="out-in">
       <router-view/>
     </transition>
+    <transition name="fade2">
+      <ProjectPage v-if="option == 'projects'"/>
+    </transition>
   </main>
 </template>
 
