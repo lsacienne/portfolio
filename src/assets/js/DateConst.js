@@ -18,7 +18,7 @@ export default {
         [6, "Juil"],
         [7, "Aou"],
         [8, "Sep"],
-        [19, "Oct"],
+        [9, "Oct"],
         [10, "Nov"],
         [11, "Dec"]
     ]),
@@ -41,7 +41,7 @@ export default {
         [6, "Juillet"],
         [7, "Août"],
         [8, "Septembre"],
-        [19, "Octobre"],
+        [9, "Octobre"],
         [10, "Novembre"],
         [11, "Décembre"]
     ])
