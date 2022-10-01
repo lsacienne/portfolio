@@ -5,19 +5,24 @@
     <transition name="fade">
       <HomePage v-if="option == 'home'"/>
     </transition>
+    <transition name="fade2">
+      <ProjectPage v-if="option == 'projects'"/>
+    </transition>
   </main>
 </template>
 
 <script>
 import HomePage from "@/components/HomePage";
 import WebsiteNavigation from "@/components/WebsiteNavigation";
+import ProjectPage from "./components/ProjectPage.vue";
 
 export default {
   name: 'App',
   components: {
     HomePage,
-    WebsiteNavigation
-  },
+    WebsiteNavigation,
+    ProjectPage
+},
   data() {
     return {
       option: 'home'
@@ -67,5 +72,13 @@ html {
 }
 .fade-enter-to {
   opacity: 1;
+}
+
+.fade2-enter-active, .fade2-leave-active {
+  transition: opacity .5s;
+  opacity: 0;
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+  opacity: 0;
 }
 </style>
