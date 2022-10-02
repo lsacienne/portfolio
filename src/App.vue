@@ -1,9 +1,9 @@
 <template>
   <main>
     <h1>Bienvenue sur le portfolio de Alexandre Viala</h1>
-    <WebsiteNavigation @option="(opt) => option = opt"/>
-    <transition name="fade">
-      <HomePage v-if="option == 'home'"/>
+    <WebsiteNavigation/>
+    <transition name="fade" mode="out-in">
+      <router-view/>
     </transition>
     <transition name="fade">
       <ProjectPage v-if="option == 'projects'"/>
@@ -12,27 +12,21 @@
 </template>
 
 <script>
-import HomePage from "@/components/HomePage";
-import WebsiteNavigation from "@/components/WebsiteNavigation";
-import ProjectPage from "./components/ProjectPage.vue";
-
-export default {
-  name: 'App',
-  components: {
-    HomePage,
-    WebsiteNavigation,
-    ProjectPage
-},
-  data() {
-    return {
-      option: 'home'
+  import WebsiteNavigation from "@/components/WebsiteNavigation";
+  
+  export default {
+    name: 'App',
+    components: {
+      WebsiteNavigation,
+  },
+    data() {
+      return {
+        option: 'home'
+      }
     }
   }
-}
 </script>
-
 <style>
-
 @font-face {
   font-family: "SquarePeg";
   src: local("SquarePeg"),
@@ -80,5 +74,26 @@ html {
 }
 .fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
   opacity: 0;
+}
+
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+}
+
+nav {
+  padding: 30px;
+}
+
+nav a {
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+nav a.router-link-exact-active {
+  color: #42b983;
 }
 </style>
