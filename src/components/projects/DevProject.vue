@@ -146,6 +146,10 @@ import DocumentDownloader from './DocumentDownloader.vue';
         background-color: rgb(255, 228, 196,10%);
     }
 
+    .doc {
+        flex-wrap: wrap;
+    }
+
     .github>img {
         height: 100%;
         margin-right: 1rem;
@@ -167,6 +171,7 @@ import DocumentDownloader from './DocumentDownloader.vue';
         text-align: right;
         justify-content: flex-end;
         align-items: center;
+        margin-top: 1rem;
     }
 
     .contributions>h2 {
