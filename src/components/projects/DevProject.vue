@@ -21,7 +21,7 @@
                         </p>
                     </a>
                 </div>
-                <div class="column doc-container">
+                <div class="column doc-container" v-if="document_list">
                     <h2>Documents</h2>
                     <div class="doc">
                         <DocumentDownloader v-for="document in document_list" :key="document.file_url" :file_url="document.file_url">
@@ -73,7 +73,8 @@ import DocumentDownloader from './DocumentDownloader.vue';
             type: String
         },
         document_list: {
-            type: Array
+            type: Array,
+            required: false
         },
         contributors: {
             type: String
