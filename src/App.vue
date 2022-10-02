@@ -5,7 +5,7 @@
     <transition name="fade">
       <HomePage v-if="option == 'home'"/>
     </transition>
-    <transition name="fade2">
+    <transition name="fade">
       <ProjectPage v-if="option == 'projects'"/>
     </transition>
   </main>
