@@ -17,7 +17,7 @@
                     <a class="github row" :href="url_github">
                         <img src="@/assets/GitHub-Mark-Light-120px-plus.png" alt="logo Github">
                         <p>
-                            {{github_project}}
+                            {{ getProjectName(url_github) }}
                         </p>
                     </a>
                 </div>
@@ -50,6 +50,16 @@ import DocumentDownloader from './DocumentDownloader.vue';
             url_file:"/projects_reports/Rapport_HM40_VIALA_GOBLOT.pdf"
         }
     },
+    methods: {
+        /**
+         * @decription Method to get a project name from a github URL
+         * @param {String} url - The url to scan
+         * @return {String} The name of the project
+         */
+        getProjectName: function(url) {
+            return url.split("/").at(-1);
+        }
+    },
     props: {
         project_title: {
             type: String,
@@ -60,9 +70,6 @@ import DocumentDownloader from './DocumentDownloader.vue';
             required: true
         },
         url_github: {
-            type: String
-        },
-        github_project: {
             type: String
         },
         document_list: {
