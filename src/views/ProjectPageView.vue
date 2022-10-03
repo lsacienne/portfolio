@@ -62,7 +62,7 @@
             </DevProject>
         </div>
         <div class="project-container">
-            Test
+            Test 2
         </div>
     </div>
 </template>
