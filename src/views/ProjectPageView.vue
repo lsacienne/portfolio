@@ -4,10 +4,10 @@
             <DevProject
             project_title="Projet d'application Android de gestion de budget"
             url_github="https://github.com/lsacienne/SY43_P2022_lafo_cheuse"
-            picture="/project_icons/lafo-cheuse_icon.png"
+            picture="./project_icons/lafo-cheuse_icon.png"
             :document_list="[
-                {file_url: '/projects_reports/Rapport_HM40_VIALA_GOBLOT.pdf', file_name: 'Rapport HM40'},
-                {file_url: '/projects_reports/SY43-Presentation-Lafo-cheuse.odp', file_name: 'Présentation de SY43'}
+                {file_url: './projects_reports/Rapport_HM40_VIALA_GOBLOT.pdf', file_name: 'Rapport HM40'},
+                {file_url: './projects_reports/SY43-Presentation-Lafo-cheuse.odp', file_name: 'Présentation de SY43'}
             ]"
             contributors="GOBLOT David, VIALA Alexandre"
              >
@@ -24,9 +24,9 @@
             <DevProject
             project_title="Projet d'idle game 'Lumber jack'"
             url_github="https://github.com/QuinD3cim/AP4B_Lumber"
-            picture="/project_icons/logo_lumber.png"
+            picture="./project_icons/logo_lumber.png"
             :document_list="[
-                {file_url: '/projects_reports/Rapport_UML.pdf', file_name: 'Rapport AP4B'}
+                {file_url: './projects_reports/Rapport_UML.pdf', file_name: 'Rapport AP4B'}
             ]"
             contributors="MANN William, LIGNON Thomas, LE GUILLY Erwann, VIALA Alexandre"
              >
@@ -46,7 +46,7 @@
             <DevProject
             project_title="Projet de robot dicord calculant le Grade Point Average (GPA)"
             url_github="https://github.com/lsacienne/gpa-bot"
-            picture="/project_icons/gpa_bot.png"
+            picture="./project_icons/gpa_bot.png"
             contributors="VIALA Alexandre"
              >
                 Lors de mes années à l'UTBM, j'ai pu découvrir ce que l'on appelle le
