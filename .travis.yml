@@ -6,6 +6,7 @@ cache: npm
 
 script: 
  - npm run build
+ - echo "test"
 
 deploy:
  provider: pages
