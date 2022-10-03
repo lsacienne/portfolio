@@ -4,9 +4,7 @@ node_js:
 
 cache: npm
 
-script: 
- - npm run build
- - echo "test"
+script: npm run build
 
 deploy:
  provider: pages
