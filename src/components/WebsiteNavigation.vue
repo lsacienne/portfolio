@@ -1,10 +1,8 @@
 <template>
   <nav>
     <ol>
-      <li @click="selectOption('home')">Accueil</li>
-      <li @click="selectOption('projects')">Projets</li>
-      <li @click="selectOption('origamis')">Origamis</li>
-      <li @click="selectOption('apps')">Mes applications</li>
+      <router-link class="li" to="/">Home</router-link>
+      <router-link class="li" to="/projects">Projects</router-link>
     </ol>
   </nav>
 </template>
@@ -12,12 +10,6 @@
 <script>
 export default {
   name: "WebsiteNavigation",
-  emits:['option'],
-  methods: {
-    selectOption: function(option) {
-      this.$emit('option',option)
-    }
-  }
 }
 </script>
 
@@ -30,7 +22,7 @@ export default {
     justify-content: space-between;
   }
 
-  li {
+  .li {
     flex-grow: 1;
     list-style-type: none;
     margin: 0.2vw;
@@ -43,7 +35,7 @@ export default {
     transition: all 300ms;
   }
 
-  li:hover {
+  .li:hover {
     background: #35454f;
     flex-grow: 1.5;
   }

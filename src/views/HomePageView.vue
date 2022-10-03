@@ -30,7 +30,7 @@ import GithubList from "@/components/GithubList";
 import DateConst from "@/assets/js/DateConst";
 import HomePagePresentation from "@/components/HomePagePresentation";
 export default {
-  name: "HomePage",
+  name: "HomePageView",
   components: {HomePagePresentation, GithubList},
   data() {
     return {
