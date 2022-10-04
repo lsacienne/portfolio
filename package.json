@@ -6,7 +6,8 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "test": ""
+    "test": "",
+    "deploy": "node scripts/deploy-gh-pages.js"
   },
   "dependencies": {
     "core-js": "^3.8.3",
@@ -23,6 +24,7 @@
     "@vue/cli-service": "~5.0.0",
     "eslint": "^7.32.0",
     "eslint-plugin-vue": "^8.0.3",
+    "execa": "^6.1.0",
     "vue-cli-plugin-vuestic-ui": "~1.0.8"
   },
   "eslintConfig": {
