@@ -61,9 +61,6 @@
                 plus en profondeur les notions de promesses et d'asynchrone en Javascript. 
             </DevProject>
         </div>
-        <div class="project-container">
-            Test 23Dkzkef
-        </div>
     </div>
 </template>
 
