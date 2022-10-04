@@ -17,7 +17,6 @@ import fs from "fs"
     await execa("git", ["push", "origin", `${subtree.stdout}:gh-pages`, "--force"]);
     await execa("rm", ["-r", folderName]);
     await execa("git", ["checkout", "-f", "main"]);
-    await execa("git", ["branch", "-D", "gh-pages"]);
     console.log("Successfully deployed, check your settings");
   } catch (e) {
     // eslint-disable-next-line no-console
