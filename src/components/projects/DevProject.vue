@@ -57,7 +57,7 @@ import DocumentDownloader from './DocumentDownloader.vue';
          * @return {String} The name of the project
          */
         getProjectName: function(url) {
-            return url.split("/").at(-1);
+            return url.split("/").at(-1).split("_").join(" ");
         }
     },
     props: {
@@ -140,6 +140,18 @@ import DocumentDownloader from './DocumentDownloader.vue';
         align-items: center;
     }
 
+    a:link {
+        color: white;
+        text-decoration: none;
+    }
+
+    a:visited {
+        color: #42b983;
+        text-decoration: none;
+    }
+
+
+
     .github:link {
         color: white;
         text-decoration: none;
@@ -198,6 +210,55 @@ import DocumentDownloader from './DocumentDownloader.vue';
     }
     .contributions>p:before {
         content: "© Tous droits réservés ";
+    }
+
+    @media only screen and (max-width: 1100px) {
+        h1 {
+            font-size: 1.2rem;
+            text-align: justify;
+        }
+
+        .row {
+            flex-direction: column;
+            width: 100%;
+        }
+
+        .img {
+            height: unset;
+            width: 100%;
+            margin-bottom: 1rem;
+        }
+
+        .img>img {
+            height: unset;
+            width: 100%;
+        }
+
+
+        .row.github {
+            flex-direction: row;
+            align-self: center;
+        }
+
+        .github-container {
+            margin-bottom: 1rem;
+        }
+
+        .doc {
+            row-gap: 0.5rem;
+        }
+
+        .contributions>p:before {
+            content: "© ";
+        }
+
+        .row.contributions {
+            justify-content: center;
+        }
+        .contributions p {
+            font-size: 0.8rem;
+        }
+
     }
 
 </style>
