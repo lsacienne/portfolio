@@ -140,6 +140,7 @@ import DocumentDownloader from './DocumentDownloader.vue';
         align-items: center;
     }
 
+
     a:link {
         color: white;
         text-decoration: none;
@@ -149,8 +150,6 @@ import DocumentDownloader from './DocumentDownloader.vue';
         color: #42b983;
         text-decoration: none;
     }
-
-
 
     .github:link {
         color: white;
@@ -212,6 +211,7 @@ import DocumentDownloader from './DocumentDownloader.vue';
         content: "© Tous droits réservés ";
     }
 
+
     @media only screen and (max-width: 1100px) {
         h1 {
             font-size: 1.2rem;
@@ -260,5 +260,4 @@ import DocumentDownloader from './DocumentDownloader.vue';
         }
 
     }
-
 </style>
