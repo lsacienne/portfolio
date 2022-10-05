@@ -4,10 +4,10 @@
             <DevProject
             project_title="Projet d'application Android de gestion de budget"
             url_github="https://github.com/lsacienne/SY43_P2022_lafo_cheuse"
-            picture="/project_icons/lafo-cheuse_icon.png"
+            picture="./project_icons/lafo-cheuse_icon.png"
             :document_list="[
-                {file_url: '/projects_reports/Rapport_HM40_VIALA_GOBLOT.pdf', file_name: 'Rapport HM40'},
-                {file_url: '/projects_reports/SY43-Presentation-Lafo-cheuse.odp', file_name: 'Présentation de SY43'}
+                {file_url: './projects_reports/Rapport_HM40_VIALA_GOBLOT.pdf', file_name: 'Rapport HM40'},
+                {file_url: './projects_reports/SY43-Presentation-Lafo-cheuse.odp', file_name: 'Présentation de SY43'}
             ]"
             contributors="GOBLOT David, VIALA Alexandre"
              >
@@ -24,9 +24,9 @@
             <DevProject
             project_title="Projet d'idle game 'Lumber jack'"
             url_github="https://github.com/QuinD3cim/AP4B_Lumber"
-            picture="/project_icons/logo_lumber.png"
+            picture="./project_icons/logo_lumber.png"
             :document_list="[
-                {file_url: '/projects_reports/Rapport_UML.pdf', file_name: 'Rapport AP4B'}
+                {file_url: './projects_reports/Rapport_UML.pdf', file_name: 'Rapport AP4B'}
             ]"
             contributors="MANN William, LIGNON Thomas, LE GUILLY Erwann, VIALA Alexandre"
              >
@@ -46,7 +46,7 @@
             <DevProject
             project_title="Projet de robot dicord calculant le Grade Point Average (GPA)"
             url_github="https://github.com/lsacienne/gpa-bot"
-            picture="/project_icons/gpa_bot.png"
+            picture="./project_icons/gpa_bot.png"
             contributors="VIALA Alexandre"
              >
                 Lors de mes années à l'UTBM, j'ai pu découvrir ce que l'on appelle le
@@ -60,7 +60,31 @@
                 à partir des résultats de l'utilisateur. Ce projet m'a surtout permis d'explorer
                 plus en profondeur les notions de promesses et d'asynchrone en Javascript. 
             </DevProject>
+            
         </div>
+        <div class="project-container">
+            <DevProject
+            project_title="Site du Congrès Industriel 2021"
+            url_github="https://github.com/lsacienne/Site_congres_A21"
+            picture="./project_icons/congres.png"
+            :document_list="[
+                {file_url: 'https://lsacienne.github.io/Site_congres_A21/site/', file_name: 'Site congrès'},
+                {file_url: 'https://lsacienne.github.io/Site_congres_A21/', file_name: 'Documentation'}
+            ]"
+            contributors="CHAILLARD Léo, VIALA Alexandre"
+             >
+                Pendant ma dernière année de Tronc Commun à l'UTBM (notre cycle préparatoire), j'ai eu
+                le privilège de créer, avec l'un de mes camarade, le site internet du Congrès
+                Idustriel 2021.<br>
+                Le site était purement front-end en HTML et CSS pur sans framework (mis à part 
+                <a href="https://fontawesome.com/">font-awesome</a>). Nous avons eu recours à quelques
+                subterfuges afin de simuler une base de donnée au cours du développement.<br>
+                Ce projet m'a permis de découvrir le mond eassociatif à l'UTBM, de découvrir
+                le langage Javascript et de travailler pour la première fois avec des personnes
+                n'ayant pas d'expertise informatique. 
+            </DevProject>
+        </div>
+        
     </div>
 </template>
 
