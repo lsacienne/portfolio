@@ -3,7 +3,7 @@
     <h1>Présentation</h1>
     <div class="body">
       <div class="avatar">
-      <img src="@/assets/avatar.jpg" alt="My avatar picture" srcset="" class="item profile_pic">
+        <img src="@/assets/avatar.jpg" alt="My avatar picture" srcset="" class="item profile_pic">
       </div>
       <p class="item">
         Bonjour ! Je m'appelle Alexandre, je suis étudiant ingénieur en informatique à l'UTBM à Belfort. <br/>
@@ -111,5 +111,27 @@ export default {
 
   .link>a:hover {
     color: #1c78c0;
+  }
+
+  @media only screen and (max-width: 1100px) {
+    .body {
+      margin: unset;
+      flex-direction: column;
+      width: 100%;
+      justify-content: center;
+    }
+
+    .body>.avatar {
+      width: 80%;
+      margin-top: 1rem;
+      align-self: center;
+    }
+
+    .body>.item {
+      width: 80%;
+      align-self: center;
+    }
+
+
   }
 </style>

@@ -1,5 +1,4 @@
 <template>
-  <div class="home-page-container">
     <div class="widgets-container">
       <div class="home-page-item name">
         <div class="text-container">
@@ -22,7 +21,6 @@
         <HomePagePresentation/>
       </div>
     </div>
-  </div>
 </template>
 
 <script>
@@ -114,6 +112,22 @@ export default {
   flex: min-content;
   flex-grow: 20;
   align-items: start;
+}
+
+@media only screen and (max-width: 1100px) {
+  .widgets-container {
+    flex-direction: column-reverse;
+  }
+
+  .home-page-item {
+    margin: unset;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .text-container>.smaller {
+    font-size: 1.5rem;
+  }
 }
 
 </style>

@@ -130,4 +130,14 @@ export default {
   align-self: center;
 }
 
+@media only screen and (max-width: 1100px) {
+  a {
+    font-size: 1rem;
+  }
+
+  .name {
+    margin-left: 1rem;
+  }
+}
+
 </style>
