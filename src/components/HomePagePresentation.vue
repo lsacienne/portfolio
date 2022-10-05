@@ -82,7 +82,8 @@ export default {
   .body>.item {
     margin: 1rem;
     flex: 1 1 0;
-    width: 0;
+    flex-wrap: wrap;
+
   }
 
   .link {
