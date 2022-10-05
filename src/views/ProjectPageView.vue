@@ -116,6 +116,16 @@
         flex-direction: column;
     }
 
+    a:link {
+        color: #42b983;
+        text-decoration: none;
+    }
+
+    a:visited {
+        color: #6ba4b6;
+        text-decoration: none;
+    }
+
     @media only screen and (max-width: 1100px) {
         .project-page-container {
             display: flex;
