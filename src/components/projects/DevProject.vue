@@ -140,24 +140,13 @@ import DocumentDownloader from './DocumentDownloader.vue';
         align-items: center;
     }
 
-
     a:link {
-        color: white;
+        color: #42b983;
         text-decoration: none;
     }
 
     a:visited {
-        color: #42b983;
-        text-decoration: none;
-    }
-
-    .github:link {
-        color: white;
-        text-decoration: none;
-    }
-
-    .github:visited {
-        color: #42b983;
+        color: #6ba4b6;
         text-decoration: none;
     }
 
@@ -214,8 +203,12 @@ import DocumentDownloader from './DocumentDownloader.vue';
 
     @media only screen and (max-width: 1100px) {
         h1 {
-            font-size: 1.2rem;
+            font-size: 1.3rem;
             text-align: justify;
+        }
+
+        .column>h2 {
+            font-size: 1.2rem;
         }
 
         .row {
@@ -231,7 +224,7 @@ import DocumentDownloader from './DocumentDownloader.vue';
 
         .img>img {
             height: unset;
-            width: 100%;
+            width: 80%;
         }
 
 
