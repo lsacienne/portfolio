@@ -60,7 +60,31 @@
                 à partir des résultats de l'utilisateur. Ce projet m'a surtout permis d'explorer
                 plus en profondeur les notions de promesses et d'asynchrone en Javascript. 
             </DevProject>
+            
         </div>
+        <div class="project-container">
+            <DevProject
+            project_title="Site du Congrès Industriel 2021"
+            url_github="https://github.com/lsacienne/Site_congres_A21"
+            picture="./project_icons/congres.png"
+            :document_list="[
+                {file_url: 'https://lsacienne.github.io/Site_congres_A21/site/', file_name: 'Site congrès'},
+                {file_url: 'https://lsacienne.github.io/Site_congres_A21/', file_name: 'Documentation'}
+            ]"
+            contributors="CHAILLARD Léo, VIALA Alexandre"
+             >
+                Pendant ma dernière année de Tronc Commun à l'UTBM (notre cycle préparatoire), j'ai eu
+                le privilège de créer, avec l'un de mes camarade, le site internet du Congrès
+                Idustriel 2021.<br>
+                Le site était purement front-end en HTML et CSS pur sans framework (mis à part 
+                <a href="https://fontawesome.com/">font-awesome</a>). Nous avons eu recours à quelques
+                subterfuges afin de simuler une base de donnée au cours du développement.<br>
+                Ce projet m'a permis de découvrir le mond eassociatif à l'UTBM, de découvrir
+                le langage Javascript et de travailler pour la première fois avec des personnes
+                n'ayant pas d'expertise informatique. 
+            </DevProject>
+        </div>
+        
     </div>
 </template>
 
@@ -90,5 +114,24 @@
         border-radius: 1rem;
         display: flex;
         flex-direction: column;
+    }
+
+    a:link {
+        color: #42b983;
+        text-decoration: none;
+    }
+
+    a:visited {
+        color: #6ba4b6;
+        text-decoration: none;
+    }
+
+    @media only screen and (max-width: 1100px) {
+        .project-page-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+        }
     }
 </style>
