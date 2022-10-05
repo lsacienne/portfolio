@@ -93,4 +93,11 @@ nav a {
 nav a.router-link-exact-active {
   color: #42b983;
 }
+
+@media only screen and (max-width: 1100px) {
+  main {
+    margin-left: 2.5vw;
+    margin-right: 2.5vw ;
+  }
+}
 </style>
