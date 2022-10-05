@@ -1,5 +1,5 @@
 <template>
-    <a :href=file_url download class="container">
+    <a :href=file_url class="container">
         <div class="file-icon">
             <img src="@/assets/icons/download_google.svg" alt="Download file">
         </div>
