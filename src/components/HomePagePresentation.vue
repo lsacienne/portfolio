@@ -2,7 +2,9 @@
   <div class="presentation">
     <h1>Présentation</h1>
     <div class="body">
+      <div class="avatar">
       <img src="@/assets/avatar.jpg" alt="My avatar picture" srcset="" class="item profile_pic">
+      </div>
       <p class="item">
         Bonjour ! Je m'appelle Alexandre, je suis étudiant ingénieur en informatique à l'UTBM à Belfort. <br/>
         Je suis plutôt intéressé par tout ce qui touche au développement d'interface utilisateur mais également au développement de logiciel dans son ensemble.<br/>
@@ -46,6 +48,14 @@ export default {
     font-size: 2rem;
     font-family: Helvetica,cursive;
     color: whitesmoke;
+  }
+
+  .avatar {
+    width: 50%;
+  }
+
+  .avatar>img {
+    width: 100%;
   }
 
   .presentation {
