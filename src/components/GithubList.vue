@@ -8,7 +8,7 @@
       <img src="../assets/GitHub-Mark-Light.svg" alt="github logo"/>
     </a>
     <div class="name">
-      <a :href="project.html_url">{{project.name}}</a>
+      <a :href="project.html_url">{{project.name.split("_").join(" ")}}</a>
     </div>
     <div class="date">Dernière modification: <br/> {{getGoodDateFormat(project.pushed_at)}}</div>
   </div>
