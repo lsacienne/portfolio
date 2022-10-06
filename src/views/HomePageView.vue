@@ -1,4 +1,5 @@
 <template>
+  <div>
     <div class="widgets-container">
       <div class="home-page-item name">
         <div class="text-container">
@@ -21,6 +22,7 @@
         <HomePagePresentation/>
       </div>
     </div>
+  </div>
 </template>
 
 <script>
