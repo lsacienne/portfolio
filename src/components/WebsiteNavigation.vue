@@ -3,6 +3,7 @@
     <ol>
       <router-link class="li" to="/">Home</router-link>
       <router-link class="li" to="/projects">Projects</router-link>
+      <router-link class="li" to="/hobbys">Hobbys</router-link>
     </ol>
   </nav>
 </template>

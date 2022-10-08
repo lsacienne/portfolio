@@ -67,7 +67,7 @@ export default {
   },
   created() {
     this.getRepos();
-    setInterval(this.getRepos, 60000);
+    setInterval(this.getRepos, 60*60*1000);
   }
 }
 </script>
