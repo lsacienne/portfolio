@@ -10,7 +10,11 @@
                     hello i'm the title
                 </h1>
                 <p class="artist-name" ref="artist">Hello i'm the artist</p>
-                <audio ref="audio" src="https://cdns-preview-1.dzcdn.net/stream/c-179888dacdd6a28871ead1caebf86c79-8.mp3" preload loop id="audio"></audio>
+                <audio ref="audio"
+                src="https://cdns-preview-1.dzcdn.net/stream/c-179888dacdd6a28871ead1caebf86c79-8.mp3"
+                preload
+                loop
+                id="audio"></audio>
             </div>
         </div>
         <ul class="toolbar" role="toolbar">
@@ -63,7 +67,8 @@ import SemipolarSpinner from '../SemipolarSpinner.vue';
     methods: {
         getMusic: async function(song_title) {
 
-            let url = `https://api.deezer.com/search/?q=${song_title}&index=0&limit=2&output=json`
+            let url = `${window.location.origin}/search/?q=${song_title}&index=0&limit=2&output=json`
+            console.log(url);
             let response = await fetch(encodeURI(url));
             let response_json = await response.json();
 
@@ -106,6 +111,7 @@ import SemipolarSpinner from '../SemipolarSpinner.vue';
 
             if (!is_paused) {
                 this.$refs.audio.play();
+                this.fadeInAudio()
             }
         },
         pushPrev: function() {
@@ -121,7 +127,35 @@ import SemipolarSpinner from '../SemipolarSpinner.vue';
 
             if (!is_paused) {
                 this.$refs.audio.play();
+                this.fadeInAudio();
             }
+        },
+        /*
+        fadeOutAudio: function() {
+            let fadePoint = this.$refs.audio.duration - 2;
+            let fadeAudio = setInterval(function() {
+                if((this.$refs.audio.currentTime >= fadePoint) && (this.$refs.audio.volume != 0.0)) {
+                    this.$refs.audio.volume -= 0.1;
+                }
+
+                if(this.$refs.audio.volume === 0.0) {
+                    clearInterval(fadeAudio);
+                }
+            }, 200);
+        },
+        */
+        fadeInAudio: function() {
+            this.$refs.audio.volume = 0.0;
+            var fadeAudio = setInterval(function() {
+                
+                if(this.$refs.audio.volume != 1.0) {
+                    this.$refs.audio.volume += 0.1;
+                }
+
+                if(this.$refs.audio.volume === 1.0) {
+                    clearInterval(fadeAudio);
+                }
+            }, 2000);
         }
     },
     components: { SemipolarSpinner }
