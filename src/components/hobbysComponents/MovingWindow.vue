@@ -3,10 +3,11 @@
     </div>
     <div class="moving-window">
         <div class="header-window" @mousedown="mouseDown">
-            <img src="@/assets/icons/x-circle-fill.svg" alt="">
+            <img src="@/assets/icons/x-circle-fill.svg" alt="" v-on:click="cutWindow">
         </div>
         <div class="content">
-            test
+            <slot>
+            </slot>
         </div>
     </div>
     
@@ -28,6 +29,10 @@
             }
         },
         methods: {
+            cutWindow: function(event) {
+                event.target.parentNode.parentNode.style.display = "none"
+                this.$refs['place-holder'].style.display
+            },
             mouseDown: function(e) {
                 this.draggedWindow = e.target.parentNode;
                 
@@ -79,6 +84,7 @@
         height: 45vh;
         border-radius: 1rem;
         background-color: rgba(41, 41, 41, 0.6);
+        backdrop-filter: blur(0.3rem);
     }
 
     .place-holder {
@@ -106,6 +112,12 @@
     .moving-window .header-window img {
         height: 50%;
     }
+
+    .moving-window .content {
+        height: 92%;
+        width: 100%;
+    }
+
 
 
 </style>
