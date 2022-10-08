@@ -66,10 +66,11 @@ import SemipolarSpinner from '../SemipolarSpinner.vue';
     },
     methods: {
         getMusic: async function(song_title) {
+            
 
-            let url = `${window.location.origin}/search/?q=${song_title}&index=0&limit=2&output=json`
-            console.log(url);
-            let response = await fetch(encodeURI(url));
+            let _url = `/deezerapi/search/?q=${song_title}&index=0&limit=2&output=json`
+            console.log(_url);
+            let response = await fetch(encodeURI(_url));
             let response_json = await response.json();
 
             const data = response_json.data[0];
