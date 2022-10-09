@@ -7,7 +7,7 @@ module.exports = defineConfig({
       '^/deezerapi': {
         target: 'https://api.deezer.com/',
         changeOrigin: true,
-        pathRewrite: {'^/deezerapi': process.env.NODE_ENV === "production" ? '/portfolio/' : '/'}
+        pathRewrite: {'^/deezerapi': ''}
       },
     }
   }

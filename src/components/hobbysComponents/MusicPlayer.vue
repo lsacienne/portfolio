@@ -67,8 +67,10 @@ import SemipolarSpinner from '../SemipolarSpinner.vue';
     methods: {
         getMusic: async function(song_title) {
             
-
-            let _url = `/deezerapi/search/?q=${song_title}&index=0&limit=2&output=json`
+            
+            let _url = process.env.NODE_ENV === "production" ? 
+            `https://api.deezer.com/search/?q=${song_title}&index=0&limit=2&output=json`
+             : `/deezerapi/search/?q=${song_title}&index=0&limit=2&output=json`;
             
             let response = await fetch(encodeURI(_url));
             console.log(response);
