@@ -49,7 +49,6 @@ export default {
       this.date = this.getGoodDateFormat(cur_date)
     },
     getGoodDateFormat : function(date) {
-      console.log(date.getMonth()+" "+date.getDay())
       return DateConst.week.get(date.getDay()) + " "
           + date.getDate() + " "
           + DateConst.year.get(date.getMonth()) + " "
