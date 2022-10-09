@@ -69,8 +69,9 @@ import SemipolarSpinner from '../SemipolarSpinner.vue';
             
 
             let _url = `/deezerapi/search/?q=${song_title}&index=0&limit=2&output=json`
-            console.log(_url);
+            
             let response = await fetch(encodeURI(_url));
+            console.log(response);
             let response_json = await response.json();
 
             const data = response_json.data[0];
