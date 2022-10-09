@@ -69,7 +69,7 @@ import SemipolarSpinner from '../SemipolarSpinner.vue';
             
             
             let _url = process.env.NODE_ENV === "production" ? 
-            `https://thingproxy.freeboard.io/fetch/https://api.deezer.com/search/?q=${song_title}&index=0&limit=2&output=json`
+            `https://radiant-hamlet-77296.herokuapp.com/https://api.deezer.com/search/?q=${song_title}&index=0&limit=2&output=json`
              : `/deezerapi/search/?q=${song_title}&index=0&limit=2&output=json`;
             
             let response = await fetch(encodeURI(_url));
