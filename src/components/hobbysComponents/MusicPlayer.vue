@@ -48,7 +48,6 @@ import songs from '@/assets/json/songs.json'
     created() {
         console.log(songs)
         this.songArray = songs;
-        console.log(this.songArray)
     },
     mounted() {
         this.loading=false
@@ -188,7 +187,7 @@ import songs from '@/assets/json/songs.json'
             transform: translateX(450%);
         }
         to {
-            transform: translateX(-150%);
+            transform: translateX(-450%);
         }
     }
 
