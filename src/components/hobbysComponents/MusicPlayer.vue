@@ -1,8 +1,5 @@
 <template>
-    <div class="loader" v-if="loading">
-        <SemipolarSpinner/>
-    </div>
-    <div class="music-widget" v-else>
+    <div class="music-widget">
         <div class="thumbnail">
             <img src="@/assets/avatar.jpg" alt="" class="art" ref="thumbnail">
             <div class="song-info">
@@ -11,7 +8,7 @@
                 </h1>
                 <p class="artist-name" ref="artist">Hello i'm the artist</p>
                 <audio ref="audio"
-                src="https://cdns-preview-1.dzcdn.net/stream/c-179888dacdd6a28871ead1caebf86c79-8.mp3"
+                src=""
                 preload
                 loop
                 id="audio"></audio>
@@ -37,7 +34,7 @@
     </div>
 </template>
 <script>
-import SemipolarSpinner from '../SemipolarSpinner.vue';
+import songs from '@/assets/json/songs.json'
 
     export default {
     name: "MusicPlayer",
@@ -48,51 +45,22 @@ import SemipolarSpinner from '../SemipolarSpinner.vue';
             index_selected: 0
         }
     },
-    mounted() {
-        
-        this.getAllSOngs().then(array => {
-            
-            this.$refs.thumbnail.src = array[0].album_cover;
-            this.$refs.artist.textContent = array[0].artist;
-            this.$refs.song.textContent = array[0].title;
-            this.$refs.audio.src = array[0].preview;
-            this.$refs.audio.muted = false;
-        });
+    created() {
+        console.log(songs)
+        this.songArray = songs;
+        console.log(this.songArray)
     },
-    computed: {
-        songArrayComplete() {
-            return this.songArray;
-        }
+    mounted() {
+        this.loading=false
+        console.log(this.$refs.thumbnail)
+        this.songArray = songs;
+        this.$refs.thumbnail.src = this.songArray[0].album_cover;
+        this.$refs.artist.textContent = this.songArray[0].artist;
+        this.$refs.song.textContent = this.songArray[0].title;
+        this.$refs.audio.src = this.songArray[0].preview;
+        this.$refs.audio.muted = false;
     },
     methods: {
-        getMusic: async function(song_title) {
-            
-            
-            let _url = process.env.NODE_ENV === "production" ? 
-            `https://radiant-hamlet-77296.herokuapp.com/https://api.deezer.com/search/?q=${song_title}&index=0&limit=2&output=json`
-             : `/deezerapi/search/?q=${song_title}&index=0&limit=2&output=json`;
-            
-            let response = await fetch(encodeURI(_url));
-            console.log(response);
-            let response_json = await response.json();
-
-            const data = response_json.data[0];
-            let song = {
-                title: data.title,
-                preview: data.preview,
-                artist: data.artist.name,
-                album_cover: data.album.cover_medium
-            };
-
-            return song;
-        },
-        getAllSOngs: async function() {
-            this.songArray.push(await this.getMusic("In the End"));
-            this.songArray.push(await this.getMusic("Golden hour JVKE"));
-            this.songArray.push(await this.getMusic("夜に駆ける"));
-            this.loading = false;
-            return this.songArray;
-        },
         playMusic: function(event) {
             if (!this.$refs.audio.paused) {
                 this.$refs.audio.pause()
@@ -115,7 +83,6 @@ import SemipolarSpinner from '../SemipolarSpinner.vue';
 
             if (!is_paused) {
                 this.$refs.audio.play();
-                this.fadeInAudio()
             }
         },
         pushPrev: function() {
@@ -131,7 +98,6 @@ import SemipolarSpinner from '../SemipolarSpinner.vue';
 
             if (!is_paused) {
                 this.$refs.audio.play();
-                this.fadeInAudio();
             }
         },
         /*
@@ -162,7 +128,6 @@ import SemipolarSpinner from '../SemipolarSpinner.vue';
             }, 2000);
         }
     },
-    components: { SemipolarSpinner }
 }
     
 </script>
