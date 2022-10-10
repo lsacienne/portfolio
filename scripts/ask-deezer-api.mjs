@@ -1,4 +1,5 @@
-import fs from 'fs'
+import fs from 'fs';
+import fetch from "node-fetch";
 
 async function getMusic(song_title) {
     let _url = `https://api.deezer.com/search/?q=${song_title}&index=0&limit=2&output=json`;
