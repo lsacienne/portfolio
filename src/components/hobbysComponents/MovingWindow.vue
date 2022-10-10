@@ -118,6 +118,20 @@
         width: 100%;
     }
 
+    @media only screen and (max-width: 1100px) {
+        .moving-window {
+            width: 90vw;
+            height: 116vw;
+            margin-bottom: 2rem;
+        }
+
+        .place-holder {
+            width: 90vw;
+            height: 116vw;
+            margin-bottom: 2rem;
+        }
+    }
+
 
 
 </style>
