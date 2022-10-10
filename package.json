@@ -7,7 +7,8 @@
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
     "test": "",
-    "deploy": "node scripts/deploy-gh-pages.mjs"
+    "deploy": "node scripts/deploy-gh-pages.mjs",
+    "load-music": "node scripts/ask-deezer-api.mjs"
   },
   "dependencies": {
     "core-js": "^3.8.3",
