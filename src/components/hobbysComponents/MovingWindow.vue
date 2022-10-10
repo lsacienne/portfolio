@@ -1,7 +1,7 @@
 <template>
     <div class="place-holder" ref="place-holder">
     </div>
-    <div class="moving-window">
+    <div class="moving-window" ref="draggedwindow">
         <div class="header-window" @mousedown="mouseDown">
             <img src="@/assets/icons/x-circle-fill.svg" alt="" v-on:click="cutWindow">
         </div>
@@ -28,15 +28,15 @@
                 draggedWindow: null
             }
         },
+        mounted() {
+            this.draggedWindow = this.$refs.draggedwindow;
+        },
         methods: {
             cutWindow: function(event) {
                 event.target.parentNode.parentNode.style.display = "none"
                 this.$refs['place-holder'].style.display
             },
             mouseDown: function(e) {
-                this.draggedWindow = e.target.parentNode;
-                
-                
                 e = e || window.event;
                 e.preventDefault();
                 // get the mouse cursor position at startup:
