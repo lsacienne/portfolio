@@ -1,22 +1,23 @@
 <template>
     <div class="window-container">
-        <MovingWindow>
+        <MovingWindow window_title="Mes musiques préférées 🎵">
             <MusicPlayer></MusicPlayer>
         </MovingWindow>
-        <MovingWindow>
-            
+        <MovingWindow window_title="Quelques origamis...">
+            <OrigamisViewer></OrigamisViewer>
         </MovingWindow>
     </div>
 </template>
 <script>
 import MovingWindow from "../components/hobbysComponents/MovingWindow.vue";
 import MusicPlayer from "../components/hobbysComponents/MusicPlayer.vue";
+import OrigamisViewer from "@/components/hobbysComponents/OrigamisViewer.vue";
     export default {
     name: "HobbyPageView",
     data() {
         return {};
     },
-    components: { MovingWindow, MusicPlayer }
+    components: { MovingWindow, MusicPlayer, OrigamisViewer }
 }
 </script>
 <style>
