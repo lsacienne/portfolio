@@ -33,6 +33,7 @@ import MusicPlayer from "../components/hobbysComponents/MusicPlayer.vue";
         .window-container {
             display: flex;
             flex-direction: column;
+            align-items: center;
         }
     }
 </style>
