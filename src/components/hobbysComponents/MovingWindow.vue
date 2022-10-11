@@ -3,6 +3,9 @@
     </div>
     <div class="moving-window" ref="draggedwindow">
         <div class="header-window" @mousedown="mouseDown">
+            <div class="window-title">
+                <h1>{{ window_title }}</h1>
+            </div>
             <img src="@/assets/icons/x-circle-fill.svg" alt="" v-on:click="cutWindow">
         </div>
         <div class="content">
@@ -15,6 +18,13 @@
 <script>
     export default {
         name:"MovingWindow",
+        props: {
+            window_title: {
+                String,
+                required: false,
+                default: ""
+            }
+        },
         data() {
             return {
                 startPos: {
@@ -109,6 +119,16 @@
         padding-right: 0.5rem;
     }
 
+    .moving-window .header-window .window-title {
+        flex-grow: 1;
+        pointer-events: none;
+    }
+
+    .moving-window .header-window .window-title h1{
+        font-size: 1rem;
+        color: rgb(187, 187, 187);
+    }
+
     .moving-window .header-window img {
         height: 50%;
     }
@@ -119,6 +139,10 @@
     }
 
     @media only screen and (max-width: 1100px) {
+        .moving-window .header-window .window-title h1{
+            font-size: 5vw;
+        }
+        
         .moving-window {
             width: 90vw;
             height: 116vw;
