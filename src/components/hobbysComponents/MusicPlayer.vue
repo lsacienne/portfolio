@@ -21,7 +21,7 @@
                 </button>
             </li>
             <li>
-                <button aria-label="play-pause" class="button-play button" v-on:click="playMusic">
+                <button aria-label="play-pause" class="button-play button" v-on:click="playMusic" v-on:touchstart="playMusic">
                     <img src="@/assets/icons/play_icon.svg" alt="play and pause button">
                 </button>
             </li>
@@ -61,12 +61,13 @@ import songs from '@/assets/json/songs.json'
     },
     methods: {
         playMusic: function(event) {
+            event.preventDefault();
             if (!this.$refs.audio.paused) {
-                this.$refs.audio.pause()
-                event.target.children[0].src=require("@/assets/icons/play_icon.svg")
+                this.$refs.audio.pause();
+                event.target.children[0].src=require("@/assets/icons/play_icon.svg");
             } else {
-                this.$refs.audio.play()
-                event.target.children[0].src=require("@/assets/icons/pause_icon.svg")
+                this.$refs.audio.play();
+                event.target.children[0].src=require("@/assets/icons/pause_icon.svg");
             }
             
         },
