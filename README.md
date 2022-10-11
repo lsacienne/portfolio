@@ -1,8 +1,8 @@
-# portfolio
-
 <a href="https://gitmoji.dev">
   <img src="https://img.shields.io/badge/gitmoji-%20😜%20😍-FFDD67.svg?style=flat-square" alt="Gitmoji">
 </a>
+
+# portfolio
 
 My own portfolio in the shape of a website. 
 I will show here all my projects.
