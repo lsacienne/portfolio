@@ -2,6 +2,28 @@
     <div class="project-page-container">
         <div class="project-container">
             <DevProject
+            project_title="Mon Portfolio"
+            url_github="https://github.com/lsacienne/portfolio1"
+            picture="./project_icons/logo_portfolio.png"
+            :document_list="[
+                {file_url: 'https://lsacienne.github.io/portfolio/', file_name: 'Mon portfolio'}
+            ]"
+            contributors="VIALA Alexandre"
+             >
+                Eh oui ! Même si j'utilise ce site internet pour présenter mes projets,
+                il s'agit également d'un autre de mes projets personnels ! Après avoir
+                travaillé sur divers projets de site web au cours de mes trois premières
+                années d'étude, j'ai décidé de créer un site entièrement personnel.<br/>
+                J'ai réalisé ce site avec le framework javascript 
+                <a href="http://vuejs.org/">Vue JS</a>. Ce site, en amélioration constante,
+                m'a déjà permis de manipuler plusieurs API, de m'exercer au CSS et de découvrir
+                mon premier framwork front-end.<br/>
+                Ce site est également l'occasion pour moi de réaliser des fonctionnalités funs
+                que je ne pourrais pas réaliser en temps normal. 🐸
+            </DevProject>
+        </div>
+        <div class="project-container">
+            <DevProject
             project_title="Projet d'application Android de gestion de budget"
             url_github="https://github.com/lsacienne/SY43_P2022_lafo_cheuse"
             picture="./project_icons/lafo-cheuse_icon.png"
@@ -84,7 +106,6 @@
                 n'ayant pas d'expertise informatique. 
             </DevProject>
         </div>
-        
     </div>
 </template>
 
