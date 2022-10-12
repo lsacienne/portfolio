@@ -33,7 +33,6 @@ export default {
 }
 
 .panel {
-    background-color: blanchedalmond;
     display: flex;
     overflow: hidden;
     flex-direction: column;
@@ -61,12 +60,21 @@ export default {
     position: absolute;
     bottom: -5px;
     left: 0;
+    width: 100%;
     pointer-events: none;
+}
+
+.origami-filter img {
+    width: 35vh;
 }
 
 @media only screen and (max-width: 1100px) {
     .panel img {
         height: 116vw;
+    }
+
+    .origami-filter img {
+        width: 90vw;
     }
 }
 
