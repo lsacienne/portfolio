@@ -1,4 +1,7 @@
 <template>
+  <div class="navigation">
+    <HamburgerMenu/>
+  </div>
   <nav>
     <ol>
       <router-link class="li" to="/">Home</router-link>
@@ -9,12 +12,20 @@
 </template>
 
 <script>
+import HamburgerMenu from './navigation/HamburgerMenu.vue';
 export default {
-  name: "WebsiteNavigation",
+    name: "WebsiteNavigation",
+    components: { HamburgerMenu }
 }
 </script>
 
 <style scoped>
+  .navigation {
+    position: absolute;
+    right: 1vh;
+    top: 1vh;
+  }
+
   ol {
     width: 100%;
     padding: 0;
