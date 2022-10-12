@@ -31,9 +31,9 @@ export default {
 
 <style scoped>
   .navigation {
-    position: absolute;
-    right: 1vh;
-    top: 1vh;
+    display: none;
+    background-color: rgba(91, 163, 100,0.8);
+    border-radius: 1rem;
   }
 
   ol {
@@ -60,5 +60,48 @@ export default {
   .li:hover {
     background: #35454f;
     flex-grow: 1.5;
+  }
+
+  @media only screen and (max-width: 1100px) {
+    .navigation {
+      display: block;
+      align-self: flex-start;
+    }
+
+    nav {
+      display: inline-flex;
+      flex-direction: row;
+      position: fixed;
+      top: 1vh;
+      right: -70vw;
+      transition: all 300ms;
+      z-index: 3000;
+    }
+
+    ol {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      border-bottom: none;
+      width: 70vw;
+      height: 99vh;
+      border-radius: 10px;
+      background: rgba(91, 163, 100,0.8);
+    }
+
+    .li {
+      font-size: 1.2rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 8%;
+      flex-grow: unset;
+    }
+
+    .li:hover {
+      flex-grow: unset;
+    }
+
+
   }
 </style>
