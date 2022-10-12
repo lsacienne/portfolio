@@ -1,11 +1,11 @@
 <template>
     <div class="container">
         <VueAgile :autoplay="true">
-            <div class="panel"><img :src="`../origamis/hedgehog-min.jpg`" alt="Hedgehog origami" srcset=""></div>
-            <div class="panel"><img :src="`../origamis/dragon-min.jpg`" alt="Dragon origami" srcset=""></div>
-            <div class="panel"><img :src="`../origamis/beetle-min.jpg`" alt="Beetle origami" srcset=""></div>
-            <div class="panel"><img :src="`../origamis/squirel-min.jpg`" alt="Squirel origami" srcset=""></div>
-            <div class="panel"><img :src="`../origamis/turtle-min.jpg`" alt="Turtle origami" srcset=""></div>
+            <div class="panel"><img src="@/assets/origamis/hedgehog-min.jpg" alt="Hedgehog origami" srcset=""></div>
+            <div class="panel"><img src="@/assets/origamis/dragon-min.jpg" alt="Dragon origami" srcset=""></div>
+            <div class="panel"><img src="@/assets/origamis/beetle-min.jpg" alt="Beetle origami" srcset=""></div>
+            <div class="panel"><img src="@/assets/origamis/squirel-min.jpg" alt="Squirel origami" srcset=""></div>
+            <div class="panel"><img src="@/assets/origamis/turtle-min.jpg" alt="Turtle origami" srcset=""></div>
         </VueAgile>
         <div class="origami-filter"><img src="@/assets/filter_origami.svg" alt="" srcset=""></div>
         <div class="filter"></div>
