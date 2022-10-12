@@ -21,7 +21,7 @@
                 </button>
             </li>
             <li>
-                <button aria-label="play-pause" class="button-play button" v-on:touchend="playMusic" v-on:click="playMusic">
+                <button aria-label="play-pause" class="button-play button" v-on:touchstart="playMusic" v-on:mousedown="playMusic">
                     <img src="@/assets/icons/play_icon.svg" alt="play and pause button">
                 </button>
             </li>
