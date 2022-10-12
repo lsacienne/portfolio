@@ -88,7 +88,7 @@
 
     }
 </script>
-<style>
+<style scoped>
     .moving-window {
         width: 35vh;
         height: 45vh;

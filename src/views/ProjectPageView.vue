@@ -121,7 +121,7 @@
     }
 </script>
 
-<style>
+<style scoped>
     .project-page-container {
         width: 100%;
         margin-bottom: 3rem;

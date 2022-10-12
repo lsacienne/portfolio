@@ -131,7 +131,7 @@ import songs from '@/assets/json/songs.json'
 }
     
 </script>
-<style>
+<style scoped>
     .loader {
         height: 100%;
         display: flex;

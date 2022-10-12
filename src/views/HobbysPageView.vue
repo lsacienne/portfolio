@@ -20,7 +20,7 @@ import OrigamisViewer from "@/components/hobbysComponents/OrigamisViewer.vue";
     components: { MovingWindow, MusicPlayer, OrigamisViewer }
 }
 </script>
-<style>
+<style scoped>
     .window-container {
         position: relative;
         margin-top: 1rem;
