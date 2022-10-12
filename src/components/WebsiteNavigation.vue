@@ -1,9 +1,9 @@
 <template>
-  <div class="navigation">
-    <HamburgerMenu/>
-  </div>
-  <nav>
-    <ol>
+  <nav ref="options">
+    <div class="navigation">
+      <HamburgerMenu @toggle="(toggled) => toggleMenu(toggled)" ref="hamburger"></HamburgerMenu>
+    </div>
+    <ol v-on:click="$refs.hamburger.updateMenu()">
       <router-link class="li" to="/">Home</router-link>
       <router-link class="li" to="/projects">Projects</router-link>
       <router-link class="li" to="/hobbys">Hobbys</router-link>
