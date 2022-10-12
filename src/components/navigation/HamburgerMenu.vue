@@ -11,10 +11,17 @@
 <script>
 export default {
   name: "HamburgerMenu",
+  emits: ['toggle'],
+  data() {
+    return {
+      toggled: false,
+    }
+  },
   methods: {
     updateMenu: function() {
       this.$refs.button.classList.toggle('opened');
-      this.$refs.button.classList.setAttribute('aria-expanded', this.classList.contains('opened'));
+      this.toggled = !this.toggled
+      this.$emit('toggle',this.toggled)
     }
   }
 }
@@ -47,6 +54,7 @@ export default {
   stroke-dasharray: 60 207;
   stroke-width: 6;
 }
+
 .opened .line1 {
   stroke-dasharray: 90 207;
   stroke-dashoffset: -134;
