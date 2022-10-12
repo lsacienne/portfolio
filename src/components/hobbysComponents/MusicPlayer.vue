@@ -21,7 +21,7 @@
                 </button>
             </li>
             <li>
-                <button aria-label="play-pause" class="button-play button" v-on:touchstart="playMusic" v-on:mousedown="playMusic">
+                <button aria-label="play-pause" class="button-play button" v-on:touchend="playMusic" v-on:mousedown="playMusic">
                     <img src="@/assets/icons/play_icon.svg" alt="play and pause button">
                 </button>
             </li>
@@ -61,7 +61,6 @@ import songs from '@/assets/json/songs.json'
     },
     methods: {
         playMusic: function(event) {
-            event.preventDefault();
             if (!this.$refs.audio.paused) {
                 this.$refs.audio.pause();
                 event.target.children[0].src=require("@/assets/icons/play_icon.svg");
