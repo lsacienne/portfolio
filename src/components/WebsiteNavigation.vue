@@ -15,7 +15,17 @@
 import HamburgerMenu from './navigation/HamburgerMenu.vue';
 export default {
     name: "WebsiteNavigation",
-    components: { HamburgerMenu }
+    components: { HamburgerMenu },
+    methods: {
+      toggleMenu: function(toggled) {
+        console.log(toggled,this.$refs.options.right )
+        if (toggled) {
+          this.$refs.options.style.right = 0
+        } else {
+          this.$refs.options.style.right = "-70vw"
+        }
+      }
+    }
 }
 </script>
 
