@@ -33,6 +33,9 @@ export default {
   border: none;
   cursor: pointer;
   display: flex;
+  align-items: center;
+  width: 10vh;
+  height: 10vh;
   padding: 0;
 }
 .line {
