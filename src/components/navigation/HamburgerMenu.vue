@@ -1,166 +1,68 @@
 <template>
-    <section class="top-nav">
-    <div>
-      Logo Here
-    </div>
-    <input id="menu-toggle" type="checkbox" />
-    <label class='menu-button-container' for="menu-toggle">
-    <div class='menu-button'></div>
-  </label>
-    <ul class="menu">
-      <li>One</li>
-      <li>Two</li>
-      <li>Three</li>
-      <li>Four</li>
-      <li>Five</li>
-    </ul>
-  </section>
+  <button class="menu" ref="button" v-on:click="updateMenu" aria-label="Main Menu">
+      <svg width="100" height="100" viewBox="0 0 100 100">
+        <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+        <path class="line line2" d="M 20,50 H 80" />
+        <path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+      </svg>
+    </button>
 </template>
 
 <script>
-    export default {
-        
-        data() {
-            return {
-                el: '#sidemenu',
-                navOpen: true,
-            } 
-        },
+export default {
+  name: "HamburgerMenu",
+  methods: {
+    updateMenu: function() {
+      this.$refs.button.classList.toggle('opened');
+      this.$refs.button.classList.setAttribute('aria-expanded', this.classList.contains('opened'));
     }
+  }
+}
 </script>
 
-<style>
-@import url(https://fonts.googleapis.com/css?family=Raleway);
-h2 {
-  vertical-align: center;
-  text-align: center;
-}
-
-html, body {
-  margin: 0;
-  height: 100%;
-}
-
-* {
-  font-family: "Raleway";
-  box-sizing: border-box;
-}
-
-.top-nav {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  background-color: #00BAF0;
-  background: linear-gradient(to left, #f46b45, #eea849);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  color: #FFF;
-  height: 50px;
-  padding: 1em;
-}
-
+<style scoped>
 .menu {
-  display: flex;
-  flex-direction: row;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-.menu > li {
-  margin: 0 1rem;
-  overflow: hidden;
-}
-
-.menu-button-container {
-  display: none;
-  height: 100%;
-  width: 30px;
+  background-color: transparent;
+  border: none;
   cursor: pointer;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  display: flex;
+  padding: 0;
+  width: 100%;
+  height: 100%;
 }
-
-#menu-toggle {
-  display: none;
+.line {
+  fill: none;
+  stroke: black;
+  stroke-width: 6;
+  transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+    stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.menu-button,
-.menu-button::before,
-.menu-button::after {
-  display: block;
-  background-color: #fff;
-  position: absolute;
-  height: 4px;
-  width: 30px;
-  transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
-  border-radius: 2px;
+.line1 {
+  stroke-dasharray: 60 207;
+  stroke-width: 6;
 }
-
-.menu-button::before {
-  content: '';
-  margin-top: -8px;
+.line2 {
+  stroke-dasharray: 60 60;
+  stroke-width: 6;
 }
-
-.menu-button::after {
-  content: '';
-  margin-top: 8px;
+.line3 {
+  stroke-dasharray: 60 207;
+  stroke-width: 6;
 }
-
-#menu-toggle:checked + .menu-button-container .menu-button::before {
-  margin-top: 0px;
-  transform: rotate(405deg);
+.opened .line1 {
+  stroke-dasharray: 90 207;
+  stroke-dashoffset: -134;
+  stroke-width: 6;
 }
-
-#menu-toggle:checked + .menu-button-container .menu-button {
-  background: rgba(255, 255, 255, 0);
+.opened .line2 {
+  stroke-dasharray: 1 60;
+  stroke-dashoffset: -30;
+  stroke-width: 6;
 }
-
-#menu-toggle:checked + .menu-button-container .menu-button::after {
-  margin-top: 0px;
-  transform: rotate(-405deg);
-}
-
-@media (max-width: 700px) {
-  .menu-button-container {
-    display: flex;
-  }
-  .menu {
-    position: absolute;
-    top: 0;
-    margin-top: 50px;
-    left: 0;
-    flex-direction: column;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-  }
-  #menu-toggle ~ .menu li {
-    height: 0;
-    margin: 0;
-    padding: 0;
-    border: 0;
-    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
-  }
-  #menu-toggle:checked ~ .menu li {
-    border: 1px solid #333;
-    height: 2.5em;
-    padding: 0.5em;
-    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
-  }
-  .menu > li {
-    display: flex;
-    justify-content: center;
-    margin: 0;
-    padding: 0.5em 0;
-    width: 100%;
-    color: white;
-    background-color: #222;
-  }
-  .menu > li:not(:last-child) {
-    border-bottom: 1px solid #444;
-  }
+.opened .line3 {
+  stroke-dasharray: 90 207;
+  stroke-dashoffset: -134;
+  stroke-width: 6;
 }
 
 </style>
