@@ -27,8 +27,6 @@ export default {
   cursor: pointer;
   display: flex;
   padding: 0;
-  width: 100%;
-  height: 100%;
 }
 .line {
   fill: none;
