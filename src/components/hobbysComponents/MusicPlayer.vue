@@ -21,8 +21,8 @@
                 </button>
             </li>
             <li>
-                <button aria-label="play-pause" class="button-play button" v-on:click="playMusic" >
-                    <img src="@/assets/icons/play_icon.svg" alt="play and pause button">
+                <button aria-label="play-pause" class="button-play button" v-on:click="playMusic">
+                    <img src="@/assets/icons/play_icon.svg" alt="play and pause button" ref="playpause">
                 </button>
             </li>
             <li>
@@ -42,7 +42,8 @@ import songs from '@/assets/json/songs.json'
         return {
             loading: true,
             songArray: [],
-            index_selected: 0
+            index_selected: 0,
+            button_clicked: false,
         }
     },
     created() {
@@ -60,13 +61,18 @@ import songs from '@/assets/json/songs.json'
         this.$refs.audio.muted = false;
     },
     methods: {
-        playMusic: function(event) {
+        playMusic: function() {
+            this.button_clicked = !this.button_clicked;
             if (!this.$refs.audio.paused) {
                 this.$refs.audio.pause();
-                event.target.children[0].src=require("@/assets/icons/play_icon.svg");
             } else {
                 this.$refs.audio.play();
-                event.target.children[0].src=require("@/assets/icons/pause_icon.svg");
+            }
+
+            if(this.button_clicked) {
+                this.$refs.playpause.src = require("@/assets/icons/pause_icon.svg");
+            } else {
+                this.$refs.playpause.src = require("@/assets/icons/play_icon.svg");
             }
             
         },
