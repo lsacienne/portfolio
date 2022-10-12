@@ -1,11 +1,11 @@
 <template>
     <div class="container">
         <VueAgile :autoplay="true">
-            <div class="panel"><img src="/origamis/hedgehog.jpg" alt="" srcset=""></div>
-            <div class="panel"><img src="/origamis/dragon.jpg" alt="" srcset=""></div>
-            <div class="panel"><img src="/origamis/beetle.jpg" alt="" srcset=""></div>
-            <div class="panel"><img src="/origamis/squirel.jpg" alt="" srcset=""></div>
-            <div class="panel"><img src="/origamis/turtle.jpg" alt="" srcset=""></div>
+            <div class="panel"><img :src="`/origamis/hedgehog.jpg`" alt="" srcset=""></div>
+            <div class="panel"><img :src="`/origamis/dragon.jpg`" alt="" srcset=""></div>
+            <div class="panel"><img :src="`/origamis/beetle.jpg`" alt="" srcset=""></div>
+            <div class="panel"><img :src="`/origamis/squirel.jpg`" alt="" srcset=""></div>
+            <div class="panel"><img :src="`/origamis/turtle.jpg`" alt="" srcset=""></div>
         </VueAgile>
         <div class="origami-filter"><img src="@/assets/filter_origami.svg" alt="" srcset=""></div>
         <div class="filter"></div>
