@@ -30,6 +30,7 @@
   url(./fonts/SquarePeg-Regular.ttf) format("truetype");
 }
 
+
 main {
   margin-left: 15vw;
   margin-right: 15vw;
@@ -43,8 +44,11 @@ main>h1 {
 }
 
 html {
-  background: url("./assets/background.jpeg") fixed;
+  background: url("@/assets/background.jpeg") fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
