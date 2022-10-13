@@ -34,8 +34,8 @@ export default {
   components: {HomePagePresentation, GithubList},
   data() {
     return {
-      time: "",
-      date: ""
+      time: (new Date()).toLocaleTimeString(),
+      date: this.getGoodDateFormat(new Date())
     }
   },
   created() {
