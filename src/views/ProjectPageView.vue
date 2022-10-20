@@ -3,7 +3,7 @@
         <div class="project-container">
             <DevProject
             project_title="Mon Portfolio"
-            url_github="https://github.com/lsacienne/portfolio1"
+            url_github="https://github.com/lsacienne/portfolio"
             picture="./project_icons/logo_portfolio.png"
             :document_list="[
                 {file_url: 'https://lsacienne.github.io/portfolio/', file_name: 'Mon portfolio'}
