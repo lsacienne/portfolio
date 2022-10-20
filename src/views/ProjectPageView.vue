@@ -108,6 +108,32 @@
         </div>
         <div class="project-container">
             <DevProject
+            project_title="Suite de jeu sous Unity"
+            url_github="https://github.com/lsacienne/LP2B_project_unity_game"
+            picture="./project_icons/bad_apple_catcher.png"
+            :document_list="[
+                {file_url: 'https://github.com/lsacienne/LP2B_project_unity_game/blob/main/README.md', file_name: 'Fonctionnalités LP2B'},
+            ]"
+            contributors="CHAILLARD Léo, VIALA Alexandre"
+             >
+                Pour un cours portant sur le traitement informatique de l'image, nous avons dû
+                réaliser des travaux pratiques sur Unity. Notre professeur nous donnait plusieurs
+                assets (des images, des sons, des vidéos, etc.) et un support de TP sous forme de
+                diaporama. Nous avons eu 4-5 TP comme celui-ci au cours du semestre et à la fin,
+                nous devions compiler tous les travaux réalisé dans un seul projet.<br>
+                Nous pouvions alors ajouter des fonctionnalités, en changer certaines, ajouter
+                nos propres assets, etc. Mon camarade s'est davantage occupé de la partie casse-brique
+                en implémentant beaucoup de power-ups, des niveaux et un menu. J'ai pour ma part fait
+                quelques modifications sur le mini-jeu "Apple Catcher" et "Furapi bird".<br>
+                Cette expérience m'a permis d'avoir un premier contact avce les moteurs physique et le
+                langage C#. J'ai également appris à utiliser les coroutines, qui sont utilisées dans
+                d'autres langages (Kotlin notamment).
+            </DevProject>
+        </div>
+            </DevProject>
+        </div>
+        <div class="project-container">
+            <DevProject
             project_title="Un Troll Bien Mécontent - Metacritic des jeux de société"
             url_github="https://github.com/lsacienne/ifd_site"
             picture="./project_icons/UnTrollBienMecontent_logo.png"
