@@ -106,6 +106,26 @@
                 n'ayant pas d'expertise informatique. 
             </DevProject>
         </div>
+        <div class="project-container">
+            <DevProject
+            project_title="Un Troll Bien Mécontent - Metacritic des jeux de société"
+            url_github="https://github.com/lsacienne/ifd_site"
+            picture="./project_icons/UnTrollBienMecontent_logo.png"
+            :document_list="[
+                {file_url: './projects_reports/IFD1_chaillard_caillier_viala.pdf', file_name: 'Rapport IFD1'},
+            ]"
+            contributors="CAILLER Paul, CHAILLARD Léo, VIALA Alexandre"
+             >
+                Pendant ma préparation intégrée à l'UTBM, en 2020, j'ai suivi des cours de base de
+                données. Ces cours m'ont permis de découvrir les bases des bases de données
+                relationnelles et le principe de normalisation de base de données.<br/>
+                Pour clôturer l'UV, nous avons dû réaliser, en groupe de trois personnes, un site 
+                internet lié à une base de données relationnelle. Le thème était imposé, nous 
+                devions réalisé un réseau social, similaire à Metacritic, pour les jeux de société.<br/>
+                Ce projet m'a permis de débuter dans la programmation web en back-end et de parfaire
+                mes connaissances en front-end.
+            </DevProject>
+        </div>
     </div>
 </template>
 
