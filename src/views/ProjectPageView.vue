@@ -37,7 +37,7 @@
                 l'UTBM, j'ai dû, avec un de mes camarades, réaliser une application
                 pour smartphones Android (version 10+). Il s'agit d'une application
                 de gestion budgétaire destinée aux étudiants.<br>
-                Ce projet nous a permi d'adopter une méthodologie de travail complète
+                Ce projet nous a permis d'adopter une méthodologie de travail complète
                 grâce à l'utilisation de divers techniques et outils de créativité.
                 L'APK est téléchargeable en ligne. 
             </DevProject>
@@ -58,7 +58,7 @@
                 un "idle game" en Java avec plusieurs de mes camarades.<br>
                 Un idle game est un jeu où le joueur a pour seul objectif de faire
                 augmenter une ou plusieurs ressource(s) de manière exponentielle.
-                Pour cela le joueur dispos de plusieurs levier d'action (augenter la
+                Pour cela le joueur dispose de plusieurs leviers d'action (augmenter la
                 productivité globale, augmenter la productivité d'un ouvrier, etc.)<br>
                 Ce projet m'a permis de découvrir davantage les possibilités du langage
                 Java et notamment la gestion des threads.
@@ -80,7 +80,7 @@
                 Beaucoup d'étudiants souhaitent néanmoins connaître leur GPA rapidement.<br/>
                 C'est pourquoi, j'ai créé ce bot discord qui a pour objectif de calculer le GPA
                 à partir des résultats de l'utilisateur. Ce projet m'a surtout permis d'explorer
-                plus en profondeur les notions de promesses et d'asynchrone en Javascript. 
+                plus en profondeur les notions de promesses et d'asynchronisme en Javascript. 
             </DevProject>
             
         </div>
@@ -97,11 +97,11 @@
              >
                 Pendant ma dernière année de Tronc Commun à l'UTBM (notre cycle préparatoire), j'ai eu
                 le privilège de créer, avec l'un de mes camarade, le site internet du Congrès
-                Idustriel 2021.<br>
+                Industriel 2021.<br>
                 Le site était purement front-end en HTML et CSS pur sans framework (mis à part 
                 <a href="https://fontawesome.com/">font-awesome</a>). Nous avons eu recours à quelques
                 subterfuges afin de simuler une base de donnée au cours du développement.<br>
-                Ce projet m'a permis de découvrir le mond eassociatif à l'UTBM, de découvrir
+                Ce projet m'a permis de découvrir le monde associatif à l'UTBM, de découvrir
                 le langage Javascript et de travailler pour la première fois avec des personnes
                 n'ayant pas d'expertise informatique. 
             </DevProject>
