@@ -147,7 +147,7 @@
                 relationnelles et le principe de normalisation de base de données.<br/>
                 Pour clôturer l'UV, nous avons dû réaliser, en groupe de trois personnes, un site 
                 internet lié à une base de données relationnelle. Le thème était imposé, nous 
-                devions réalisé un réseau social, similaire à Metacritic, pour les jeux de société.<br/>
+                devions réalisé un réseau social, similaire à Metacritic pour les jeux de société.<br/>
                 Ce projet m'a permis de débuter dans la programmation web en back-end et de parfaire
                 mes connaissances en front-end.
             </DevProject>
