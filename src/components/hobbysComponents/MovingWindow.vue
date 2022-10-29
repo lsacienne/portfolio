@@ -44,7 +44,7 @@
         methods: {
             cutWindow: function(event) {
                 event.target.parentNode.parentNode.style.display = "none"
-                this.$refs['place-holder'].style.display
+                this.$refs['place-holder'].style.display = "unset";
             },
             mouseDown: function(e) {
                 e = e || window.event;
@@ -95,6 +95,7 @@
         border-radius: 1rem;
         background-color: rgba(41, 41, 41, 0.6);
         backdrop-filter: blur(0.3rem);
+        overflow: hidden;
     }
 
     .place-holder {
