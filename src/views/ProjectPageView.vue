@@ -3,7 +3,7 @@
         <div class="project-container">
             <DevProject
             project_title="Mon Portfolio"
-            url_github="https://github.com/lsacienne/portfolio1"
+            url_github="https://github.com/lsacienne/portfolio"
             picture="./project_icons/logo_portfolio.png"
             :document_list="[
                 {file_url: 'https://lsacienne.github.io/portfolio/', file_name: 'Mon portfolio'}
@@ -37,7 +37,7 @@
                 l'UTBM, j'ai dû, avec un de mes camarades, réaliser une application
                 pour smartphones Android (version 10+). Il s'agit d'une application
                 de gestion budgétaire destinée aux étudiants.<br>
-                Ce projet nous a permi d'adopter une méthodologie de travail complète
+                Ce projet nous a permis d'adopter une méthodologie de travail complète
                 grâce à l'utilisation de divers techniques et outils de créativité.
                 L'APK est téléchargeable en ligne. 
             </DevProject>
@@ -58,7 +58,7 @@
                 un "idle game" en Java avec plusieurs de mes camarades.<br>
                 Un idle game est un jeu où le joueur a pour seul objectif de faire
                 augmenter une ou plusieurs ressource(s) de manière exponentielle.
-                Pour cela le joueur dispos de plusieurs levier d'action (augenter la
+                Pour cela le joueur dispose de plusieurs leviers d'action (augmenter la
                 productivité globale, augmenter la productivité d'un ouvrier, etc.)<br>
                 Ce projet m'a permis de découvrir davantage les possibilités du langage
                 Java et notamment la gestion des threads.
@@ -80,7 +80,7 @@
                 Beaucoup d'étudiants souhaitent néanmoins connaître leur GPA rapidement.<br/>
                 C'est pourquoi, j'ai créé ce bot discord qui a pour objectif de calculer le GPA
                 à partir des résultats de l'utilisateur. Ce projet m'a surtout permis d'explorer
-                plus en profondeur les notions de promesses et d'asynchrone en Javascript. 
+                plus en profondeur les notions de promesses et d'asynchronisme en Javascript. 
             </DevProject>
             
         </div>
@@ -97,13 +97,77 @@
              >
                 Pendant ma dernière année de Tronc Commun à l'UTBM (notre cycle préparatoire), j'ai eu
                 le privilège de créer, avec l'un de mes camarade, le site internet du Congrès
-                Idustriel 2021.<br>
+                Industriel 2021.<br>
                 Le site était purement front-end en HTML et CSS pur sans framework (mis à part 
                 <a href="https://fontawesome.com/">font-awesome</a>). Nous avons eu recours à quelques
                 subterfuges afin de simuler une base de donnée au cours du développement.<br>
-                Ce projet m'a permis de découvrir le mond eassociatif à l'UTBM, de découvrir
+                Ce projet m'a permis de découvrir le monde associatif à l'UTBM, de découvrir
                 le langage Javascript et de travailler pour la première fois avec des personnes
                 n'ayant pas d'expertise informatique. 
+            </DevProject>
+        </div>
+        <div class="project-container">
+            <DevProject
+            project_title="Suite de jeu sous Unity"
+            url_github="https://github.com/lsacienne/LP2B_project_unity_game"
+            picture="./project_icons/bad_apple_catcher.png"
+            :document_list="[
+                {file_url: 'https://github.com/lsacienne/LP2B_project_unity_game/blob/main/README.md', file_name: 'Fonctionnalités LP2B'},
+            ]"
+            contributors="CHAILLARD Léo, VIALA Alexandre"
+             >
+                Pour un cours portant sur le traitement informatique de l'image, nous avons dû
+                réaliser des travaux pratiques sur Unity. Notre professeur nous donnait plusieurs
+                assets (des images, des sons, des vidéos, etc.) et un support de TP sous forme de
+                diaporama. Nous avons eu 4-5 TP comme celui-ci au cours du semestre et à la fin,
+                nous devions compiler tous les travaux réalisé dans un seul projet.<br>
+                Nous pouvions alors ajouter des fonctionnalités, en changer certaines, ajouter
+                nos propres assets, etc. Mon camarade s'est davantage occupé de la partie casse-brique
+                en implémentant beaucoup de power-ups, des niveaux et un menu. J'ai pour ma part fait
+                quelques modifications sur le mini-jeu "Apple Catcher" et "Furapi bird".<br>
+                Cette expérience m'a permis d'avoir un premier contact avce les moteurs physique et le
+                langage C#. J'ai également appris à utiliser les coroutines, qui sont utilisées dans
+                d'autres langages (Kotlin notamment).
+            </DevProject>
+        </div>
+        <div class="project-container">
+            <DevProject
+            project_title="PonyGame - Jeu de Ludo en Java"
+            url_github="https://github.com/toma68650/ProjectLLP2A"
+            picture="./project_icons/ponygame_icon.png"
+            :document_list="[
+                {file_url: './projects_reports/Project_LP2A.pdf', file_name: 'Rapport LP2A'},
+            ]"
+            contributors="LIGNON Thomas, VIALA Alexandre"
+             >
+                Pendant mon dernier semestre de cycle préparatoire intégré à l'UTBM, j'ai eu l'occasion
+                de suivre un cours de programmation orientée objet. Pour appliquer les notions de 
+                polymorphisme, d'abstraction, d'encapsulage et d'héritage, nous avons utilisé le
+                langage Java.<br/>
+                Afin de parfaire nos connaissances et de travailler sur un projet plus
+                concret, nous avons dû réaliser, en binôme, un jeu de petits chevaux en Java.<br/>
+                Ce projet m'a permis de réaliser mon premier système informatique utilisant
+                pleinement les mécanismes de base de programmation orientée objet.
+            </DevProject>
+        </div>
+        <div class="project-container">
+            <DevProject
+            project_title="Un Troll Bien Mécontent - Metacritic des jeux de société"
+            url_github="https://github.com/lsacienne/ifd_site"
+            picture="./project_icons/UnTrollBienMecontent_logo.png"
+            :document_list="[
+                {file_url: './projects_reports/IFD1_chaillard_caillier_viala.pdf', file_name: 'Rapport IFD1'},
+            ]"
+            contributors="CAILLER Paul, CHAILLARD Léo, VIALA Alexandre"
+             >
+                Pendant ma préparation intégrée à l'UTBM, en 2020, j'ai suivi des cours de base de
+                données. Ces cours m'ont permis de découvrir les bases des bases de données
+                relationnelles et le principe de normalisation de base de données.<br/>
+                Pour clôturer l'UV, nous avons dû réaliser, en groupe de trois personnes, un site 
+                internet lié à une base de données relationnelle. Le thème était imposé, nous 
+                devions réalisé un réseau social, similaire à Metacritic pour les jeux de société.<br/>
+                Ce projet m'a permis de débuter dans la programmation web en back-end et de parfaire
+                mes connaissances en front-end.
             </DevProject>
         </div>
     </div>
