@@ -130,6 +130,24 @@
                 d'autres langages (Kotlin notamment).
             </DevProject>
         </div>
+        <div class="project-container">
+            <DevProject
+            project_title="PonyGame - Jeu de Ludo en Java"
+            url_github="https://github.com/toma68650/ProjectLLP2A"
+            picture="./project_icons/ponygame_icon.png"
+            :document_list="[
+                {file_url: './projects_reports/Project_LP2A.pdf', file_name: 'Rapport LP2A'},
+            ]"
+            contributors="LIGNON Thomas, VIALA Alexandre"
+             >
+                Pendant mon dernier semestre de cycle préparatoire intégré à l'UTBM, j'ai eu l'occasion
+                de suivre un cours de programmation orientée objet. Pour appliquer les notions de 
+                polymorphisme, d'abstraction, d'encapsulage et d'héritage, nous avons utilisé le
+                langage Java.<br/>
+                Afin de parfaire nos connaissances et de travailler sur un projet plus
+                concret, nous avons dû réaliser, en binôme, un jeu de petits chevaux en Java.<br/>
+                Ce projet m'a permis de réaliser mon premier système informatique utilisant
+                pleinement les mécanismes de base de programmation orientée objet.
             </DevProject>
         </div>
         <div class="project-container">
