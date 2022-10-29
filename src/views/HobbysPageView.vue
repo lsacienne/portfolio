@@ -28,6 +28,15 @@ import GameDisplayer from "@/components/skills/GameDisplayer.vue";
 }
 </script>
 <style scoped>
+
+    .global-layout {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+
+
+        width: 100%;
+    }
     .window-container {
         position: relative;
         margin-top: 1rem;
