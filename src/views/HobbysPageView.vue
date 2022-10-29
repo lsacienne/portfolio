@@ -1,14 +1,5 @@
 <template>
-    <div class="window-container">
-        <MovingWindow window_title="Mes musiques préférées 🎵">
-            <MusicPlayer></MusicPlayer>
-        </MovingWindow>
-        <MovingWindow window_title="Quelques origamis...">
-            <OrigamisViewer></OrigamisViewer>
-        </MovingWindow>
-        <MovingWindow window_title="Mes jeux préférés 🎮">
-            <GameDisplayer></GameDisplayer>
-        </MovingWindow>
+    <div class="global-layout">
     </div>
 </template>
 <script>
