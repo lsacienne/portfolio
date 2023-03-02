@@ -112,9 +112,12 @@ export default {
 
 <style scoped>
     .container {
-
+        width: 100%;
+        padding-top: 1rem;
         display: flex;
+        flex-wrap: wrap;
         align-items: center;
         justify-content: center;
+        gap: 2rem;
     }
 </style>
