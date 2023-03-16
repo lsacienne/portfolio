@@ -1,96 +1,130 @@
 <template>
     <div class="container">
-        <LanguageBadge languageName="Vue-3" imgSource="vue-logo.png" :badgesList="['https://github.com/lsacienne/calendar-maker','https://github.com/lsacienne/portfolio']">
+        <LanguageBadge languageName="Vue-3" imgSource="vue-logo.png"
+            :badgesList="['https://github.com/lsacienne/calendar-maker', 'https://github.com/lsacienne/portfolio']">
             Vue 3 est un framework front-end pour le langage Javascript. Il permet de concevoir
             des sites internets front-end.<br>
             J'ai eu l'ocassion d'utiliser ce framework afin de réaliser ce portfolio ainsi que
             la deuxième version de mon logiciel calendar-maker.
         </LanguageBadge>
-        <LanguageBadge languageName="CSS" imgSource="logo-css.png" :badgesList="['https://github.com/lsacienne/calendar-maker','https://github.com/lsacienne/portfolio']">
+        <LanguageBadge languageName="CSS" imgSource="logo-css.png" :badgesList="[
+            'https://github.com/lsacienne/portfolio',
+            'https://github.com/lsacienne/ifd_site',
+            'https://github.com/lsacienne/calendar-maker',
+            'https://github.com/lsacienne/Site_congres_A21',
+            'https://github.com/lmichel/alix',
+        ]">
+            CSS est un langage de feuilles de cascade. Son but est de styliser des pages
+            HTML principalement.<br>
+            J'ai eu l'occasion de l'utiliser dès mes premières utilisation d'HTML.
+        </LanguageBadge>
+        <LanguageBadge languageName="HTML" imgSource="logo-html.png" :badgesList="[
+            'https://github.com/lsacienne/ifd_site',
+            'https://github.com/lsacienne/portfolio',
+            'https://github.com/lsacienne/calendar-maker',
+            'https://github.com/lsacienne/Site_congres_A21'
+        ]">
+            HTML est un langage de balisage. Il permet de définir le contenu d'un document texte.
+            Ces docuements peuvent ensuite être distribués sur internet au travers du protocole HTTP.<br>
+            J'utilise très souvent HTML afin de réaliser des interfaces rapidement pour des concepts.
+        </LanguageBadge>
+        <LanguageBadge languageName="Javascript" imgSource="Unofficial_JavaScript_logo_2 1.png" :badgesList="[
+            'https://github.com/lsacienne/calendar-maker',
+            'https://github.com/lsacienne/portfolio',
+            'https://github.com/lsacienne/advent_of_code_2023',
+            'https://github.com/Clamorae/Bandle_Mayor',
+            'https://github.com/lsacienne/gpa-bot',
+            'https://github.com/lmichel/alix',
+            'https://github.com/lsacienne/Site_congres_A21'
+        ]">
+            Javascript est un langage de programmation multiparadigme faiblement typé. Il s'agit d'un des deux
+            seuls langages de programmation, avec WebAssembly, directement interprétable par les navigateurs modernes.<br>
+            Mon utilisation de Javascript se cantonne principalement au développement de fonctionnalités front-end
+            d'applications. J'utilise notamment les fonctionnalités de canvas, d'objets et d'asynchronisme afin de réalier
+            cesdites fonctionnalités.<br>
+            J'utilise également Javascript avec l'utilitaire Node afin de concevoir rapidement des algorithmes
+            mais également pour réaliser des robots Discord.
+        </LanguageBadge>
+        <LanguageBadge languageName="Typescript" imgSource="Typescript_logo_2020.svg.png"
+            :badgesList="['https://github.com/lsacienne/calendar-maker']">
+            Typescript est un langage de programmation dérivé du Javascript qui permet de rendre ce dernier
+            plus robuste et extensif à l'aide, notamment, de fonctionnalités de typage fort.<br>
+            J'ai eu l'occasion d'utiliser Typescript pour réaliser la version 2 de monn générateur d'emplois du temps
+            (toujours en cours de développement).
+        </LanguageBadge>
+        <LanguageBadge languageName="C" imgSource="c_programming_language.png"
+            :badgesList="['https://github.com/lsacienne/belote_L_A', 'https://github.com/QuinD3cim/LO21_Project', 'https://github.com/lsacienne/LP25_project']">
+            Le langage C est un langage de programmation particulièrement performant utilisé depuis de nombreuses
+            années. Il est principalement utilisé dans le développement de solutions dédiées au bas niveau (robotique,
+            systèmes d'exploitations, drivers, etc.).<br>
+            J'ai beaucoup utilisé le langage C au cours de mes études pour des cours d'initiation à l'informatique. Ces
+            projets consistaient souevent à maîtriser des fonctionnalités particulières du C comme les structures de
+            données, les fonctionnalités unix (getopts par exemple) ou encore différents algorithmes basiques
+            (tri à bulles, tri par insertion, recherche binaire, tri rapide, etc.).
+        </LanguageBadge>
+        <LanguageBadge languageName="C++" imgSource="Cpp_Logo.png"
+            :badgesList="['https://github.com/lsacienne/CPP_practical_sessions', 'https://github.com/lsacienne/jiang_viala_tp_fiits']">
+            Le langage C++ est un langage principalement employé avec les paradigmes orienté objet et procédural.
+
+        </LanguageBadge>
+        <LanguageBadge languageName="C#" imgSource="c_sharp.png"
+            :badgesList="['https://github.com/lsacienne/calendar-maker', 'https://github.com/lsacienne/portfolio']">
             Vue 3 est un framework front-end pour le langage Javascript. Il permet de concevoir
             des sites internets front-end.<br>
             J'ai eu l'ocassion d'utiliser ce framework afin de réaliser ce portfolio ainsi que
             la deuxième version de mon logiciel calendar-maker.
         </LanguageBadge>
-        <LanguageBadge languageName="HTML" imgSource="logo-html.png" :badgesList="['https://github.com/lsacienne/calendar-maker','https://github.com/lsacienne/portfolio']">
+        <LanguageBadge languageName="Unity" imgSource="unity.png"
+            :badgesList="['https://github.com/lsacienne/calendar-maker', 'https://github.com/lsacienne/portfolio']">
             Vue 3 est un framework front-end pour le langage Javascript. Il permet de concevoir
             des sites internets front-end.<br>
             J'ai eu l'ocassion d'utiliser ce framework afin de réaliser ce portfolio ainsi que
             la deuxième version de mon logiciel calendar-maker.
         </LanguageBadge>
-        <LanguageBadge languageName="Javascript" imgSource="Unofficial_JavaScript_logo_2 1.png" :badgesList="['https://github.com/lsacienne/calendar-maker','https://github.com/lsacienne/portfolio']">
+        <LanguageBadge languageName="Python" imgSource="Python_logo_01.svg.png"
+            :badgesList="['https://github.com/lsacienne/calendar-maker', 'https://github.com/lsacienne/portfolio']">
             Vue 3 est un framework front-end pour le langage Javascript. Il permet de concevoir
             des sites internets front-end.<br>
             J'ai eu l'ocassion d'utiliser ce framework afin de réaliser ce portfolio ainsi que
             la deuxième version de mon logiciel calendar-maker.
         </LanguageBadge>
-        <LanguageBadge languageName="Typescript" :badgesList="['https://github.com/lsacienne/calendar-maker','https://github.com/lsacienne/portfolio']">
+        <LanguageBadge languageName="Java" imgSource="Java_Logo.svg.png"
+            :badgesList="['https://github.com/lsacienne/calendar-maker', 'https://github.com/lsacienne/portfolio']">
             Vue 3 est un framework front-end pour le langage Javascript. Il permet de concevoir
             des sites internets front-end.<br>
             J'ai eu l'ocassion d'utiliser ce framework afin de réaliser ce portfolio ainsi que
             la deuxième version de mon logiciel calendar-maker.
         </LanguageBadge>
-        <LanguageBadge languageName="C" imgSource="c_programming_language.png" :badgesList="['https://github.com/lsacienne/calendar-maker','https://github.com/lsacienne/portfolio']">
+        <LanguageBadge languageName="Kotlin" imgSource="Kotlin_Icon.svg.png"
+            :badgesList="['https://github.com/lsacienne/calendar-maker', 'https://github.com/lsacienne/portfolio']">
             Vue 3 est un framework front-end pour le langage Javascript. Il permet de concevoir
             des sites internets front-end.<br>
             J'ai eu l'ocassion d'utiliser ce framework afin de réaliser ce portfolio ainsi que
             la deuxième version de mon logiciel calendar-maker.
         </LanguageBadge>
-        <LanguageBadge languageName="C++" imgSource="Cpp_Logo.png" :badgesList="['https://github.com/lsacienne/calendar-maker','https://github.com/lsacienne/portfolio']">
+        <LanguageBadge languageName="SQL, MySQL, SQLite" imgSource="SQLite370.png"
+            :badgesList="['https://github.com/lsacienne/calendar-maker', 'https://github.com/lsacienne/portfolio']">
             Vue 3 est un framework front-end pour le langage Javascript. Il permet de concevoir
             des sites internets front-end.<br>
             J'ai eu l'ocassion d'utiliser ce framework afin de réaliser ce portfolio ainsi que
             la deuxième version de mon logiciel calendar-maker.
         </LanguageBadge>
-        <LanguageBadge languageName="C#" ImgSource="c-sharp-programming-language-icon.png" :badgesList="['https://github.com/lsacienne/calendar-maker','https://github.com/lsacienne/portfolio']">
+        <LanguageBadge languageName="PHP" imgSource="PHP-logo.svg.png"
+            :badgesList="['https://github.com/lsacienne/calendar-maker', 'https://github.com/lsacienne/portfolio']">
             Vue 3 est un framework front-end pour le langage Javascript. Il permet de concevoir
             des sites internets front-end.<br>
             J'ai eu l'ocassion d'utiliser ce framework afin de réaliser ce portfolio ainsi que
             la deuxième version de mon logiciel calendar-maker.
         </LanguageBadge>
-        <LanguageBadge languageName="Unity" :badgesList="['https://github.com/lsacienne/calendar-maker','https://github.com/lsacienne/portfolio']">
+        <LanguageBadge languageName="Android" imgSource="Android_robot.svg.png"
+            :badgesList="['https://github.com/lsacienne/calendar-maker', 'https://github.com/lsacienne/portfolio']">
             Vue 3 est un framework front-end pour le langage Javascript. Il permet de concevoir
             des sites internets front-end.<br>
             J'ai eu l'ocassion d'utiliser ce framework afin de réaliser ce portfolio ainsi que
             la deuxième version de mon logiciel calendar-maker.
         </LanguageBadge>
-        <LanguageBadge languageName="Python" :badgesList="['https://github.com/lsacienne/calendar-maker','https://github.com/lsacienne/portfolio']">
-            Vue 3 est un framework front-end pour le langage Javascript. Il permet de concevoir
-            des sites internets front-end.<br>
-            J'ai eu l'ocassion d'utiliser ce framework afin de réaliser ce portfolio ainsi que
-            la deuxième version de mon logiciel calendar-maker.
-        </LanguageBadge>
-        <LanguageBadge languageName="Java" :badgesList="['https://github.com/lsacienne/calendar-maker','https://github.com/lsacienne/portfolio']">
-            Vue 3 est un framework front-end pour le langage Javascript. Il permet de concevoir
-            des sites internets front-end.<br>
-            J'ai eu l'ocassion d'utiliser ce framework afin de réaliser ce portfolio ainsi que
-            la deuxième version de mon logiciel calendar-maker.
-        </LanguageBadge>
-        <LanguageBadge languageName="Kotlin" :badgesList="['https://github.com/lsacienne/calendar-maker','https://github.com/lsacienne/portfolio']">
-            Vue 3 est un framework front-end pour le langage Javascript. Il permet de concevoir
-            des sites internets front-end.<br>
-            J'ai eu l'ocassion d'utiliser ce framework afin de réaliser ce portfolio ainsi que
-            la deuxième version de mon logiciel calendar-maker.
-        </LanguageBadge>
-        <LanguageBadge languageName="SQL, MySQL, SQLite" imgSource="SQLite370.png" :badgesList="['https://github.com/lsacienne/calendar-maker','https://github.com/lsacienne/portfolio']">
-            Vue 3 est un framework front-end pour le langage Javascript. Il permet de concevoir
-            des sites internets front-end.<br>
-            J'ai eu l'ocassion d'utiliser ce framework afin de réaliser ce portfolio ainsi que
-            la deuxième version de mon logiciel calendar-maker.
-        </LanguageBadge>
-        <LanguageBadge languageName="PHP" :badgesList="['https://github.com/lsacienne/calendar-maker','https://github.com/lsacienne/portfolio']">
-            Vue 3 est un framework front-end pour le langage Javascript. Il permet de concevoir
-            des sites internets front-end.<br>
-            J'ai eu l'ocassion d'utiliser ce framework afin de réaliser ce portfolio ainsi que
-            la deuxième version de mon logiciel calendar-maker.
-        </LanguageBadge>
-        <LanguageBadge languageName="Android" :badgesList="['https://github.com/lsacienne/calendar-maker','https://github.com/lsacienne/portfolio']">
-            Vue 3 est un framework front-end pour le langage Javascript. Il permet de concevoir
-            des sites internets front-end.<br>
-            J'ai eu l'ocassion d'utiliser ce framework afin de réaliser ce portfolio ainsi que
-            la deuxième version de mon logiciel calendar-maker.
-        </LanguageBadge>
-        <LanguageBadge languageName="Figma" :badgesList="['https://github.com/lsacienne/calendar-maker','https://github.com/lsacienne/portfolio']">
+        <LanguageBadge languageName="Figma" imgSource="Figma-logo.svg"
+            :badgesList="['https://github.com/lsacienne/calendar-maker', 'https://github.com/lsacienne/portfolio']">
             Vue 3 est un framework front-end pour le langage Javascript. Il permet de concevoir
             des sites internets front-end.<br>
             J'ai eu l'ocassion d'utiliser ce framework afin de réaliser ce portfolio ainsi que
@@ -111,13 +145,14 @@ export default {
 </script>
 
 <style scoped>
-    .container {
-        width: 100%;
-        padding-top: 1rem;
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
-        gap: 2rem;
-    }
+.container {
+    width: 100%;
+    padding-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
 </style>
