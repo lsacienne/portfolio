@@ -1,17 +1,17 @@
 <template>
-<div class="thumbnail-container">
-    <a class="github" :href="projectRepo">
-        <img src="@/assets/GitHub-Mark-Light-120px-plus.png" alt="logo Github">
-        <p>
-            {{ getProjectName(projectRepo) }}
-        </p>
-    </a>
-</div>
+    <div class="thumbnail-container">
+        <a class="github" :href="projectRepo">
+            <img src="@/assets/GitHub-Mark-Light-120px-plus.png" alt="logo Github">
+            <p>
+                {{ getProjectName(projectRepo) }}
+            </p>
+        </a>
+    </div>
 </template>
 
 <script>
 export default {
-    name:"ProjectThumbnail",
+    name: "ProjectThumbnail",
     props: {
         projectRepo: {
             type: String,
@@ -24,7 +24,7 @@ export default {
          * @param {String} url - The url to scan
          * @return {String} The name of the project
          */
-        getProjectName: function(url) {
+        getProjectName: function (url) {
             return url.split("/").at(-1).split("_").join(" ");
         }
     },
@@ -33,7 +33,8 @@ export default {
 
 <style scoped>
 .github {
-    background-color: rgba(0,0,0,.5);
+    font-size: 1vw;
+    background-color: rgba(0, 0, 0, .5);
     display: inline-flex;
     border: 0.15rem solid whitesmoke;
     border-radius: 2rem;
@@ -55,7 +56,7 @@ a:visited {
 }
 
 .github:hover {
-    background-color: rgb(255, 228, 196,10%);
+    background-color: rgb(255, 228, 196, 10%);
 }
 
 .github>img {
