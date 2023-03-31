@@ -74,11 +74,9 @@
 
         </LanguageBadge>
         <LanguageBadge languageName="C#" imgSource="c_sharp.png"
-            :badgesList="['https://github.com/lsacienne/calendar-maker', 'https://github.com/lsacienne/portfolio']">
-            Vue 3 est un framework front-end pour le langage Javascript. Il permet de concevoir
-            des sites internets front-end.<br>
-            J'ai eu l'ocassion d'utiliser ce framework afin de réaliser ce portfolio ainsi que
-            la deuxième version de mon logiciel calendar-maker.
+            :badgesList="['https://github.com/lsacienne/LP2B_project_unity_game']">
+            C# Est un langage de programmation orientée objet. Il a été créé par Microsoft pour son framework .NET.<br>
+            J'ai eu l'occasion d'utiliser ce langage pour programmer différentes applications sur Unity.
         </LanguageBadge>
         <LanguageBadge languageName="Unity" imgSource="unity.png"
             :badgesList="['https://github.com/lsacienne/calendar-maker', 'https://github.com/lsacienne/portfolio']">
