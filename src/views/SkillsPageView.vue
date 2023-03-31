@@ -79,11 +79,9 @@
             J'ai eu l'occasion d'utiliser ce langage pour programmer différentes applications sur Unity.
         </LanguageBadge>
         <LanguageBadge languageName="Unity" imgSource="unity.png"
-            :badgesList="['https://github.com/lsacienne/calendar-maker', 'https://github.com/lsacienne/portfolio']">
-            Vue 3 est un framework front-end pour le langage Javascript. Il permet de concevoir
-            des sites internets front-end.<br>
-            J'ai eu l'ocassion d'utiliser ce framework afin de réaliser ce portfolio ainsi que
-            la deuxième version de mon logiciel calendar-maker.
+            :badgesList="['https://github.com/lsacienne/LP2B_project_unity_game', 'https://github.com/la-ferme-en-folie/MV50']">
+            Unity est un moteur de jeu multi-plateforme permettant notamment de réaliser des jeux-vidéos.<br>
+            J'ai eu l'occasion d'utiliser unity pour réaliser des applications en 2D et en 3D.
         </LanguageBadge>
         <LanguageBadge languageName="Python" imgSource="Python_logo_01.svg.png"
             :badgesList="['https://github.com/lsacienne/calendar-maker', 'https://github.com/lsacienne/portfolio']">
