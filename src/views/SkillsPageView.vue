@@ -64,7 +64,13 @@
         </LanguageBadge>
         <LanguageBadge languageName="C++" imgSource="Cpp_Logo.png"
             :badgesList="['https://github.com/lsacienne/CPP_practical_sessions', 'https://github.com/lsacienne/jiang_viala_tp_fiits']">
-            Le langage C++ est un langage principalement employé avec les paradigmes orienté objet et procédural.
+            Le langage C++ est un langage de programmation multi-paradigme. Contrairement au langage C qui n'utilise
+            que le paradigme impératif, le C++ peut également être également utilisé en programmation orientée objet.
+            C'est un langage largement utilisé pour la programmation graphique notamment grâce à OpenGL.<br>
+            J'ai eu l'occasion d'utiliser ce langage pendant mes cours à l'UTBM pour apprendre les fonctionnalités de
+            base du langage comme la surcharge d'opérateur ou la définition des classes, méthodes, etc.<br>
+            J'ai également eu l'occasion d'utiliser ce langage pour travailler avec l'API Qt permettant de réaliser
+            des interfaces utilisateur en C++.
 
         </LanguageBadge>
         <LanguageBadge languageName="C#" imgSource="c_sharp.png"
