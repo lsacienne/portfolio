@@ -185,4 +185,25 @@ export default {
     row-gap: 0.5rem;
     column-gap: 0.2rem;
 }
+
+@media only screen and (max-width: 1100px) {
+    .language-container {
+        width: 90vw;
+        height: 90vw;
+        perspective: 225vw;
+    }
+
+    .description .shrink {
+        font-size: 6vw;
+        margin-left: 3vw;
+    }
+
+    .badge-back h1 {
+        font-size: 2rem;
+    }
+
+    .badge-back p {
+        font-size: 6vw;
+    }
+}
 </style>

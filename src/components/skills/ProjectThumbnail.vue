@@ -33,12 +33,12 @@ export default {
 
 <style scoped>
 .github {
+    text-align: start;
     font-size: 1vw;
     background-color: rgba(0, 0, 0, .5);
     display: inline-flex;
     border: 0.15rem solid whitesmoke;
     border-radius: 2rem;
-    height: 2rem;
     padding: 0.3rem;
     padding-right: 0.5rem;
     gap: 0.3rem;
@@ -60,6 +60,12 @@ a:visited {
 }
 
 .github>img {
-    height: 100%;
+    height: 1.5rem;
+}
+
+@media only screen and (max-width: 1100px) {
+    .github {
+        font-size: 6vw;
+    }
 }
 </style>
