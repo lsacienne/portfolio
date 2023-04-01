@@ -137,11 +137,15 @@
             société. Ce projet avait pour but de nous apprendre les bases de la conception de bases de données.
         </LanguageBadge>
         <LanguageBadge languageName="Android" imgSource="Android_robot.svg.png"
-            :badgesList="['https://github.com/lsacienne/calendar-maker', 'https://github.com/lsacienne/portfolio']">
-            Vue 3 est un framework front-end pour le langage Javascript. Il permet de concevoir
-            des sites internets front-end.<br>
-            J'ai eu l'ocassion d'utiliser ce framework afin de réaliser ce portfolio ainsi que
-            la deuxième version de mon logiciel calendar-maker.
+            :badgesList="['https://github.com/lsacienne/SY43_P2022_lafo_cheuse']">
+            Android est un système d'exploitation (OS) fondé sur le noyau linux. Il est largement utilisé dans
+            le monde sur des appareils embarqués comme les téléphones portables mais également les montres
+            connectées, les voitures ou encore les téléviseurs.<br>
+            Android est construit sur plusieurs couches d'abstractions. Au cours de mes études j'ai pu m'exercer
+            sur la plus haute couche d'abstraction. Cette dernière est une implémnetation spéciifique de la machine
+            virtuelle Java (JVM) permettant de réaliser des applications pour appareils Android.<br>
+            J'ai également acquéris quelques connaissances sur le système de build Android et sur les fonctionnalités
+            d'implémentation de code de bas niveau dans des applications (JNI).
         </LanguageBadge>
         <LanguageBadge languageName="Figma" imgSource="Figma-logo.svg"
             :badgesList="['https://github.com/lsacienne/calendar-maker', 'https://github.com/lsacienne/portfolio']">
