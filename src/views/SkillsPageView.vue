@@ -74,7 +74,7 @@
 
         </LanguageBadge>
         <LanguageBadge languageName="C#" imgSource="c_sharp.png"
-            :badgesList="['https://github.com/lsacienne/LP2B_project_unity_game']">
+            :badgesList="['https://github.com/lsacienne/LP2B_project_unity_game', 'https://github.com/la-ferme-en-folie/MV50']">
             C# Est un langage de programmation orientée objet. Il a été créé par Microsoft pour son framework .NET.<br>
             J'ai eu l'occasion d'utiliser ce langage pour programmer différentes applications sur Unity.
         </LanguageBadge>
