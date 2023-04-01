@@ -84,11 +84,16 @@
             J'ai eu l'occasion d'utiliser unity pour réaliser des applications en 2D et en 3D.
         </LanguageBadge>
         <LanguageBadge languageName="Python" imgSource="Python_logo_01.svg.png"
-            :badgesList="['https://github.com/lsacienne/calendar-maker', 'https://github.com/lsacienne/portfolio']">
-            Vue 3 est un framework front-end pour le langage Javascript. Il permet de concevoir
-            des sites internets front-end.<br>
-            J'ai eu l'ocassion d'utiliser ce framework afin de réaliser ce portfolio ainsi que
-            la deuxième version de mon logiciel calendar-maker.
+            :badgesList="['https://github.com/lsacienne/akari', 'https://github.com/lmichel/alix']">
+            Python est un langage de programmation multi-paradigme. Ce langage est largement utilisé pour sa syntaxe
+            simple et sa grande polyvalence grâce à son gestionaire de bibliothèques <i>pip</i>.<br>
+            J'ai eu l'occasion d'utiliser Python pour réaliser différents projets. J'ai notamment eu l'occasion
+            d'utiliser le framework <a href="https://flask.palletsprojects.com/en/2.2.x/">Flask</a> permettant de réaliser
+            le backend d'une application web par la création d'uen REST API.<br>
+            J'ai également eu l'occasion d'utiliser les bibliothéques <a
+                href="https://docs.python.org/fr/3/library/tkinter.html">Tkinter</a>, <a
+                href="https://matplotlib.org/">MatplotLib</a>,
+            <a href="https://pandas.pydata.org/">Pandas</a> et CUDA Python.
         </LanguageBadge>
         <LanguageBadge languageName="Java" imgSource="Java_Logo.svg.png"
             :badgesList="['https://github.com/lsacienne/calendar-maker', 'https://github.com/lsacienne/portfolio']">
