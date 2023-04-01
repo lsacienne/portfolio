@@ -147,12 +147,10 @@
             J'ai également acquéris quelques connaissances sur le système de build Android et sur les fonctionnalités
             d'implémentation de code de bas niveau dans des applications (JNI).
         </LanguageBadge>
-        <LanguageBadge languageName="Figma" imgSource="Figma-logo.svg"
-            :badgesList="['https://github.com/lsacienne/calendar-maker', 'https://github.com/lsacienne/portfolio']">
-            Vue 3 est un framework front-end pour le langage Javascript. Il permet de concevoir
-            des sites internets front-end.<br>
-            J'ai eu l'ocassion d'utiliser ce framework afin de réaliser ce portfolio ainsi que
-            la deuxième version de mon logiciel calendar-maker.
+        <LanguageBadge languageName="Figma" imgSource="Figma-logo.svg" :badgesList="[]">
+            Figma est un logiciel de dessin vectoriel et de prototypage.<br>
+            Je me sers de Figma principalement pour concevoir des schémas et des protoypes d'interfaces utilisateur.
+            Il m'arrive également d'utiliser ce logiciel pour éditer ou concevoir des logo ou images vectoriels.
         </LanguageBadge>
     </div>
 </template>
