@@ -96,11 +96,11 @@
             <a href="https://pandas.pydata.org/">Pandas</a> et CUDA Python.
         </LanguageBadge>
         <LanguageBadge languageName="Java" imgSource="Java_Logo.svg.png"
-            :badgesList="['https://github.com/lsacienne/calendar-maker', 'https://github.com/lsacienne/portfolio']">
-            Vue 3 est un framework front-end pour le langage Javascript. Il permet de concevoir
-            des sites internets front-end.<br>
-            J'ai eu l'ocassion d'utiliser ce framework afin de réaliser ce portfolio ainsi que
-            la deuxième version de mon logiciel calendar-maker.
+            :badgesList="['https://github.com/toma68650/ProjectLLP2A', 'https://github.com/QuinD3cim/AP4B_Lumber']">
+            Java est un langage de programmation orientée objet. Ce langage a pour particularité d'être particulièrement
+            portable grâce à l'utilisation d'une machine virtuelle (JVM).<br>
+            J'ai eu l'occasion d'utiliser ce langage pour créer une application graphique. C'est également avec
+            ce langage que j'ai acquis mes premières compétences en programmation orientée objet.
         </LanguageBadge>
         <LanguageBadge languageName="Kotlin" imgSource="Kotlin_Icon.svg.png"
             :badgesList="['https://github.com/lsacienne/calendar-maker', 'https://github.com/lsacienne/portfolio']">
