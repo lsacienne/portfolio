@@ -24,7 +24,7 @@ import MusicPlayer from "../components/hobbysComponents/MusicPlayer.vue";
 import OrigamisViewer from "@/components/hobbysComponents/OrigamisViewer.vue";
 import GameDisplayer from "@/components/hobbysComponents/GameDisplayer.vue";
 import FeatherWidget from "@/components/hobbysComponents/FeatherWidget.vue";
-    export default {
+export default {
     name: "HobbyPageView",
     data() {
         return {};
@@ -33,29 +33,30 @@ import FeatherWidget from "@/components/hobbysComponents/FeatherWidget.vue";
 }
 </script>
 <style scoped>
+.global-layout {
+    position: relative;
+    display: flex;
+    flex-direction: column;
 
-    .global-layout {
-        position: relative;
+
+    width: 100%;
+    margin-bottom: 3rem;
+}
+
+.window-container {
+    position: relative;
+    margin-top: 1rem;
+    display: inline-flex;
+    justify-content: space-evenly;
+
+    width: 100%;
+}
+
+@media only screen and (max-width: 1100px) {
+    .window-container {
         display: flex;
         flex-direction: column;
-
-
-        width: 100%;
+        align-items: center;
     }
-    .window-container {
-        position: relative;
-        margin-top: 1rem;
-        display: inline-flex;
-        justify-content: space-evenly;
-        
-        width: 100%;
-    }
-
-    @media only screen and (max-width: 1100px) {
-        .window-container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-    }
+}
 </style>
