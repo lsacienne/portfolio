@@ -71,7 +71,6 @@
             base du langage comme la surcharge d'opérateur ou la définition des classes, méthodes, etc.<br>
             J'ai également eu l'occasion d'utiliser ce langage pour travailler avec l'API Qt permettant de réaliser
             des interfaces utilisateur en C++.
-
         </LanguageBadge>
         <LanguageBadge languageName="C#" imgSource="c_sharp.png"
             :badgesList="['https://github.com/lsacienne/LP2B_project_unity_game', 'https://github.com/la-ferme-en-folie/MV50']">
