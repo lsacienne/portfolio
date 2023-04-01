@@ -113,11 +113,21 @@
             J'ai eu l'occasion d'utiliser ce langage pour la conception d'une application Android.
         </LanguageBadge>
         <LanguageBadge languageName="SQL, MySQL, SQLite" imgSource="SQLite370.png"
-            :badgesList="['https://github.com/lsacienne/calendar-maker', 'https://github.com/lsacienne/portfolio']">
-            Vue 3 est un framework front-end pour le langage Javascript. Il permet de concevoir
-            des sites internets front-end.<br>
-            J'ai eu l'ocassion d'utiliser ce framework afin de réaliser ce portfolio ainsi que
-            la deuxième version de mon logiciel calendar-maker.
+            :badgesList="['https://github.com/lsacienne/ifd_site', 'https://github.com/lsacienne/SY43_P2022_lafo_cheuse', 'https://github.com/lmichel/alix']">
+            SQL est le langage de requête le plus utilisé. Il permet de réaliser des requêtes sur des
+            bases de données relationnelles. Certains langages de requêtes comme <a
+                href="https://www.ivoa.net/documents/ADQL/20180112/PR-ADQL-2.1-20180112.html">ADQL</a>
+            (Astronomical Data Query Language) ou <a href="https://cassandra.apache.org/doc/latest/cassandra/cql/">CQL</a>
+            (Cassandra Query Language)
+            se basent fortement sur SQL.<br>
+            SQL est utilisé avec ce que l'on appelle un système de gestion de base de données (SGBD). Ces derniers
+            correspondent à l'implémentation de la base de données. La plupart de ces systèmes sont des
+            implémentations serveur nécessitant de tourner sur un démon pour fonctionner. C'est le cas de MySQL ou de
+            PostGreSQL. D'autres systèmes n'utilisent pas de démon et conviennent mieux à des données embarquées. C'est
+            notamment le cas de SQLite.<br>
+            J'ai eu l'occasion d'apprendre de nombreuses notions de SQL sur les SGBD MySQL et Microsoft Access. J'ai
+            également eu l'occasion d'utiliser le SGBD SQLite pour le développement d'une application Android et
+            pour la réalisation d'un service Web en Python/Flask.
         </LanguageBadge>
         <LanguageBadge languageName="PHP" imgSource="PHP-logo.svg.png"
             :badgesList="['https://github.com/lsacienne/calendar-maker', 'https://github.com/lsacienne/portfolio']">
