@@ -130,11 +130,11 @@
             pour la réalisation d'un service Web en Python/Flask.
         </LanguageBadge>
         <LanguageBadge languageName="PHP" imgSource="PHP-logo.svg.png"
-            :badgesList="['https://github.com/lsacienne/calendar-maker', 'https://github.com/lsacienne/portfolio']">
-            Vue 3 est un framework front-end pour le langage Javascript. Il permet de concevoir
-            des sites internets front-end.<br>
-            J'ai eu l'ocassion d'utiliser ce framework afin de réaliser ce portfolio ainsi que
-            la deuxième version de mon logiciel calendar-maker.
+            :badgesList="['https://github.com/lsacienne/ifd_site']">
+            PHP est un langage de script orienté objet. Il est notamment utilisé pour générer des pages HTML
+            dynamiques côté serveur.<br>
+            J'ai utilisé ce langage à une unique reprise dans le but de réaliser un site de critique de jeux de
+            société. Ce projet avait pour but de nous apprendre les bases de la conception de bases de données.
         </LanguageBadge>
         <LanguageBadge languageName="Android" imgSource="Android_robot.svg.png"
             :badgesList="['https://github.com/lsacienne/calendar-maker', 'https://github.com/lsacienne/portfolio']">
