@@ -103,11 +103,14 @@
             ce langage que j'ai acquis mes premières compétences en programmation orientée objet.
         </LanguageBadge>
         <LanguageBadge languageName="Kotlin" imgSource="Kotlin_Icon.svg.png"
-            :badgesList="['https://github.com/lsacienne/calendar-maker', 'https://github.com/lsacienne/portfolio']">
-            Vue 3 est un framework front-end pour le langage Javascript. Il permet de concevoir
-            des sites internets front-end.<br>
-            J'ai eu l'ocassion d'utiliser ce framework afin de réaliser ce portfolio ainsi que
-            la deuxième version de mon logiciel calendar-maker.
+            :badgesList="['https://github.com/lsacienne/SY43_P2022_lafo_cheuse']">
+            Kotlin est un langage de programamtion orientée objet. Ce langage a été développé par l'entreprise
+            JetBrains connue pour sa suite de logiciels d'environnement de développement intégré (IDE).<br>
+            Tout comme Java, ce langage fonctionne sur la Machine virtuelle Java (JVM). Kotlin a pour particularité
+            d'être plus simple à aborder que Java grâce à sa syntaxe bien moins verbeuse que Java. Le langage utilise
+            également des notions introduites dans d'autres langages comme les coroutines (ces dernières remplacent
+            les threads de Java).<br>
+            J'ai eu l'occasion d'utiliser ce langage pour la conception d'une application Android.
         </LanguageBadge>
         <LanguageBadge languageName="SQL, MySQL, SQLite" imgSource="SQLite370.png"
             :badgesList="['https://github.com/lsacienne/calendar-maker', 'https://github.com/lsacienne/portfolio']">
