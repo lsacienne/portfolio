@@ -7,7 +7,7 @@
             <MovingWindow window_title="Quelques origamis...">
                 <OrigamisViewer></OrigamisViewer>
             </MovingWindow>
-            <MovingWindow window_title="Mes jeux préférés 🎮">
+            <MovingWindow window_title="Derniers jeux complétés 🎮">
                 <GameDisplayer></GameDisplayer>
             </MovingWindow>
         </div>
