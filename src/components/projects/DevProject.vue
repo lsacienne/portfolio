@@ -47,7 +47,7 @@ import DocumentDownloader from './DocumentDownloader.vue';
     components: { DocumentDownloader },
     data() {
         return {
-            url_file:"/projects_reports/Rapport_HM40_VIALA_GOBLOT.pdf"
+            url_file: ""
         }
     },
     methods: {
