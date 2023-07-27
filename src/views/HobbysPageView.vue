@@ -8,7 +8,7 @@
                 <OrigamisViewer></OrigamisViewer>
             </MovingWindow>
             <MovingWindow window_title="Derniers jeux complétés 🎮">
-                <GameDisplayer></GameDisplayer>
+                <GameDisplayer user="L_Sacienne"></GameDisplayer>
             </MovingWindow>
         </div>
         <div class="window-container">
