@@ -21,11 +21,11 @@
                         </p>
                     </a>
                 </div>
-                <div class="column doc-container" v-if="document_list">
+                <div class="column doc-container" v-if="element_list">
                     <h2>Documents</h2>
                     <div class="doc">
-                        <DocumentDownloader v-for="document in document_list" :key="document.file_url"
-                            :file_url="document.file_url">
+                        <DocumentDownloader v-for="document in element_list" :key="document.file_url"
+                            :file_url="document.file_url" :type="document.type">
                             {{ document.file_name }}
                         </DocumentDownloader>
                     </div>
@@ -73,7 +73,7 @@ export default {
         url_github: {
             type: String
         },
-        document_list: {
+        element_list: {
             type: Array,
             required: false
         },
