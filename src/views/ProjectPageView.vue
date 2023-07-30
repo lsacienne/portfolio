@@ -1,10 +1,45 @@
 <template>
     <div class="project-page-container">
         <div class="project-container">
+            <DevProject project_title="Jumeau numérique de la ferme de Badevel"
+                url_github="https://github.com/la-ferme-en-folie/MV50" picture="./project_icons/la-ferme-en-folie-icon.webp"
+                :element_list="[
+                    { file_url: './projects_reports/Rapport_mv50_Trombini-Caillier-Renaud-Crouts_de_Paille-Viala.pdf', file_name: 'Rapport MV50', type: 'doc' },
+                    { file_url: './public/projects_reports/Soutenance-MV50-Crouts_De_Paille-Renaud-Caillier-Trombini-Viala.pdf', file_name: 'Soutenance MV50', type: 'doc' },
+                    { file_url: './projects_reports/doc_jumeau_numerique_ferme_badevel.pdf', file_name: 'Documentation', type: 'doc' },
+                    { file_url: 'https://github.com/la-ferme-en-folie/MV50/releases/tag/v1.0.0', file_name: 'Release du Projet', type: 'url' }
+                ]"
+                contributors="TROMBINI Quentin, CAILLIER Paul, Crouts-De-Paille Benjamin, RENAUD Eléanore & VIALA Alexandre">
+                Pendant mes études à l'UTBM, j'ai eu l'occasion de suivre la spécilaisation
+                "Mondes Virtuels, UX & UI". Dans cette spécialisation, j'ai eu l'occasion, avec plusieurs
+                de mes camarade, de réaliser un projet sur tout le long du semestre. L'objectif de ce
+                projet était de mobiliser les connaissances acquises dans la spécialisation que nous
+                avions choisi dans un projet s'approchant d'une situation réelle.<br />
+                Pour ce projet, nous étions encadrés par l'un de nos professeurs. Il nous a donné
+                les objectifs attendus du projet et il nous a conseillé dans nos choix sur le projet.
+                Nous devions réaliser le jumeau numérique de la ferme d'une commune du Doubs, Badevel.
+                Un jumeau numérique d'un lieu est une copie du lieu dans un environnement 3D permettant
+                d'être exploré depuis un appareil numérique. La Ferme de Badevel est une ferme connectée,
+                destinée à cultiver des plantes de manière ludique à l'aide de différents capteurs et de
+                robots. Les enjeux de ce jumeau numérique était donc de représenter la ferme tout en
+                fournissant la possibilité de consoluter les données en temps réel.<br />
+                Pour ce projet, nous avons dû réaliser différentes tâches :
+                <ul>
+                    <li>Etablissement du cahier des charges</li>
+                    <li>Conception de l'interface et de l'expérience utilisateur</li>
+                    <li>Modélisation 3D des modèles </li>
+                    <li>Création de la ferme dans Unity</li>
+                    <li>Visualisation des données dans le jumeau</li>
+                    <li>Lien avec une base de données</li>
+                    <li>Affichage de la météo dynamiquement</li>
+                </ul>
+            </DevProject>
+        </div>
+        <div class="project-container">
             <DevProject project_title="Appartement Blender" url_github="https://github.com/lsacienne/appartment-blender"
                 picture="./project_icons/frog-toon-final.webp" :element_list="[
-                                    { file_url: './projects_reports/2023_MV52_Viala_Alexandre.pdf', file_name: 'Rapport MV52', type: 'doc' }
-                                ]" contributors="VIALA Alexandre">
+                    { file_url: './projects_reports/2023_MV52_Viala_Alexandre.pdf', file_name: 'Rapport MV52', type: 'doc' }
+                ]" contributors="VIALA Alexandre">
                 Au cours de mon semestre d'étude de Printemps 2023, j'ai eu l'occasion
                 de suivre des cours de synthèse d'image dans le cadre de ma formation
                 à l'UTBM. Au travers de ces cours, j'ai acquis des compétences en HLSL,
@@ -25,10 +60,10 @@
         <div class="project-container">
             <DevProject project_title="AMORA" url_github="https://github.com/lmichel/alix/tree/DR12-viala"
                 picture="./project_icons/amora-icon.webp" :element_list="[
-                                    { file_url: 'https://xcatdb.unistra.fr/xsasdb/', file_name: 'XcatDB AliX', type: 'url' },
-                                    { file_url: '', file_name: 'Rapport de stage', type: 'doc' },
-                                    { file_url: '', file_name: 'Soutenance de stage', type: 'doc' }
-                                ]" contributors="MICHEL Laurent & VIALA Alexandre">
+                    { file_url: 'https://xcatdb.unistra.fr/xsasdb/', file_name: 'XcatDB AliX', type: 'url' },
+                    { file_url: '', file_name: 'Rapport de stage', type: 'doc' },
+                    { file_url: '', file_name: 'Soutenance de stage', type: 'doc' }
+                ]" contributors="MICHEL Laurent & VIALA Alexandre">
                 Au cours du semestre d'automne 2022, j'ai eu la chance de réaliser un stage
                 d'assistant ingénieur à l'Observatoire Astronomique de Strasbourg. Cette
                 expérience de 6 mois m'a permis de travailler dans un domaine passionnant
@@ -71,8 +106,8 @@
         <div class="project-container">
             <DevProject project_title="Mon Portfolio" url_github="https://github.com/lsacienne/portfolio"
                 picture="./project_icons/logo_portfolio.png" :element_list="[
-                                    { file_url: 'https://lsacienne.github.io/portfolio/', file_name: 'Mon portfolio', type: 'url' }
-                                ]" contributors="VIALA Alexandre">
+                    { file_url: 'https://lsacienne.github.io/portfolio/', file_name: 'Mon portfolio', type: 'url' }
+                ]" contributors="VIALA Alexandre">
                 Eh oui ! Même si j'utilise ce site internet pour présenter mes projets,
                 il s'agit également d'un autre de mes projets personnels ! Après avoir
                 travaillé sur divers projets de site web au cours de mes trois premières
@@ -89,9 +124,9 @@
             <DevProject project_title="Projet d'application Android de gestion de budget"
                 url_github="https://github.com/lsacienne/SY43_P2022_lafo_cheuse"
                 picture="./project_icons/lafo-cheuse_icon.png" :element_list="[
-                                    { file_url: './projects_reports/Rapport_HM40_VIALA_GOBLOT.pdf', file_name: 'Rapport HM40', type: 'doc' },
-                                    { file_url: './projects_reports/SY43-Presentation-Lafo-cheuse.odp', file_name: 'Présentation de SY43', type: 'doc' }
-                                ]" contributors="GOBLOT David, VIALA Alexandre">
+                    { file_url: './projects_reports/Rapport_HM40_VIALA_GOBLOT.pdf', file_name: 'Rapport HM40', type: 'doc' },
+                    { file_url: './projects_reports/SY43-Presentation-Lafo-cheuse.odp', file_name: 'Présentation de SY43', type: 'doc' }
+                ]" contributors="GOBLOT David, VIALA Alexandre">
                 Lors du semestre de printemps 2022, dans le cadre de mes études à
                 l'UTBM, j'ai dû, avec un de mes camarades, réaliser une application
                 pour smartphones Android (version 10+). Il s'agit d'une application
@@ -105,8 +140,8 @@
             <DevProject project_title="Projet d'idle game 'Lumber jack'"
                 url_github="https://github.com/QuinD3cim/AP4B_Lumber" picture="./project_icons/logo_lumber.png"
                 :element_list="[
-                                    { file_url: './projects_reports/Rapport_UML.pdf', file_name: 'Rapport AP4B', type: 'doc' }
-                                ]" contributors="MANN William, LIGNON Thomas, LE GUILLY Erwann, VIALA Alexandre">
+                    { file_url: './projects_reports/Rapport_UML.pdf', file_name: 'Rapport AP4B', type: 'doc' }
+                ]" contributors="MANN William, LIGNON Thomas, LE GUILLY Erwann, VIALA Alexandre">
                 Au cours de mon semestre d'étude de printemps 2022 à l'UTBM, j'ai eu
                 l'occasion de suivre des cours de programmation orientée objet. Dans
                 ce cadre, j'ai eu l'occasion d'apprendre les bases du C++ et de réaliser
@@ -140,9 +175,9 @@
             <DevProject project_title="Site du Congrès Industriel 2021"
                 url_github="https://github.com/lsacienne/Site_congres_A21" picture="./project_icons/congres.png"
                 :element_list="[
-                                    { file_url: 'https://lsacienne.github.io/Site_congres_A21/site/', file_name: 'Site congrès', type: 'url' },
-                                    { file_url: 'https://lsacienne.github.io/Site_congres_A21/', file_name: 'Documentation', type: 'url' }
-                                ]" contributors="CHAILLARD Léo, VIALA Alexandre">
+                    { file_url: 'https://lsacienne.github.io/Site_congres_A21/site/', file_name: 'Site congrès', type: 'url' },
+                    { file_url: 'https://lsacienne.github.io/Site_congres_A21/', file_name: 'Documentation', type: 'url' }
+                ]" contributors="CHAILLARD Léo, VIALA Alexandre">
                 Pendant ma dernière année de Tronc Commun à l'UTBM (notre cycle préparatoire), j'ai eu
                 le privilège de créer, avec l'un de mes camarade, le site internet du Congrès
                 Industriel 2021.<br>
@@ -158,8 +193,8 @@
             <DevProject project_title="Suite de jeu sous Unity"
                 url_github="https://github.com/lsacienne/LP2B_project_unity_game"
                 picture="./project_icons/bad_apple_catcher.png" :element_list="[
-                                    { file_url: 'https://github.com/lsacienne/LP2B_project_unity_game/blob/main/README.md', file_name: 'Fonctionnalités LP2B', type: 'url' },
-                                ]" contributors="CHAILLARD Léo, VIALA Alexandre">
+                    { file_url: 'https://github.com/lsacienne/LP2B_project_unity_game/blob/main/README.md', file_name: 'Fonctionnalités LP2B', type: 'url' },
+                ]" contributors="CHAILLARD Léo, VIALA Alexandre">
                 Pour un cours portant sur le traitement informatique de l'image, nous avons dû
                 réaliser des travaux pratiques sur Unity. Notre professeur nous donnait plusieurs
                 assets (des images, des sons, des vidéos, etc.) et un support de TP sous forme de
@@ -178,8 +213,8 @@
             <DevProject project_title="PonyGame - Jeu de Ludo en Java"
                 url_github="https://github.com/toma68650/ProjectLLP2A" picture="./project_icons/ponygame_icon.png"
                 :element_list="[
-                                    { file_url: './projects_reports/Project_LP2A.pdf', file_name: 'Rapport LP2A', type: 'doc' },
-                                ]" contributors="LIGNON Thomas, VIALA Alexandre">
+                    { file_url: './projects_reports/Project_LP2A.pdf', file_name: 'Rapport LP2A', type: 'doc' },
+                ]" contributors="LIGNON Thomas, VIALA Alexandre">
                 Pendant mon dernier semestre de cycle préparatoire intégré à l'UTBM, j'ai eu l'occasion
                 de suivre un cours de programmation orientée objet. Pour appliquer les notions de
                 polymorphisme, d'abstraction, d'encapsulage et d'héritage, nous avons utilisé le
@@ -194,8 +229,8 @@
             <DevProject project_title="Un Troll Bien Mécontent - Metacritic des jeux de société"
                 url_github="https://github.com/lsacienne/ifd_site" picture="./project_icons/UnTrollBienMecontent_logo.png"
                 :element_list="[
-                                    { file_url: './projects_reports/IFD1_chaillard_caillier_viala.pdf', file_name: 'Rapport IFD1', type: 'doc' },
-                                ]" contributors="CAILLER Paul, CHAILLARD Léo, VIALA Alexandre">
+                    { file_url: './projects_reports/IFD1_chaillard_caillier_viala.pdf', file_name: 'Rapport IFD1', type: 'doc' },
+                ]" contributors="CAILLER Paul, CHAILLARD Léo, VIALA Alexandre">
                 Pendant ma préparation intégrée à l'UTBM, en 2020, j'ai suivi des cours de base de
                 données. Ces cours m'ont permis de découvrir les bases des bases de données
                 relationnelles et le principe de normalisation de base de données.<br />
@@ -209,8 +244,8 @@
         <div class="project-container">
             <DevProject project_title="Akari" url_github="https://github.com/lsacienne/akari"
                 picture="./project_icons/akari_icon.png" :element_list="[
-                                    { file_url: './projects_reports/IFD1_chaillard_caillier_viala.pdf', file_name: 'Rapport Akari', type: 'doc' },
-                                ]" contributors="BIETH Elise, VIALA Alexandre">
+                    { file_url: './projects_reports/IFD1_chaillard_caillier_viala.pdf', file_name: 'Rapport Akari', type: 'doc' },
+                ]" contributors="BIETH Elise, VIALA Alexandre">
                 En classe de terminale au lycée. J'ai suivi les cours d'un enseignement optionnel d'Informatique
                 & Sciences du Numérique (SIN). Au cours de cet enseignement, j'ai appris les bases du langage de
                 balisage HTML et de style CSS ainsi que les bases de la programmation impérative à l'aide du langage
