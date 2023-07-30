@@ -244,7 +244,7 @@
         <div class="project-container">
             <DevProject project_title="Akari" url_github="https://github.com/lsacienne/akari"
                 picture="./project_icons/akari_icon.png" :element_list="[
-                    { file_url: './projects_reports/IFD1_chaillard_caillier_viala.pdf', file_name: 'Rapport Akari', type: 'doc' },
+                    { file_url: './projects_reports/dossier_projet_isn_akari_v_alexandre.pdf', file_name: 'Rapport Akari', type: 'doc' },
                 ]" contributors="BIETH Elise, VIALA Alexandre">
                 En classe de terminale au lycée. J'ai suivi les cours d'un enseignement optionnel d'Informatique
                 & Sciences du Numérique (SIN). Au cours de cet enseignement, j'ai appris les bases du langage de
