@@ -5,7 +5,7 @@
                 url_github="https://github.com/la-ferme-en-folie/MV50" picture="./project_icons/la-ferme-en-folie-icon.webp"
                 :element_list="[
                     { file_url: './projects_reports/Rapport_mv50_Trombini-Caillier-Renaud-Crouts_de_Paille-Viala.pdf', file_name: 'Rapport MV50', type: 'doc' },
-                    { file_url: './public/projects_reports/Soutenance-MV50-Crouts_De_Paille-Renaud-Caillier-Trombini-Viala.pdf', file_name: 'Soutenance MV50', type: 'doc' },
+                    { file_url: './projects_reports/Soutenance-MV50-Crouts_De_Paille-Renaud-Caillier-Trombini-Viala.pdf', file_name: 'Soutenance MV50', type: 'doc' },
                     { file_url: './projects_reports/doc_jumeau_numerique_ferme_badevel.pdf', file_name: 'Documentation', type: 'doc' },
                     { file_url: 'https://github.com/la-ferme-en-folie/MV50/releases/tag/v1.0.0', file_name: 'Release du Projet', type: 'url' }
                 ]"
@@ -61,8 +61,8 @@
             <DevProject project_title="AMORA" url_github="https://github.com/lmichel/alix/tree/DR12-viala"
                 picture="./project_icons/amora-icon.webp" :element_list="[
                     { file_url: 'https://xcatdb.unistra.fr/xsasdb/', file_name: 'XcatDB AliX', type: 'url' },
-                    { file_url: '', file_name: 'Rapport de stage', type: 'doc' },
-                    { file_url: '', file_name: 'Soutenance de stage', type: 'doc' }
+                    { file_url: './projects_reports/RAPPORT_A22_INFO_ST40_VIALA_ALEXANDRE.pdf', file_name: 'Rapport de stage', type: 'doc' },
+                    { file_url: './projects_reports/Soutenance_VIALA_Alexandre.pdf', file_name: 'Soutenance de stage', type: 'doc' }
                 ]" contributors="MICHEL Laurent & VIALA Alexandre">
                 Au cours du semestre d'automne 2022, j'ai eu la chance de réaliser un stage
                 d'assistant ingénieur à l'Observatoire Astronomique de Strasbourg. Cette
