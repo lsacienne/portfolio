@@ -129,6 +129,7 @@ h1 {
     flex-wrap: wrap;
     row-gap: .4rem;
     column-gap: .8rem;
+    max-width: 30vh;
 }
 
 .img>img {
@@ -244,6 +245,17 @@ a:visited {
     .row {
         flex-direction: column;
         width: 100%;
+    }
+
+
+    .quick-view {
+        margin-bottom: 1rem;
+        gap: 0;
+    }
+
+    .skill-pills {
+        max-width: 60%;
+        align-items: center;
     }
 
     .img {
