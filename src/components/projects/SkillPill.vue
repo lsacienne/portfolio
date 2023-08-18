@@ -88,7 +88,6 @@ export default {
 
 .img {
     height: 50%;
-    aspect-ratio: 1/1;
 }
 
 .img>img {
