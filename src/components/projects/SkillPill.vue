@@ -23,6 +23,7 @@ export default {
     created() {
         // Initialize imgMap
         this.imgMap.set("vue", "vue-logo.png");
+        this.imgMap.set("android", "Android_robot.svg.png");
         this.imgMap.set("csharp", "c_sharp.png");
         this.imgMap.set("c", "c_programming_language.png");
         this.imgMap.set("cpp", "Cpp_Logo.png");
@@ -42,6 +43,7 @@ export default {
 
         // initialize nameMap
         this.nameMap.set("vue", "Vue JS");
+        this.nameMap.set("android", "Android");
         this.nameMap.set("csharp", "C#");
         this.nameMap.set("c", "C lang");
         this.nameMap.set("cpp", "C++");
