@@ -9,7 +9,8 @@
                     { file_url: './projects_reports/doc_jumeau_numerique_ferme_badevel.pdf', file_name: 'Documentation', type: 'doc' },
                     { file_url: 'https://github.com/la-ferme-en-folie/MV50/releases/tag/v1.0.0', file_name: 'Release du Projet', type: 'url' }
                 ]"
-                contributors="TROMBINI Quentin, CAILLIER Paul, Crouts-De-Paille Benjamin, RENAUD Eléanore & VIALA Alexandre">
+                contributors="TROMBINI Quentin, CAILLIER Paul, Crouts-De-Paille Benjamin, RENAUD Eléanore & VIALA Alexandre"
+                :skills="['unity', 'blender', 'csharp', 'figma']">
                 Pendant mes études à l'UTBM, j'ai eu l'occasion de suivre la spécilaisation
                 "Mondes Virtuels, UX & UI". Dans cette spécialisation, j'ai eu l'occasion, avec plusieurs
                 de mes camarade, de réaliser un projet sur tout le long du semestre. L'objectif de ce
@@ -39,7 +40,7 @@
             <DevProject project_title="Appartement Blender" url_github="https://github.com/lsacienne/appartment-blender"
                 picture="./project_icons/frog-toon-final.webp" :element_list="[
                     { file_url: './projects_reports/2023_MV52_Viala_Alexandre.pdf', file_name: 'Rapport MV52', type: 'doc' }
-                ]" contributors="VIALA Alexandre">
+                ]" contributors="VIALA Alexandre" :skills="['blender']">
                 Au cours de mon semestre d'étude de Printemps 2023, j'ai eu l'occasion
                 de suivre des cours de synthèse d'image dans le cadre de ma formation
                 à l'UTBM. Au travers de ces cours, j'ai acquis des compétences en HLSL,
@@ -63,7 +64,8 @@
                     { file_url: 'https://xcatdb.unistra.fr/xsasdb/', file_name: 'XcatDB AliX', type: 'url' },
                     { file_url: './projects_reports/RAPPORT_A22_INFO_ST40_VIALA_ALEXANDRE.pdf', file_name: 'Rapport de stage', type: 'doc' },
                     { file_url: './projects_reports/Soutenance_VIALA_Alexandre.pdf', file_name: 'Soutenance de stage', type: 'doc' }
-                ]" contributors="MICHEL Laurent & VIALA Alexandre">
+                ]" contributors="MICHEL Laurent & VIALA Alexandre"
+                :skills="['figma', 'flask', 'css', 'python', 'jinja', 'javascript', 'jquery', 'html', 'bootstrap']">
                 Au cours du semestre d'automne 2022, j'ai eu la chance de réaliser un stage
                 d'assistant ingénieur à l'Observatoire Astronomique de Strasbourg. Cette
                 expérience de 6 mois m'a permis de travailler dans un domaine passionnant
@@ -107,7 +109,7 @@
             <DevProject project_title="Mon Portfolio" url_github="https://github.com/lsacienne/portfolio"
                 picture="./project_icons/logo_portfolio.png" :element_list="[
                     { file_url: 'https://lsacienne.github.io/portfolio/', file_name: 'Mon portfolio', type: 'url' }
-                ]" contributors="VIALA Alexandre">
+                ]" contributors="VIALA Alexandre" :skills="['vue', 'html', 'css', 'javascript', 'figma', 'blender']">
                 Eh oui ! Même si j'utilise ce site internet pour présenter mes projets,
                 il s'agit également d'un autre de mes projets personnels ! Après avoir
                 travaillé sur divers projets de site web au cours de mes trois premières
@@ -126,7 +128,7 @@
                 picture="./project_icons/lafo-cheuse_icon.png" :element_list="[
                     { file_url: './projects_reports/Rapport_HM40_VIALA_GOBLOT.pdf', file_name: 'Rapport HM40', type: 'doc' },
                     { file_url: './projects_reports/SY43-Presentation-Lafo-cheuse.odp', file_name: 'Présentation de SY43', type: 'doc' }
-                ]" contributors="GOBLOT David, VIALA Alexandre">
+                ]" contributors="GOBLOT David, VIALA Alexandre" :skills="['android', 'kotlin', 'figma', 'sqlite']">
                 Lors du semestre de printemps 2022, dans le cadre de mes études à
                 l'UTBM, j'ai dû, avec un de mes camarades, réaliser une application
                 pour smartphones Android (version 10+). Il s'agit d'une application
@@ -141,7 +143,7 @@
                 url_github="https://github.com/QuinD3cim/AP4B_Lumber" picture="./project_icons/logo_lumber.png"
                 :element_list="[
                     { file_url: './projects_reports/Rapport_UML.pdf', file_name: 'Rapport AP4B', type: 'doc' }
-                ]" contributors="MANN William, LIGNON Thomas, LE GUILLY Erwann, VIALA Alexandre">
+                ]" contributors="MANN William, LIGNON Thomas, LE GUILLY Erwann, VIALA Alexandre" :skills="['java']">
                 Au cours de mon semestre d'étude de printemps 2022 à l'UTBM, j'ai eu
                 l'occasion de suivre des cours de programmation orientée objet. Dans
                 ce cadre, j'ai eu l'occasion d'apprendre les bases du C++ et de réaliser
@@ -157,7 +159,7 @@
         <div class="project-container">
             <DevProject project_title="Projet de robot dicord calculant le Grade Point Average (GPA)"
                 url_github="https://github.com/lsacienne/gpa-bot" picture="./project_icons/gpa_bot.png"
-                contributors="VIALA Alexandre">
+                contributors="VIALA Alexandre" :skills="['javascript']">
                 Lors de mes années à l'UTBM, j'ai pu découvrir ce que l'on appelle le
                 'Grade Point Average' ou plus sobrement le GPA. En effet, dans notre école,
                 nous recevons des notes entre A et F (comme aux Etats-Unis) et afin de se faire
@@ -177,7 +179,7 @@
                 :element_list="[
                     { file_url: 'https://lsacienne.github.io/Site_congres_A21/site/', file_name: 'Site congrès', type: 'url' },
                     { file_url: 'https://lsacienne.github.io/Site_congres_A21/', file_name: 'Documentation', type: 'url' }
-                ]" contributors="CHAILLARD Léo, VIALA Alexandre">
+                ]" contributors="CHAILLARD Léo, VIALA Alexandre" :skills="['html', 'css', 'javascript', 'jquery']">
                 Pendant ma dernière année de Tronc Commun à l'UTBM (notre cycle préparatoire), j'ai eu
                 le privilège de créer, avec l'un de mes camarade, le site internet du Congrès
                 Industriel 2021.<br>
@@ -194,7 +196,7 @@
                 url_github="https://github.com/lsacienne/LP2B_project_unity_game"
                 picture="./project_icons/bad_apple_catcher.png" :element_list="[
                     { file_url: 'https://github.com/lsacienne/LP2B_project_unity_game/blob/main/README.md', file_name: 'Fonctionnalités LP2B', type: 'url' },
-                ]" contributors="CHAILLARD Léo, VIALA Alexandre">
+                ]" contributors="CHAILLARD Léo, VIALA Alexandre" :skills="['unity']">
                 Pour un cours portant sur le traitement informatique de l'image, nous avons dû
                 réaliser des travaux pratiques sur Unity. Notre professeur nous donnait plusieurs
                 assets (des images, des sons, des vidéos, etc.) et un support de TP sous forme de
@@ -214,7 +216,7 @@
                 url_github="https://github.com/toma68650/ProjectLLP2A" picture="./project_icons/ponygame_icon.png"
                 :element_list="[
                     { file_url: './projects_reports/Project_LP2A.pdf', file_name: 'Rapport LP2A', type: 'doc' },
-                ]" contributors="LIGNON Thomas, VIALA Alexandre">
+                ]" contributors="LIGNON Thomas, VIALA Alexandre" :skills="['java']">
                 Pendant mon dernier semestre de cycle préparatoire intégré à l'UTBM, j'ai eu l'occasion
                 de suivre un cours de programmation orientée objet. Pour appliquer les notions de
                 polymorphisme, d'abstraction, d'encapsulage et d'héritage, nous avons utilisé le
@@ -230,7 +232,8 @@
                 url_github="https://github.com/lsacienne/ifd_site" picture="./project_icons/UnTrollBienMecontent_logo.png"
                 :element_list="[
                     { file_url: './projects_reports/IFD1_chaillard_caillier_viala.pdf', file_name: 'Rapport IFD1', type: 'doc' },
-                ]" contributors="CAILLER Paul, CHAILLARD Léo, VIALA Alexandre">
+                ]" contributors="CAILLER Paul, CHAILLARD Léo, VIALA Alexandre"
+                :skills="['mysql', 'php', 'html', 'css']">
                 Pendant ma préparation intégrée à l'UTBM, en 2020, j'ai suivi des cours de base de
                 données. Ces cours m'ont permis de découvrir les bases des bases de données
                 relationnelles et le principe de normalisation de base de données.<br />
@@ -245,7 +248,7 @@
             <DevProject project_title="Akari" url_github="https://github.com/lsacienne/akari"
                 picture="./project_icons/akari_icon.png" :element_list="[
                     { file_url: './projects_reports/dossier_projet_isn_akari_v_alexandre.pdf', file_name: 'Rapport Akari', type: 'doc' },
-                ]" contributors="BIETH Elise, VIALA Alexandre">
+                ]" contributors="BIETH Elise, VIALA Alexandre" :skills="['python']">
                 En classe de terminale au lycée. J'ai suivi les cours d'un enseignement optionnel d'Informatique
                 & Sciences du Numérique (SIN). Au cours de cet enseignement, j'ai appris les bases du langage de
                 balisage HTML et de style CSS ainsi que les bases de la programmation impérative à l'aide du langage
