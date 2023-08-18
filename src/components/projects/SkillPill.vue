@@ -40,6 +40,10 @@ export default {
         this.imgMap.set("unity", "unity.png");
         this.imgMap.set("javascript", "Unofficial_JavaScript_logo_2 1.png");
         this.imgMap.set("blender", "Blender_logo_no_text.svg");
+        this.imgMap.set("jinja", "Jinja_software_logo.svg");
+        this.imgMap.set("jquery", "JQuery-Logo.svg");
+        this.imgMap.set("flask", "Flask_logo.svg");
+        this.imgMap.set("bootstrap", "Bootstrap_logo.svg");
 
         // initialize nameMap
         this.nameMap.set("vue", "Vue JS");
@@ -60,6 +64,11 @@ export default {
         this.nameMap.set("unity", "Unity");
         this.nameMap.set("javascript", "Javascript");
         this.nameMap.set("blender", "Blender");
+        this.imgMap.set("jinja", "Jinja Template");
+        this.imgMap.set("jquery", "JQuery");
+        this.imgMap.set("flask", "Flask");
+        this.imgMap.set("bootstrap", "Bootstrap");
+
     },
     computed: {
         imgSrc() {
