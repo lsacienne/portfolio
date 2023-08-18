@@ -254,8 +254,9 @@ a:visited {
     }
 
     .skill-pills {
-        max-width: 60%;
+        max-width: 100%;
         align-items: center;
+        align-self: center;
     }
 
     .img {
