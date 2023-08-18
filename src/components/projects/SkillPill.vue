@@ -1,6 +1,6 @@
 <template>
     <div class="pill">
-        <div class="img"><img :src="imgSrc" :alt="skillName + ' logo'"></div>
+        <div class="img"><img :src="require(`@/assets/languages/${imgSrc}`)" :alt="skillName + ' logo'"></div>
         <div class="name">{{ skillName }}</div>
     </div>
 </template>
@@ -22,22 +22,23 @@ export default {
     },
     created() {
         // Initialize imgMap
-        this.imgMap.set("vue", "./languages/vue-logo.png");
-        this.imgMap.set("csharp", "./languages/c_sharp.png");
-        this.imgMap.set("c", "./languages/c_programming_language.png");
-        this.imgMap.set("cpp", "./languages/Cpp_Logo.png");
-        this.imgMap.set("figma", "./languages/Figma-logo.svg");
-        this.imgMap.set("java", "./languages/Java_Logo.svg.png");
-        this.imgMap.set("kotlin", "./languages/Kotlin_Icon.svg.png");
-        this.imgMap.set("css", "./languages/logo-css.png");
-        this.imgMap.set("html", "./languages/logo-html.png");
-        this.imgMap.set("php", "./languages/PHP-logo.svg.png");
-        this.imgMap.set("python", "./languages/Python_logo_01.svg.png");
-        this.imgMap.set("sqlite", "./languages/SQLite370.png");
-        this.imgMap.set("mysql", "./languages/MySQL.svg");
-        this.imgMap.set("typescript", "./languages/Typescript_logo_2020.svg.png");
-        this.imgMap.set("unity", "./languages/unity.png");
-        this.imgMap.set("javascript", "./languages/Unofficial_JavaScript_logo_2 1.png");
+        this.imgMap.set("vue", "vue-logo.png");
+        this.imgMap.set("csharp", "c_sharp.png");
+        this.imgMap.set("c", "c_programming_language.png");
+        this.imgMap.set("cpp", "Cpp_Logo.png");
+        this.imgMap.set("figma", "Figma-logo.svg");
+        this.imgMap.set("java", "Java_Logo.svg.png");
+        this.imgMap.set("kotlin", "Kotlin_Icon.svg.png");
+        this.imgMap.set("css", "logo-css.png");
+        this.imgMap.set("html", "logo-html.png");
+        this.imgMap.set("php", "PHP-logo.svg.png");
+        this.imgMap.set("python", "Python_logo_01.svg.png");
+        this.imgMap.set("sqlite", "SQLite370.png");
+        this.imgMap.set("mysql", "MySQL.svg");
+        this.imgMap.set("typescript", "Typescript_logo_2020.svg.png");
+        this.imgMap.set("unity", "unity.png");
+        this.imgMap.set("javascript", "Unofficial_JavaScript_logo_2 1.png");
+        this.imgMap.set("blender", "Blender_logo_no_text.svg");
 
         // initialize nameMap
         this.nameMap.set("vue", "Vue JS");
@@ -56,6 +57,7 @@ export default {
         this.nameMap.set("typescript", "Typescript");
         this.nameMap.set("unity", "Unity");
         this.nameMap.set("javascript", "Javascript");
+        this.nameMap.set("blender", "Blender");
     },
     computed: {
         imgSrc() {
