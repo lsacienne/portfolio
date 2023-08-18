@@ -1,8 +1,13 @@
 <template>
     <h1>{{ project_title }}</h1>
     <div class="row">
-        <div class="img">
-            <img :src=picture alt="" srcset="">
+        <div class="quick-view">
+            <div class="img">
+                <img :src=picture alt="" srcset="">
+            </div>
+            <div class="skill-pills">
+                <SkillPill v-for="skillVal in skills" :skill="skillVal" :key="skillVal" />
+            </div>
         </div>
         <div class="column presentation">
             <h2>Présentation</h2>
@@ -43,9 +48,10 @@
 
 <script>
 import DocumentDownloader from './DocumentDownloader.vue';
+import SkillPill from './SkillPill.vue';
 export default {
     name: "DevProject",
-    components: { DocumentDownloader },
+    components: { DocumentDownloader, SkillPill },
     data() {
         return {
             url_file: ""
@@ -79,6 +85,9 @@ export default {
         },
         contributors: {
             type: String
+        },
+        skills: {
+            type: Array
         }
     }
 }
@@ -106,6 +115,21 @@ h1 {
 
 .img {
     height: 30vh;
+}
+
+.quick-view {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 1rem;
+}
+
+.skill-pills {
+    display: inline-flex;
+    flex-wrap: wrap;
+    row-gap: .4rem;
+    column-gap: .8rem;
+    max-width: 30vh;
 }
 
 .img>img {
@@ -221,6 +245,17 @@ a:visited {
     .row {
         flex-direction: column;
         width: 100%;
+    }
+
+
+    .quick-view {
+        margin-bottom: 1rem;
+        gap: 0;
+    }
+
+    .skill-pills {
+        max-width: 60%;
+        align-items: center;
     }
 
     .img {
