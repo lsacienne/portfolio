@@ -64,10 +64,10 @@ export default {
         this.nameMap.set("unity", "Unity");
         this.nameMap.set("javascript", "Javascript");
         this.nameMap.set("blender", "Blender");
-        this.imgMap.set("jinja", "Jinja Template");
-        this.imgMap.set("jquery", "JQuery");
-        this.imgMap.set("flask", "Flask");
-        this.imgMap.set("bootstrap", "Bootstrap");
+        this.nameMap.set("jinja", "Jinja Template");
+        this.nameMap.set("jquery", "JQuery");
+        this.nameMap.set("flask", "Flask");
+        this.nameMap.set("bootstrap", "Bootstrap");
 
     },
     computed: {
