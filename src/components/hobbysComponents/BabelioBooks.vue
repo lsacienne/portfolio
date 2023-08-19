@@ -1,8 +1,8 @@
 <template>
-    <div class="babelio-container">
-        <div id="wBa16304">
+    <div id="win16304" class="babelio-window">
+        <div id="wBa16304" class="babelio-container">
+            <div id="Bidtitre16304"></div>
             <div id="Bcorps16304" ref="body">
-                <!-- <script type="text/javascript" src="https://www.babelio.com/wj.php?id=16304"></script> -->
             </div>
             <div class="Bfooter16304">
                 <a href="https://www.babelio.com"><img src="https://www.babelio.com/images/logo2.GIF"
@@ -14,39 +14,53 @@
 <script>
 export default {
     name: "BabelioBooks",
-    mounted() {
-        var BObj = {};
-        BObj.id = '16304';
-        BObj.cururl = window.location.href;
-
-        BObj.nosdivs = this.$refs.body;
-        console.log(BObj.nosdivs);
-        BObj.addScript = function (url) {
-            let script = document.createElement('script');
-            script.type = 'text/javascript';
-            script.src = url;
-            this.nosdivs.appendChild(script)
-        };
-
-        BObj.getcharset = function () {
-            return document.characterSet;
-        };
-        BObj.charset = BObj.getcharset();
-        if (BObj.cururl.indexOf("babelio.com") != -1)
-            this.getContent('https://www.babelio.com/wj2.php?id=' + BObj.id + '&navigator=' + navigator.appName + '&codepage=' + BObj.charset + '&rnd=137');
-        //BObj.addScript('https://www.babelio.com/wj2.php?id=' + BObj.id + '&navigator=' + navigator.appName + '&codepage=' + BObj.charset + '&rnd=137');
-        else
-            this.getContent('https://www.babelio.com/wj2.php?id=' + BObj.id + '&navigator=' + navigator.appName + '&codepage=' + BObj.charset)
-        //BObj.addScript('https://www.babelio.com/wj2.php?id=' + BObj.id + '&navigator=' + navigator.appName + '&codepage=' + BObj.charset);
+    created() {
+        const babelioScript = document.createElement("script");
+        babelioScript.setAttribute(
+            "src",
+            "https://www.babelio.com/wj.php?id=16304"
+        );
+        babelioScript.setAttribute(
+            "type",
+            "text/javascript"
+        )
+        document.head.appendChild(babelioScript);
     },
-    methods: {
-        async getContent(url) {
-            let script = await fetch(`https://cors-proxy.htmldriven.com/?url=${url}`, { method: 'get' });
-            console.log(script);
-            let outLines = script.split('\n').filter((line) => line.startsWith("out = "));
-            console.log(outLines);
-        }
-    }
 }
 </script>
-<style scoped></style>
+<style>
+#win16304.babelio-window {
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+}
+
+#win16304.babelio-window::-webkit-scrollbar {
+    display: none;
+    /* for Chrome, Safari, and Opera */
+}
+
+#wBa16304.babelio-container {
+    width: 100%;
+    border: none;
+}
+
+#Bcorps16304 {
+    width: 100%;
+}
+
+.Belement16304 .Boeuvre16304 a:link,
+.Belement16304 .Bauteur16304 a:link {
+    color: whitesmoke;
+}
+
+.Belement16304 .Boeuvre16304 a:visited,
+.Belement16304 .Bauteur16304 a:visited {
+    color: #42b983;
+}
+
+.Belement16304 .Boeuvre16304 a:hover,
+.Belement16304 .Bauteur16304 a:hover {
+    color: #1c78c0;
+}
+</style>
