@@ -23,6 +23,9 @@
             <MovingWindow window_title="La modélisation 🐸">
                 <ModelisationFrog></ModelisationFrog>
             </MovingWindow>
+            <MovingWindow window_title="Work In Progress ⚠️">
+
+            </MovingWindow>
         </div>
     </div>
 </template>
