@@ -20,6 +20,9 @@
             <MovingWindow>
                 <FeatherWidget></FeatherWidget>
             </MovingWindow>
+            <MovingWindow window_title="La modélisation 🐸">
+                <ModelisationFrog></ModelisationFrog>
+            </MovingWindow>
         </div>
     </div>
 </template>
@@ -29,12 +32,13 @@ import MusicPlayer from "../components/hobbysComponents/MusicPlayer.vue";
 import OrigamisViewer from "@/components/hobbysComponents/OrigamisViewer.vue";
 import FeatherWidget from "@/components/hobbysComponents/FeatherWidget.vue";
 import BabelioBooks from "@/components/hobbysComponents/BabelioBooks.vue";
+import ModelisationFrog from "@/components/hobbysComponents/ModelisationFrog.vue";
 export default {
     name: "HobbyPageView",
     data() {
         return {};
     },
-    components: { MovingWindow, MusicPlayer, OrigamisViewer, BabelioBooks, FeatherWidget }
+    components: { MovingWindow, MusicPlayer, OrigamisViewer, BabelioBooks, FeatherWidget, ModelisationFrog }
 }
 </script>
 <style scoped>
