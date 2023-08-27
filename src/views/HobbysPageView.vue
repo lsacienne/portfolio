@@ -7,13 +7,24 @@
             <MovingWindow window_title="Quelques origamis...">
                 <OrigamisViewer></OrigamisViewer>
             </MovingWindow>
-            <MovingWindow window_title="Mes jeux préférés 🎮">
-                <GameDisplayer></GameDisplayer>
+            <!-- 
+                <MovingWindow window_title="Mes jeux préférés 🎮">
+                    <GameDisplayer></GameDisplayer>
+                </MovingWindow>
+             -->
+            <MovingWindow window_title="Mes derniers livres lus 📚">
+                <BabelioBooks></BabelioBooks>
             </MovingWindow>
         </div>
         <div class="window-container">
             <MovingWindow>
                 <FeatherWidget></FeatherWidget>
+            </MovingWindow>
+            <MovingWindow window_title="La modélisation 🐸">
+                <ModelisationFrog></ModelisationFrog>
+            </MovingWindow>
+            <MovingWindow window_title="Work In Progress ⚠️">
+
             </MovingWindow>
         </div>
     </div>
@@ -22,14 +33,15 @@
 import MovingWindow from "../components/hobbysComponents/MovingWindow.vue";
 import MusicPlayer from "../components/hobbysComponents/MusicPlayer.vue";
 import OrigamisViewer from "@/components/hobbysComponents/OrigamisViewer.vue";
-import GameDisplayer from "@/components/hobbysComponents/GameDisplayer.vue";
 import FeatherWidget from "@/components/hobbysComponents/FeatherWidget.vue";
+import BabelioBooks from "@/components/hobbysComponents/BabelioBooks.vue";
+import ModelisationFrog from "@/components/hobbysComponents/ModelisationFrog.vue";
 export default {
     name: "HobbyPageView",
     data() {
         return {};
     },
-    components: { MovingWindow, MusicPlayer, OrigamisViewer, GameDisplayer, FeatherWidget }
+    components: { MovingWindow, MusicPlayer, OrigamisViewer, BabelioBooks, FeatherWidget, ModelisationFrog }
 }
 </script>
 <style scoped>
