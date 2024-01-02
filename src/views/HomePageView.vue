@@ -6,20 +6,18 @@
           <div class="smaller">
             Bonjour, nous sommes le
           </div>
-          {{date}}
+          {{ date }}
         </div>
       </div>
       <div class="home-page-item time">
         {{ time }}
       </div>
-    </div>
-    <div class="widgets-container">
       <div class="home-page-item github">
         <h1>Github :</h1>
-        <GithubList/>
+        <GithubList />
       </div>
       <div class="home-page-item presentation">
-        <HomePagePresentation/>
+        <HomePagePresentation />
       </div>
     </div>
   </div>
@@ -31,7 +29,7 @@ import DateConst from "@/assets/js/DateConst";
 import HomePagePresentation from "@/components/HomePagePresentation";
 export default {
   name: "HomePageView",
-  components: {HomePagePresentation, GithubList},
+  components: { HomePagePresentation, GithubList },
   data() {
     return {
       time: (new Date()).toLocaleTimeString(),
@@ -43,27 +41,30 @@ export default {
   },
 
   methods: {
-    getTime: function() {
+    getTime: function () {
       let cur_date = new Date();
       this.time = cur_date.toLocaleTimeString();
       this.date = this.getGoodDateFormat(cur_date)
     },
-    getGoodDateFormat : function(date) {
+    getGoodDateFormat: function (date) {
       return DateConst.week.get(date.getDay()) + " "
-          + date.getDate() + " "
-          + DateConst.year.get(date.getMonth()) + " "
-          + date.getFullYear();
+        + date.getDate() + " "
+        + DateConst.year.get(date.getMonth()) + " "
+        + date.getFullYear();
     }
   }
 }
 </script>
 
 <style scoped>
-
 .widgets-container {
   width: 100%;
-  display: flex;
-  flex-flow: row nowrap;
+  display: grid;
+  grid-template:
+    "a a a a b" auto
+    "c c d d d" auto
+    "c c d d d" auto
+    "c c d d d" auto;
 }
 
 .home-page-item {
@@ -83,8 +84,21 @@ export default {
 .smaller {
   font-size: 1.8rem;
 }
+
 .name {
-  flex-grow: 5;
+  grid-area: a;
+}
+
+.time {
+  grid-area: b;
+}
+
+.github {
+  grid-area: c;
+}
+
+.presentation {
+  grid-area: d;
 }
 
 .text-container {
@@ -96,7 +110,7 @@ export default {
 
 .github h1 {
   font-size: 2rem;
-  font-family: Helvetica,cursive;
+  font-family: Helvetica, cursive;
   color: whitesmoke;
 }
 
@@ -130,5 +144,4 @@ export default {
     font-size: 1.5rem;
   }
 }
-
 </style>
