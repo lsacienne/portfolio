@@ -61,10 +61,10 @@ export default {
   width: 100%;
   display: grid;
   grid-template:
-    "a a a a b" auto
-    "c c d d d" auto
-    "c c d d d" auto
-    "c c d d d" auto;
+    "a a a a b b" auto
+    "c c c d d d" auto
+    "c c c d d d" auto
+    "c c c d d d" / 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 
 .home-page-item {
@@ -129,9 +129,13 @@ export default {
   align-items: start;
 }
 
-@media only screen and (max-width: 1100px) {
+@media only screen and (max-width: 700px) {
   .widgets-container {
-    flex-direction: column-reverse;
+    grid-template:
+      "a" auto
+      "d" auto
+      "c" auto
+      "b" auto;
   }
 
   .home-page-item {
