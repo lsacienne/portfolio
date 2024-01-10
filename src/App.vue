@@ -30,6 +30,12 @@ export default {
     url(./fonts/SquarePeg-Regular.ttf) format("truetype");
 }
 
+@font-face {
+  font-family: "RobotoCondensed";
+  src: local("RobotoCondensed"),
+    url(./fonts/RobotoCondensed-VariableFont_wght.ttf) format("truetype");
+}
+
 
 main {
   margin-left: 15vw;
