@@ -2,36 +2,35 @@
   <div class="presentation">
 
     <div class="body">
-      <div class="avatar">
-        <img src="@/assets/avatar.webp" alt="My avatar picture" srcset="" class="item profile_pic">
-      </div>
-      <h1>Liens</h1>
-      <div class="body col">
+      <img src="@/assets/avatar.webp" alt="My avatar picture" srcset="" class="profile_pic">
+      <article class="networks">
+        <span class="name">
+          Alexandre Viala
+        </span>
         <div class="link">
           <a href="http://www.linkedin.com/in/viala-alexandre/">
-            <img src="@/assets/linkedin.png" alt="Logo de linkedIn">
-          </a>
-          <a href="https://www.linkedin.com/in/viala-alexandre/">
-            Mon profil LinkedIn
+            <img src="@/assets/social_media_logos/logo_linkedin.svg" alt="Mon compte LinkedIn">
           </a>
           <a href="http://github.com/lsacienne" class="img">
-            <img src="@/assets/GitHub-Mark-Light-120px-plus.png" alt="Logo de Github">
-          </a>
-          <a href="https://github.com/lsacienne">
-            Mon profil Github
+            <img src="@/assets/social_media_logos/logo_github.svg" alt="Mon compte Github">
           </a>
         </div>
-      </div>
+      </article>
+    </div>
+    <div class="body col">
+      <article>
+        <h1>A propos de moi</h1>
+        <p class="item">
+          Bonjour ! Je m'appelle Alexandre, et vous êtes actuellement sur la page d'accueil de mon portfolio. <br />
+          Ici, vous pourrez trouver aussi bien tous les projets importantqs que j'ai réalisé au cours de mon
+          parcours... Mais vous trouverez également les choses que j'aime. <br />
+          Il y a d'ailleurs une chose que j'aime par dessus tout : c'est les grenouilles 🐸. Ne vous étonnez pas
+          d'en retrouver un peu partout sur ce site !<br />
+        </p>
+      </article>
     </div>
 
-    <h1>A propos de moi</h1>
-    <p class="item">
-      Bonjour ! Je m'appelle Alexandre, et vous êtes actuellement sur la page d'accueil de mon por tfolio. <br />
-      Ici, vous pourrez trouver aussi bien tous les projets importantqs que j'ai réalisé au cours de mon
-      parcours... Mais vous trouverez également les choses que j'aime. <br />
-      Il y a d'ailleurs une chose que j'aime par dessus tout : c'est les grenouilles 🐸. Ne vous étonnez pas
-      d'en retrouver un peu partout sur ce site !<br />
-    </p>
+
 
 
 
@@ -55,8 +54,12 @@ h1 {
   width: 50%;
 }
 
-.avatar>img {
-  width: 100%;
+.name {
+  font-size: 4rem;
+  font-family: 'RobotoCondensed', Helvetica, sans-serif;
+  color: #00a78d;
+  font-weight: bold;
+  line-height: 4rem;
 }
 
 .presentation {
@@ -66,8 +69,8 @@ h1 {
 
 .body {
   font-size: 1rem;
-  display: flex;
-  flex-direction: row;
+  display: inline-flex;
+  gap: 1rem;
   line-height: 1.6;
   margin: 0.5rem;
 }
@@ -79,13 +82,13 @@ h1 {
 .body .profile_pic {
   border: 0.3em solid whitesmoke;
   border-radius: 10px;
+  width: 40%;
 }
 
 .body>.item {
   margin: 1rem;
   flex: 1 1 0;
   flex-wrap: wrap;
-
 }
 
 .link {
@@ -104,30 +107,31 @@ h1 {
 }
 
 .link>a>img:hover {
-  filter: invert(35%) sepia(100%) saturate(774%) hue-rotate(176deg) brightness(90%) contrast(91%);
+  filter: brightness(0) saturate(100%) invert(47%) sepia(83%) saturate(2203%) hue-rotate(139deg) brightness(89%) contrast(101%);
 }
 
-.link>a:visited {
-  color: #42b983;
-  text-decoration: none;
+article.networks {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.link>a:hover {
-  color: #1c78c0;
+article>h1 {
+  margin-bottom: .5rem;
 }
 
 @media only screen and (max-width: 1100px) {
   .body {
     margin: unset;
+    margin-bottom: 1rem;
     flex-direction: column;
     width: 100%;
     justify-content: center;
   }
 
-  .body>.avatar {
-    width: 80%;
-    margin-top: 1rem;
+  .body .profile_pic {
     align-self: center;
+    width: 80%;
   }
 
   .body>.item {
