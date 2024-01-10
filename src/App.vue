@@ -30,6 +30,12 @@ export default {
     url(./fonts/SquarePeg-Regular.ttf) format("truetype");
 }
 
+@font-face {
+  font-family: "RobotoCondensed";
+  src: local("RobotoCondensed"),
+    url(./fonts/RobotoCondensed-VariableFont_wght.ttf) format("truetype");
+}
+
 
 main {
   margin-left: 15vw;
@@ -111,9 +117,10 @@ nav a.router-link-exact-active {
   color: #42b983;
 }
 
-@media only screen and (max-width: 1100px) {
+@media only screen and (max-width: 1250px) {
   main {
     margin-left: 2.5vw;
     margin-right: 2.5vw;
   }
-}</style>
+}
+</style>
