@@ -7,8 +7,16 @@ module.exports = defineConfig({
       '^/deezerapi': {
         target: 'https://api.deezer.com/',
         changeOrigin: true,
-        pathRewrite: {'^/deezerapi': ''}
+        pathRewrite: { '^/deezerapi': '' }
       },
+    }
+  },
+  pluginOptions: {
+    i18n: {
+      locale: 'fr',
+      fallbackLocale: 'en',
+      localeDir: 'locales',
+      enableInSFC: true
     }
   }
 })
