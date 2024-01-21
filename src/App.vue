@@ -1,6 +1,6 @@
 <template>
   <main>
-    <h1>Bienvenue sur le portfolio de Alexandre Viala</h1>
+    <h1>{{ $t("app.title") }}</h1>
     <WebsiteNavigation />
     <transition name="fade" mode="out-in">
       <router-view />
@@ -53,6 +53,10 @@ html {
   background: url("@/assets/background.jpeg") fixed;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+body {
+  background-color: unset;
 }
 
 #app {
