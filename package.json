@@ -11,13 +11,15 @@
     "load-music": "node scripts/ask-deezer-api.mjs"
   },
   "dependencies": {
+    "@intlify/unplugin-vue-i18n": "^2.0.0",
     "core-js": "^3.8.3",
     "node-fetch": "^2.6.7",
     "three": "^0.155.0",
-    "vue": "^3.2.13",
+    "vue": "^3.4.15",
     "vue-agile": "^2.0.0",
+    "vue-i18n": "^9.9.0",
     "vue-router": "^4.0.3",
-    "vuestic-ui": "^1.4.7"
+    "vuestic-ui": "^1.8.8"
   },
   "devDependencies": {
     "@babel/core": "^7.12.16",
@@ -29,6 +31,7 @@
     "eslint": "^7.32.0",
     "eslint-plugin-vue": "^8.0.3",
     "execa": "^6.1.0",
+    "vue-cli-plugin-i18n": "^2.3.2",
     "vue-cli-plugin-vuestic-ui": "~1.0.11"
   },
   "eslintConfig": {
