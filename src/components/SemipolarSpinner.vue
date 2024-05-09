@@ -1,5 +1,5 @@
 <template>
-  <div class="semipolar-spinner" :style="spinnerStyle">
+  <div class="semipolar-spinner">
     <div class="ring"></div>
     <div class="ring"></div>
     <div class="ring"></div>
