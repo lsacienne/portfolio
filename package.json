@@ -12,6 +12,9 @@
     "load-music": "node scripts/ask-deezer-api.mjs"
   },
   "dependencies": {
+    "@tresjs/cientos": "^3.9.0",
+    "@tresjs/core": "^3.9.0",
+    "@tresjs/post-processing": "^0.7.1",
     "core-js": "^3.8.3",
     "eslint-config-prettier": "^9.1.0",
     "node-fetch": "^2.6.7",
