@@ -1,6 +1,6 @@
 <template>
     <h1>{{ project_title }}</h1>
-    <div class="row">
+    <div class="row-project">
         <div class="quick-view">
             <div class="img">
                 <img :src=picture alt="" srcset="">
@@ -16,10 +16,10 @@
                     Description
                 </slot>
             </p>
-            <div class="row">
+            <div class="row-project">
                 <div class="column github-container">
                     <h2>Github</h2>
-                    <a class="github row" :href="url_github">
+                    <a class="github row-project" :href="url_github">
                         <img src="@/assets/GitHub-Mark-Light-120px-plus.png" alt="logo Github">
                         <p>
                             {{ getProjectName(url_github) }}
@@ -38,7 +38,7 @@
             </div>
         </div>
     </div>
-    <div class="row contributions">
+    <div class="row-project contributions">
         <h2>Contributeurs:</h2>
         <p>
             {{ contributors }}
@@ -101,7 +101,7 @@ h1 {
     margin-bottom: 1rem;
 }
 
-.row {
+.row-project {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;

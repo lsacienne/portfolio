@@ -24,9 +24,9 @@
 </template>
 
 <script>
-import GithubList from "@/components/GithubList";
-import DateConst from "@/assets/js/DateConst";
-import HomePagePresentation from "@/components/HomePagePresentation";
+import GithubList from "@/components/GithubList.vue";
+import DateConst from "@/assets/js/DateConst.js";
+import HomePagePresentation from "@/components/HomePagePresentation.vue";
 export default {
   name: "HomePageView",
   components: { HomePagePresentation, GithubList },

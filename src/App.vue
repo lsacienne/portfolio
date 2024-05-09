@@ -9,7 +9,7 @@
 </template>
 
 <script>
-import WebsiteNavigation from "@/components/WebsiteNavigation";
+import WebsiteNavigation from "@/components/WebsiteNavigation.vue";
 
 export default {
   name: 'App',

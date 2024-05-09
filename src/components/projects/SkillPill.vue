@@ -1,6 +1,6 @@
 <template>
     <div class="pill">
-        <div class="img"><img :src="require(`@/assets/languages/${imgSrc}`)" :alt="skillName + ' logo'"></div>
+        <div class="img"><img :src="`/languages/${imgSrc}`" :alt="skillName + ' logo'"></div>
         <div class="name">{{ skillName }}</div>
     </div>
 </template>

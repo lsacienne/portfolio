@@ -2,8 +2,8 @@
     <div class="language-container">
         <div class="language-inner">
             <button class="badge-front">
-                <img v-if="imgSource" :src="require(`@/assets/languages/${imgSource}`)" alt="skill" srcset="">
-                <img v-else src="@/assets/languages/frog-placeholder.png" alt="skill">
+                <img v-if="imgSource" :src="`/languages/${imgSource}`" alt="skill" srcset="">
+                <img v-else src="/languages/frog-placeholder.png" alt="skill">
             </button>
             <div class="badge-back">
                 <h1>{{ languageName }}</h1>

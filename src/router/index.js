@@ -1,5 +1,8 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
 import HomePageView from '@/views/HomePageView.vue'
+import ProjectPageView from '@/views/ProjectPageView.vue'
+import HobbysPageView from '@/views/HobbysPageView.vue'
+import SkillsPageView from '@/views/SkillsPageView.vue'
 
 const routes = [
   {
@@ -13,7 +16,7 @@ const routes = [
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import('@/views/ProjectPageView.vue')
+    component: ProjectPageView
   },
   {
     path: '/hobbys',
@@ -21,7 +24,7 @@ const routes = [
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import('@/views/HobbysPageView.vue')
+    component: HobbysPageView
   },
   {
     path: '/skills',
@@ -29,12 +32,12 @@ const routes = [
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import('@/views/SkillsPageView.vue')
+    component: SkillsPageView
   }
 ]
 
 const router = createRouter({
-  history: createWebHashHistory(process.env.BASE_URL),
+  history: createWebHashHistory(import.meta.env.BASE_URL),
   routes
 })
 
