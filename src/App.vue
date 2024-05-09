@@ -2,9 +2,11 @@
   <main>
     <h1>Bienvenue sur le portfolio de Alexandre Viala</h1>
     <WebsiteNavigation />
-    <transition name="fade" mode="out-in">
-      <router-view />
-    </transition>
+    <router-view v-slot="{ Component }">
+      <transition name="fade" mode="out-in">
+        <component :is="Component" />
+      </transition>
+    </router-view>
   </main>
 </template>
 
@@ -12,37 +14,38 @@
 import WebsiteNavigation from "@/components/WebsiteNavigation.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
     WebsiteNavigation,
   },
   data() {
     return {
-      option: 'home'
-    }
-  }
-}
+      option: "home",
+    };
+  },
+};
 </script>
 <style>
 @font-face {
   font-family: "SquarePeg";
-  src: local("SquarePeg"),
+  src:
+    local("SquarePeg"),
     url(./fonts/SquarePeg-Regular.ttf) format("truetype");
 }
 
 @font-face {
   font-family: "RobotoCondensed";
-  src: local("RobotoCondensed"),
+  src:
+    local("RobotoCondensed"),
     url(./fonts/RobotoCondensed-VariableFont_wght.ttf) format("truetype");
 }
-
 
 main {
   margin-left: 15vw;
   margin-right: 15vw;
 }
 
-main>h1 {
+main > h1 {
   color: black;
   font-size: 2.5rem;
   font-family: "SquarePeg", Helvetica, serif;
@@ -66,15 +69,14 @@ html {
 
 .fade-enter-active,
 .fade-leave-active {
-  transition: opacity .5s;
+  transition: opacity 0.5s;
   opacity: 0;
 }
 
 .fade-enter,
 .fade-leave-to
 
-/* .fade-leave-active below version 2.1.8 */
-  {
+/* .fade-leave-active below version 2.1.8 */ {
   opacity: 0;
 }
 
@@ -84,15 +86,14 @@ html {
 
 .fade2-enter-active,
 .fade2-leave-active {
-  transition: opacity .5s;
+  transition: opacity 0.5s;
   opacity: 0;
 }
 
 .fade-enter,
 .fade-leave-to
 
-/* .fade-leave-active below version 2.1.8 */
-  {
+/* .fade-leave-active below version 2.1.8 */ {
   opacity: 0;
 }
 

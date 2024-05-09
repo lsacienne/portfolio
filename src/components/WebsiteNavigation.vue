@@ -1,7 +1,10 @@
 <template>
   <nav ref="options">
     <div class="navigation">
-      <HamburgerMenu @toggle="(toggled) => toggleMenu(toggled)" ref="hamburger"></HamburgerMenu>
+      <HamburgerMenu
+        @toggle="(toggled) => toggleMenu(toggled)"
+        ref="hamburger"
+      ></HamburgerMenu>
     </div>
     <ol v-on:click="$refs.hamburger.updateMenu()">
       <router-link class="li" to="/">Home</router-link>
@@ -13,21 +16,20 @@
 </template>
 
 <script>
-import HamburgerMenu from './navigation/HamburgerMenu.vue';
+import HamburgerMenu from "./navigation/HamburgerMenu.vue";
 export default {
   name: "WebsiteNavigation",
   components: { HamburgerMenu },
   methods: {
     toggleMenu: function (toggled) {
-      console.log(toggled, this.$refs.options.right)
       if (toggled) {
-        this.$refs.options.style.right = 0
+        this.$refs.options.style.right = 0;
       } else {
-        this.$refs.options.style.right = "-70vw"
+        this.$refs.options.style.right = "-70vw";
       }
-    }
-  }
-}
+    },
+  },
+};
 </script>
 
 <style scoped>
@@ -52,8 +54,15 @@ ol {
   padding: 10px;
   border-radius: 10px;
   color: whitesmoke;
-  text-shadow: 2px 0 #2c3e50, -2px 0 #2c3e50, 0 2px #2c3e50, 0 -2px #2c3e50,
-    1px 1px #2c3e50, -1px -1px #2c3e50, 1px -1px #2c3e50, -1px 1px #2c3e50;
+  text-shadow:
+    2px 0 #2c3e50,
+    -2px 0 #2c3e50,
+    0 2px #2c3e50,
+    0 -2px #2c3e50,
+    1px 1px #2c3e50,
+    -1px -1px #2c3e50,
+    1px -1px #2c3e50,
+    -1px 1px #2c3e50;
 
   transition: all 300ms;
 }
@@ -102,7 +111,5 @@ ol {
   .li:hover {
     flex-grow: unset;
   }
-
-
 }
 </style>

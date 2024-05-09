@@ -3,9 +3,7 @@
     <div class="widgets-container">
       <div class="home-page-item name">
         <div class="text-container">
-          <div class="smaller">
-            Bonjour, nous sommes le
-          </div>
+          <div class="smaller">Bonjour, nous sommes le</div>
           {{ date }}
         </div>
       </div>
@@ -32,9 +30,9 @@ export default {
   components: { HomePagePresentation, GithubList },
   data() {
     return {
-      time: (new Date()).toLocaleTimeString(),
-      date: this.getGoodDateFormat(new Date())
-    }
+      time: new Date().toLocaleTimeString(),
+      date: this.getGoodDateFormat(new Date()),
+    };
   },
   created() {
     setInterval(this.getTime, 1000);
@@ -44,16 +42,21 @@ export default {
     getTime: function () {
       let cur_date = new Date();
       this.time = cur_date.toLocaleTimeString();
-      this.date = this.getGoodDateFormat(cur_date)
+      this.date = this.getGoodDateFormat(cur_date);
     },
     getGoodDateFormat: function (date) {
-      return DateConst.week.get(date.getDay()) + " "
-        + date.getDate() + " "
-        + DateConst.year.get(date.getMonth()) + " "
-        + date.getFullYear();
-    }
-  }
-}
+      return (
+        DateConst.week.get(date.getDay()) +
+        " " +
+        date.getDate() +
+        " " +
+        DateConst.year.get(date.getMonth()) +
+        " " +
+        date.getFullYear()
+      );
+    },
+  },
+};
 </script>
 
 <style scoped>
@@ -144,7 +147,7 @@ export default {
     margin-bottom: 1rem;
   }
 
-  .text-container>.smaller {
+  .text-container > .smaller {
     font-size: 1.5rem;
   }
 }
