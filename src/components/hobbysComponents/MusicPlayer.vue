@@ -41,6 +41,8 @@
 </template>
 <script>
 import songs from "@/assets/json/songs.json";
+import playIcon from "@/assets/icons/play_icon.svg";
+import pauseIcon from "@/assets/icons/pause_icon.svg";
 
 export default {
   name: "MusicPlayer",
@@ -63,9 +65,10 @@ export default {
     this.$refs.song.textContent = this.songArray[0].title;
     this.$refs.audio.src = this.songArray[0].preview;
     this.$refs.audio.muted = false;
+    this.$refs.audio.volume = 0.4;
   },
   methods: {
-    playMusic: function () {
+    async playMusic() {
       this.button_clicked = !this.button_clicked;
       if (!this.$refs.audio.paused) {
         this.$refs.audio.pause();
@@ -74,9 +77,9 @@ export default {
       }
 
       if (this.button_clicked) {
-        this.$refs.playpause.src = require("@/assets/icons/pause_icon.svg");
+        this.$refs.playpause.src = pauseIcon;
       } else {
-        this.$refs.playpause.src = require("@/assets/icons/play_icon.svg");
+        this.$refs.playpause.src = playIcon;
       }
     },
     pushNext: function () {
