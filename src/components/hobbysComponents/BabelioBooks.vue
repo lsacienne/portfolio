@@ -174,6 +174,20 @@ export default {
   transform: rotate(-15deg) translateX(-20px) translateY(11px);
 }
 
+/* ANimation when hover */
+
+#Bcorps16304:hover .Belement16304:nth-of-type(3) .Bcouv16304 {
+  transform: rotate(17deg) translateX(18px) translateY(0px);
+}
+
+#Bcorps16304:hover .Belement16304:nth-of-type(2) .Bcouv16304 {
+  transform: rotate(-19deg) translateX(-28px) translateY(-4px);
+}
+
+#Bcorps16304:hover .Belement16304:nth-of-type(1) .Bcouv16304 {
+  transform: translateY(-15px);
+}
+
 #Bcorps16304 .Belement16304 .Bcouv16304 a {
   pointer-events: none;
 }
