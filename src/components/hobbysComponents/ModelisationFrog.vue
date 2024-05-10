@@ -8,7 +8,10 @@
         :enableZoom="false"
       />
       <Suspense>
-        <GLTFModel path="/models/frog-swim-rasp.glb" :draco="true"></GLTFModel>
+        <GLTFModel
+          :path="`${publicPath}models/frog-swim-rasp.glb`"
+          :draco="true"
+        ></GLTFModel>
       </Suspense>
       <TresAmbientLight :intensity="2" />
     </TresCanvas>
@@ -27,6 +30,14 @@ export default {
     TresCanvas,
     GLTFModel,
     OrbitControls,
+  },
+  data() {
+    return {
+      publicPath: "",
+    };
+  },
+  created() {
+    this.publicPath = import.meta.env.BASE_URL;
   },
 };
 </script>

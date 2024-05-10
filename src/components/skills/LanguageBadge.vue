@@ -4,11 +4,15 @@
       <button class="badge-front">
         <img
           v-if="imgSource"
-          :src="`/languages/${imgSource}`"
+          :src="`${publicPath}languages/${imgSource}`"
           alt="skill"
           srcset=""
         />
-        <img v-else src="/languages/frog-placeholder.png" alt="skill" />
+        <img
+          v-else
+          :src="`${publicPath}languages/frog-placeholder.png`"
+          alt="skill"
+        />
       </button>
       <div class="badge-back">
         <h1>{{ languageName }}</h1>
@@ -56,7 +60,11 @@ export default {
         type: Boolean,
         default: true,
       },
+      publicPath: "",
     };
+  },
+  created() {
+    this.publicPath = import.meta.env.BASE_URL;
   },
   mounted() {
     this.fullDescription = this.$refs.content.textContent;

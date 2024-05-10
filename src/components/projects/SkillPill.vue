@@ -1,7 +1,10 @@
 <template>
   <div class="pill">
     <div class="img">
-      <img :src="`/languages/${imgSrc}`" :alt="skillName + ' logo'" />
+      <img
+        :src="`${publicPath}languages/${imgSrc}`"
+        :alt="skillName + ' logo'"
+      />
     </div>
     <div class="name">{{ skillName }}</div>
   </div>
@@ -20,9 +23,11 @@ export default {
     return {
       imgMap: new Map(),
       nameMap: new Map(),
+      publicPath: "",
     };
   },
   created() {
+    this.publicPath = import.meta.env.BASE_URL;
     // Initialize imgMap
     this.imgMap.set("vue", "vue-logo.png");
     this.imgMap.set("android", "Android_robot.svg.png");
