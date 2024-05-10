@@ -21,7 +21,7 @@ async function getMusic(song_title) {
 
 async function getAllSOngs() {
   let songArray = [];
-  songArray.push(await getMusic("In the End Linkin Park "));
+  songArray.push(await getMusic("In the End"));
   songArray.push(await getMusic("JVKE Golden hour"));
   songArray.push(await getMusic("夜に駆ける"));
   songArray.push(await getMusic("Lily Allen Somewhere Only We Know"));
