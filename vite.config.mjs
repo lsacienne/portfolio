@@ -14,11 +14,8 @@ export default defineConfig({
     },
   },
   transpileDependencies: true,
-  publicPath: process.env.NODE_ENV === "production" ? "/portfolio/" : "/",
   server: {
-    origin: {
-      base: "/portfolio/",
-    },
+    origin: process.env.NODE_ENV === "production" ? "/portfolio" : "",
   },
   devServer: {
     proxy: {
