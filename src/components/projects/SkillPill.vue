@@ -27,7 +27,7 @@ export default {
     };
   },
   created() {
-    this.publicPath = import.meta.env.BASE_URL;
+    this.publicPath = (import.meta.env.BASE_URL + "/").replaceAll("//", "/");
     // Initialize imgMap
     this.imgMap.set("vue", "vue-logo.png");
     this.imgMap.set("android", "Android_robot.svg.png");

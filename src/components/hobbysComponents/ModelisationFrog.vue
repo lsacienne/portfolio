@@ -37,7 +37,9 @@ export default {
     };
   },
   created() {
-    this.publicPath = import.meta.env.BASE_URL;
+    this.publicPath = this.publicPath = (
+      import.meta.env.BASE_URL + "/"
+    ).replaceAll("//", "/");
   },
 };
 </script>

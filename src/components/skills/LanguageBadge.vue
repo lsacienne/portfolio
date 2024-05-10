@@ -64,7 +64,7 @@ export default {
     };
   },
   created() {
-    this.publicPath = import.meta.env.BASE_URL;
+    this.publicPath = (import.meta.env.BASE_URL + "/").replaceAll("//", "/");
   },
   mounted() {
     this.fullDescription = this.$refs.content.textContent;
