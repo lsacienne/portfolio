@@ -4,7 +4,7 @@
 
 # portfolio
 
-My own portfolio in the shape of a website. 
+My own portfolio in the shape of a website.
 I will show here all my projects.
 
 ## Technology considered
