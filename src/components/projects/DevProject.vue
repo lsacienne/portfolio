@@ -248,7 +248,7 @@ a:visited {
     font-size: 1.2rem;
   }
 
-  .row {
+  .row-project {
     flex-direction: column;
     width: 100%;
   }
@@ -275,7 +275,7 @@ a:visited {
     width: 80%;
   }
 
-  .row.github {
+  .row-project.github {
     flex-direction: row;
     align-self: center;
   }
@@ -292,7 +292,7 @@ a:visited {
     content: "© ";
   }
 
-  .row.contributions {
+  .row-project.contributions {
     justify-content: center;
   }
 
