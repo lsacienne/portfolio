@@ -26,6 +26,9 @@ concurrency:
 jobs:
   # This workflow contains a single job called "gh-pages-deploy"
   gh-pages-deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
 
