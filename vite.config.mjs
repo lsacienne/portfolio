@@ -17,9 +17,9 @@ export default defineConfig({
   publicPath: process.env.NODE_ENV === "production" ? "/portfolio/" : "/",
   server: {
     origin: {
-      base: "/portfolio/"
-    }
-  }
+      base: "/portfolio/",
+    },
+  },
   devServer: {
     proxy: {
       "^/deezerapi": {
