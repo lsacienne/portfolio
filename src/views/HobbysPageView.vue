@@ -23,7 +23,9 @@
       <MovingWindow window_title="La modélisation 🐸">
         <ModelisationFrog></ModelisationFrog>
       </MovingWindow>
-      <MovingWindow window_title="Work In Progress ⚠️"> </MovingWindow>
+      <MovingWindow window_title="Work In Progress ⚠️">
+        <GameDisplayer></GameDisplayer>
+      </MovingWindow>
     </div>
   </div>
 </template>
@@ -34,6 +36,7 @@ import OrigamisViewer from "@/components/hobbysComponents/OrigamisViewer.vue";
 import FeatherWidget from "@/components/hobbysComponents/FeatherWidget.vue";
 import BabelioBooks from "@/components/hobbysComponents/BabelioBooks.vue";
 import ModelisationFrog from "@/components/hobbysComponents/ModelisationFrog.vue";
+import GameDisplayer from "@/components/hobbysComponents/GameDisplayer.vue";
 export default {
   name: "HobbyPageView",
   data() {
@@ -46,6 +49,7 @@ export default {
     BabelioBooks,
     FeatherWidget,
     ModelisationFrog,
+    GameDisplayer,
   },
 };
 </script>

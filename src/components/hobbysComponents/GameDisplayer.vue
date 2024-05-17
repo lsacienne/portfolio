@@ -1,6 +1,14 @@
 <template>
   <div class="game-container">
-    <div class="game-displayer" ref="games" @click="extandSkills"></div>
+    <div v-for="project in games" :key="project.name" class="game-item-wrapper">
+      <div class="game-item">
+        <img
+          :src="project.artwork_url"
+          :alt="`${project.name} artwork`"
+          class="game-artwork"
+        />
+      </div>
+    </div>
   </div>
 </template>
 <script>
@@ -35,69 +43,82 @@ export default {
 <style scoped>
 .game-container {
   height: 100%;
+  width: 100%;
+  transform-style: preserve-3d;
+  position: absolute;
+  perspective: 100vw;
+}
+
+.game-item-wrapper {
+  position: absolute;
+  height: 92%;
+  width: 100%;
   display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 15%;
+
+  transition: all 0.3s;
+}
+
+.game-item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  height: 65%;
+  padding: 0.5rem;
+  border-radius: 1.2rem;
+  z-index: 1;
+
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    0deg,
+    rgb(19, 19, 19) 0%,
+    rgba(43, 43, 43, 1) 100%
+  );
+  box-shadow:
+    rgba(0, 0, 0, 0.3) 0px 1px 1px 0px inset,
+    rgba(50, 50, 93, 0.5) 0px 50px 100px -20px,
+    rgba(255, 255, 255, 0.7) 0px 30px 60px -30px;
+
+  transition: all 0.3s;
 }
 
-.game-displayer {
-  width: 20%;
-  height: 20%;
-  display: flex;
-
-  border-radius: 1rem;
-  border: solid 0.2rem rgb(179, 206, 176);
-  background: url("@/assets/background_night.jpg");
-  background-size: cover;
-  box-shadow: rgb(179, 206, 176) 0 0 8px 8px;
+.game-item-wrapper:nth-child(1) {
+  transform: rotateY(0) translateZ(15rem);
+}
+.game-item-wrapper:nth-child(2) {
+  transform: rotateY(50deg) translateZ(15rem);
+}
+.game-item-wrapper:nth-child(3) {
+  transform: rotateY(144deg) translateZ(15rem);
+}
+.game-item-wrapper:nth-child(4) {
+  transform: rotateY(216deg) translateZ(15rem);
+}
+.game-item-wrapper:nth-child(5) {
+  transform: rotateY(310deg) translateZ(15rem);
 }
 
-.extanded {
-  width: 95%;
-  height: 95%;
-  animation: extandGames 2s;
+/* Blur background games */
+.game-item-wrapper:nth-child(3) .game-artwork {
+  filter: blur(5px) brightness(50%);
+}
+.game-item-wrapper:nth-child(4) .game-artwork {
+  filter: blur(5px) brightness(50%);
 }
 
-.shrinked {
-  animation: shrinkGames 2s;
+/* Delete box-shadow */
+.game-item-wrapper:nth-child(n + 2) .game-item {
+  box-shadow: none;
 }
 
-@keyframes shrinkGames {
-  0% {
-    width: 95%;
-    height: 95%;
-  }
+.game-artwork {
+  height: 100%;
+  border-radius: 0.7rem;
 
-  20% {
-    width: 8%;
-    height: 95%;
-  }
-
-  100% {
-    width: 20%;
-    height: 20%;
-  }
-}
-
-@keyframes extandGames {
-  0% {
-    width: 20%;
-    height: 20%;
-  }
-
-  20% {
-    width: 6%;
-    height: 6%;
-  }
-
-  40% {
-    width: 6%;
-    height: 6%;
-  }
-
-  100% {
-    width: 95%;
-    height: 95%;
-  }
+  transition: all 0.3s;
 }
 </style>
