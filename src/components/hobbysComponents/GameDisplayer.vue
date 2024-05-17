@@ -6,17 +6,28 @@
 <script>
 export default {
   name: "GameDisplayer",
+  data() {
+    return {
+      loading: true,
+      gamesLink: "http://0.0.0.0:8080/steam/games",
+      games: [],
+    };
+  },
+  created() {
+    this.getGames();
+  },
   methods: {
-    extandSkills: function () {
-      if (
-        !this.$refs.games.classList.contains("extanded") &&
-        !this.$refs.games.classList.contains("shrinked")
-      ) {
-        this.$refs.games.classList.add("extanded");
-      } else {
-        this.$refs.games.classList.toggle("shrinked");
-        this.$refs.games.classList.toggle("extanded");
-      }
+    async fetchSteamApi() {
+      this.loading = true;
+      let response = await fetch(this.gamesLink);
+      return response.json();
+    },
+    getGames() {
+      this.fetchSteamApi().then((data) => {
+        this.games = data;
+        console.log(this.games);
+        this.loading = false;
+      });
     },
   },
 };
