@@ -1,6 +1,6 @@
 <template>
   <div class="frog-container" ref="container">
-    <TresCanvas :alpha="true">
+    <TresCanvas :clearAlpha="0">
       <TresPerspectiveCamera />
       <OrbitControls
         :autoRotate="true"
@@ -21,7 +21,6 @@
 import SemipolarSpinner from "@/components/SemipolarSpinner.vue";
 import { TresCanvas } from "@tresjs/core";
 import { GLTFModel, OrbitControls } from "@tresjs/cientos";
-import { EffectComposer, Outline } from "@tresjs/post-processing";
 
 export default {
   name: "ModelisationFrog",
