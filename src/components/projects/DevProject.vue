@@ -14,10 +14,8 @@
       </div>
     </div>
     <div class="column presentation">
-      <h2>Présentation</h2>
-      <p>
-        <slot> Description </slot>
-      </p>
+      <h2>{{ $t("projectsPage.general.presentation") }}</h2>
+      <p v-html="description"></p>
       <div class="row-project">
         <div class="column github-container">
           <h2>Github</h2>
@@ -32,7 +30,7 @@
           </a>
         </div>
         <div class="column doc-container" v-if="element_list">
-          <h2>Documents</h2>
+          <h2>{{ $t("projectsPage.general.documents") }}</h2>
           <div class="doc">
             <DocumentDownloader
               v-for="document in element_list"
@@ -48,7 +46,8 @@
     </div>
   </div>
   <div class="row-project contributions">
-    <h2>Contributeurs:</h2>
+    <h2>{{ $t("projectsPage.general.contributor", nbContributors) }}:</h2>
+    <p class="pre-copyright">{{ $t("projectsPage.general.copyright") }}</p>
     <p>
       {{ contributors }}
     </p>
@@ -65,6 +64,14 @@ export default {
     return {
       url_file: "",
     };
+  },
+  computed: {
+    nbContributors() {
+      const isSeparator = (character) => {
+        return character === "," || character === "&";
+      };
+      return this.contributors.split("").filter(isSeparator).length + 1;
+    },
   },
   methods: {
     /**
@@ -94,9 +101,14 @@ export default {
     },
     contributors: {
       type: String,
+      required: true,
     },
     skills: {
       type: Array,
+    },
+    description: {
+      type: String,
+      required: false,
     },
   },
 };
@@ -234,8 +246,8 @@ a:visited {
   color: grey;
 }
 
-.contributions > p:before {
-  content: "© Tous droits réservés ";
+.contributions > p.pre-copyright {
+  margin-right: 0.3rem;
 }
 
 @media only screen and (max-width: 1100px) {
