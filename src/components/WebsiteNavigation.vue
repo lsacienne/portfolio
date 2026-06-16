@@ -7,10 +7,16 @@
       ></HamburgerMenu>
     </div>
     <ol v-on:click="$refs.hamburger.updateMenu()">
-      <router-link class="li" to="/">Home</router-link>
-      <router-link class="li" to="/projects">Projets</router-link>
-      <router-link class="li" to="/hobbys">Hobbys</router-link>
-      <router-link class="li" to="/skills">Compétences</router-link>
+      <router-link class="li" to="/">{{ $t("app.nav.home") }}</router-link>
+      <router-link class="li" to="/projects">{{
+        $t("app.nav.projects")
+      }}</router-link>
+      <router-link class="li" to="/hobbys">{{
+        $t("app.nav.hobbys")
+      }}</router-link>
+      <router-link class="li" to="/skills">{{
+        $t("app.nav.skills")
+      }}</router-link>
     </ol>
   </nav>
 </template>
