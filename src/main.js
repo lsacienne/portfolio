@@ -1,6 +1,7 @@
 import { createApp } from "vue";
 import App from "./App.vue";
 
+import { usePreferredLanguages } from "@vueuse/core";
 import { createVuesticEssential, VaButton } from "vuestic-ui";
 import "vuestic-ui/styles/essential.css";
 import "vuestic-ui/styles/reset.css";
@@ -12,7 +13,7 @@ import { fr } from "./i18n/fr-FR";
 import { en } from "./i18n/en-US";
 
 const i18n = createI18n({
-  locale: "fr",
+  locale: usePreferredLanguages().value.at(0),
   fallbackLocale: "en",
   messages: {
     fr: fr.translations,
