@@ -125,12 +125,12 @@ p.description a:visited {
   text-decoration: none;
 }
 
-ul > li {
+p.description ul > li {
   list-style: disc;
   margin-left: 1.5rem;
 }
 
-ul > li::marker {
+p.description ul > li::marker {
   color: #42b983;
 }
 </style>
