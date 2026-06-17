@@ -15,7 +15,7 @@
     </div>
     <div class="column presentation">
       <h2>{{ $t("projectsPage.general.presentation") }}</h2>
-      <p v-html="description"></p>
+      <p class="description" v-html="description"></p>
       <div class="row-project">
         <div class="column github-container">
           <h2>Github</h2>
@@ -114,6 +114,26 @@ export default {
 };
 </script>
 
+<style>
+p.description a:link {
+  color: #42b983;
+  text-decoration: none;
+}
+
+p.description a:visited {
+  color: #6ba4b6;
+  text-decoration: none;
+}
+
+ul > li {
+  list-style: disc;
+  margin-left: 1.5rem;
+}
+
+ul > li::marker {
+  color: #42b983;
+}
+</style>
 <style scoped>
 h1 {
   text-align: left;
