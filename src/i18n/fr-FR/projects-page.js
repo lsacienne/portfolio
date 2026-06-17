@@ -65,6 +65,119 @@ export const projectsPage = {
     },
     lumberJackIdleGame: {
       title: 'Idle Game "Lumber Jack"',
+      body: "Au cours de mon semestre d'étude de printemps 2022 à l'UTBM, j'ai eu l'occasion de suivre des cours de programmation orientée objet. \
+      Dans ce cadre, j'ai eu l'occasion d'apprendre les bases du C++ et de réaliser un 'idle game' en Java avec plusieurs de mes camarades.<br>\
+      Un idle game est un jeu où le joueur a pour seul objectif de faire augmenter une ou plusieurs ressource(s) de manière exponentielle. Pour \
+      cela le joueur dispose de plusieurs leviers d'action (augmenter la productivité globale, augmenter la productivité d'un ouvrier, etc.)<br>\
+      Ce projet m'a permis de découvrir davantage les possibilités du langage Java et notamment la gestion des threads. J'ai également appris à \
+      utiliser la méthode UML sur un projet complet.",
+    },
+    lafocheuse: {
+      title: "Application Android de gestion de budget",
+      body: "Lors du semestre de printemps 2022, dans le cadre de mes études à l'UTBM, j'ai dû, avec un de mes camarades, réaliser une application \
+      pour smartphones Android (version 10+). Il s'agit d'une application de gestion budgétaire destinée aux étudiants.<br>\
+      Ce projet nous a permis d'adopter une méthodologie de travail complète grâce à l'utilisation de divers techniques et \
+      outils de créativité. L'APK est téléchargeable en ligne sur GitHub.",
+    },
+    portfolio: {
+      title: "Mon Portfolio",
+      body: "Eh oui ! Même si j'utilise ce site internet pour présenter mes projets, il s'agit également d'un autre de mes projets personnels ! \
+      Après avoir travaillé sur divers projets de site web au cours de mes trois premières années d'étude, j'ai décidé de créer un site \
+      entièrement personnel.<br>\
+      J'ai réalisé ce site avec le framework javascript <a href='https://vuejs.org'>Vue JS</a>. Ce site, en amélioration constante, m'a \
+      déjà permis de manipuler plusieurs REST API, de m'exercer au CSS et de découvrir mon premier framwork front-end.<br>\
+      Ce site est également l'occasion pour moi de réaliser des fonctionnalités funs que je ne pourrais pas réaliser en temps normal. 🐸",
+    },
+    amora: {
+      title: "AMORA",
+      body: "Au cours du semestre d'automne 2022, j'ai eu la chance de réaliser un stage d'assistant ingénieur à l'Observatoire \
+      Astronomique de Strasbourg. Cette expérience de 6 mois m'a permis de travailler dans un domaine passionnant tout en mobilisant \
+      mes connaissances acquises durant mon cursus.<br>\
+      Dans le cadre de ce stage, j'ai dû réaliser plusieurs missions toutes liés à un même projet : L'Asynchronous Multi-Observatory \
+      Region Analysis (AMORA). Il s'agit d'un site web lié au logiciel <a href='https://xcatdb.unistra.fr/4xmmdr14/index.html'>XCatDB</a> \
+      permettant d'éxecuter des scripts rédigés par des scientifiques depuis une page web. AMORA se rapproche de ce que l'on appelle un \
+      cloud Platform As A Service (PaaS). Ce projet a été conçu dans le langages de programmation Python avec le framework Flask pour \
+      toute la partie Back-end. Le front-end a quant à lui été rédigé en pur Javascript. \
+      Pendant ce stage, j'ai acquéris énormément d'expérience :\
+      <ul>\
+        <li>\
+          La perspective de la conception d'un logiciel de cette envergure m'a\
+          permis d'approfondir mes connaissances en Programmation Orientée\
+          Objet.\
+        </li>\
+        <li>\
+          J'ai également pu mettre en application mes compétences acquises en\
+          conception d'interface utilisateur avec gestion de l'expérience\
+          utilisateur.\
+        </li>\
+        <li>\
+          J'ai approfondi mes connaissances en technologies web, notamment sur\
+          toute la partie back-end. Flask étant relativement bas niveau, j'ai\
+          pu maîtriser les redirections de mes endpoints manuellement.\
+        </li>\
+        <li>\
+          Finalement, j'ai largement approfondi mes compétences en Python.\
+          J'ai acquis une connaissance profonde des fonctionnalités du langage\
+          et du systsème d'environnement.\
+        </li>\
+      </ul>",
+    },
+    blenderAppartment: {
+      title: "Appartement Blender",
+      body: "Au cours de mon semestre d'étude de Printemps 2023, j'ai eu l'occasion de suivre des cours de synthèse d'image dans le cadre \
+      de ma formation à l'UTBM. Au travers de ces cours, j'ai acquis des compétences en GLSL, en mathématiques et en Pipeline de rendu. J'ai \
+      également appris à maîtriser le logiciel de modélisation 3D <a href='https://www.blender.org'>Blender</a>.<br>\
+      J'ai dû, dans le cadre de cet enseignement, réaliser une scène 3D quelconque. C'est pourquoi, j'ai choisi de représenter une partie de \
+      mon appartement étudiant plus ou moins fidèlement. Grâce à ce projet de modélisation, j'ai appris à maîtriser différents aspects du logiciel :\
+      <ul>\
+        <li>\
+          Le mode Edit et le mode Object.\
+        </li>\
+        <li>\
+          La création d'Armature et le mode Pose.\
+        </li>\
+        <li>\
+          L'utilisation des Matériaux procéduraux.\
+        </li>\
+        <li>\
+          L'utilisation des Noeuds de Géométrie.\
+        </li>\
+      </ul>",
+    },
+    badevelFarm: {
+      title: "Jumeau numérique de la ferme de Badevel",
+      body: "Pendant mes études à l'UTBM, j'ai eu l'occasion de suivre la spécialisation 'Mondes Virtuels, UX & UI'. Dans cette spécialisation, \
+      j'ai eu l'occasion, avec plusieurs de mes camarade, de réaliser un projet sur tout le long du semestre. L'objectif de ce projet était de \
+      mobiliser les connaissances acquises dans la spécialisation que nous avions choisi dans un projet s'approchant d'une situation réelle.<br>\
+      Pour ce projet, nous étions encadrés par l'un de nos professeurs. Il nous a donné les objectifs attendus du projet et il nous a conseillé \
+      dans nos choix sur le projet. Nous devions réaliser le jumeau numérique de la ferme d'une commune du Doubs, Badevel. Un jumeau numérique \
+      d'un lieu est une copie du lieu dans un environnement 3D permettant d'être exploré depuis un appareil numérique. La Ferme de Badevel est \
+      une ferme connectée, destinée à cultiver des plantes de manière ludique à l'aide de différents capteurs et de robots. Les enjeux de ce \
+      jumeau numérique était donc de représenter la ferme tout en fournissant la possibilité de consulter les données en temps réel.<br>\
+      Pour ce projet, nous avons dû réaliser différentes tâches :\
+      <ul>\
+        <li>\
+          Etablissement du cahier des charges\
+        </li>\
+        <li>\
+          Conception de l'interface et de l'expérience utilisateur\
+        </li>\
+        <li>\
+          Modélisation 3D des modèles\
+        </li>\
+        <li>\
+          Création de la ferme dans Unity\
+        </li>\
+        <li>\
+          Visualisation des données dans le jumeau\
+        </li>\
+        <li>\
+          Lien avec une base de données\
+        </li>\
+        <li>\
+          Affichage de la météo dynamiquement\
+        </li>\
+      </ul>",
     },
   },
 };

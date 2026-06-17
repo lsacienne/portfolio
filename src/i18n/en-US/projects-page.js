@@ -64,6 +64,114 @@ export const projectsPage = {
     },
     lumberJackIdleGame: {
       title: '"Lumber Jack" Idle Game project',
+      body: "During 2022 spring semester at UTBM in postgraduate program, I had the opportunity ton take part to an Object Oriented Programming class \
+      which pushed further basic concept of OOP. In this context, I learnt basic concepts of C++ (operator overloading, coplien form, etc.) and \
+      I worked on the conception of an 'idle game' in Java with my class mates.<br>\
+      An idel game is game where the player has to increase one or multiple resources in an exponential fashion. To reach this goal, the player \
+      has access to multiple tools (increase global productivity of every resources, increase operator productivity, etc.).<br>\
+      This project introduced me to new possibilities with Java language like threads management. I also learnt to use the UML method on a whole \
+      project.",
+    },
+    lafocheuse: {
+      title: "Budget Management application on Android",
+      body: "During 2022 spring semester at UTBM, I have to, with one of my coworker, build an Android smartphone application (10+ version). \
+      We chose to build a budget management application targetting students needs.<br>\
+      This project let us work with a full work methodology on a complete project. We used diverse technical skills and multiple creativity \
+      tools. The APK is downloadable on the GitHub.",
+    },
+    portfolio: {
+      title: "My Portfolio",
+      body: "Yes, even though I use this website to present all my projects, this is also one of my personal projects!<br>\
+      Thanks to my experience with the multiple web projects I built during my first 3 study years, I decided to create a entirely personal \
+      website.<br>\
+      I built this website by using the <a href='https://vuejs.org/'>Vue JS</a> framework. This website , regularily upgraded, let me \
+      handle multiple REST API, exercise myself to CSS styling and let me discover my first web front-end framework.<br>\
+      This website was also an occasion for me to build fun features that I could not push in any other professional project. 🐸",
+    },
+    amora: {
+      title: "AMORA",
+      body: "During 2022 Fall semester, I was in internship at Strasbourg's Astronomical Observatory as a research engineering assitant. \
+      This 6-month long experience let me work in a thrilling domain while mobilizing my knowledge acquired during my studies.<br>\
+      In the context of this internship, I have to develop multiple solutions all linked together by one project : The 'Asynchronous \
+      Multi-Observatory Region Analysis (short AMORA). This is a web application link to the \
+      <a href='https://xcatdb.unistra.fr/4xmmdr14/index.html'>XCatDB</a> software letting users execute scientist scripts from a\
+      nested webpage. AMORA is close from a Platform As A Service (PaaS) cloud. This project has been written in the Python programming language \
+      with the Flask framework for the back-end part. The front-end part has been written in pure Javascript.<br>\
+      During this internship, I have learnt a lot:\
+      <ul>\
+        <li>\
+          The perspective to design such a big software alone let me increase my knowledge in Object Oriented Programming.\
+        </li>\
+        <li>\
+          I also had the opportunity to put into practice my skills acquired in User Interface design with a user experience \
+          management.\
+        </li>\
+        <li>\
+          I increased my web technologies knowledge mainly on the back-end part. \
+          Flask being a relatively low-level API, I have been able to choose the endpoints redirection manually to have more control.\
+        </li>\
+        <li>\
+          Finally, I deeply increased my Python skills. I acquired a deep knowledge of the language features and \
+          environment system.\
+        </li>\
+      </ul>",
+    },
+    blenderAppartment: {
+      title: "Blender Appartment",
+      body: "During the 2023 Spring semester, I followed an image synthesis class in the context of postgraduate program at UTBM.\
+      Through the different courses, I acquire skills in GLSL, in geometrical mathematics and rendering pipeline. I also learnt \
+      to use the 3D modeling software <a href='https://www.blender.org'>Blender</a>.<br>\
+      During the practical sessions, I had to realize any 3D scene. I chose to represent a part of my student appartment pretty \
+      faithfully. Thanks to this 3D modeling project, I learnt multiple software dimensions:\
+      <ul>\
+        <li>\
+          Edit mode and Object mode.\
+        </li>\
+        <li>\
+          Armature creation and Pose mode.\
+        </li>\
+        <li>\
+          Procedural materials usage.\
+        </li>\
+        <li>\
+          Geometry Nodes usage.\
+        </li>\
+      </ul>",
+    },
+    badevelFarm: {
+      title: "Badevel Farm Digital Twin",
+      body: "During my 4th year at UTBM, I took a specialization called 'Virtual Worlds, UX & UI'. Within this specialization clases, \
+      I had the opportunity with multiple classmates, to work on a project during a whole session. The goal of this project \
+      was to mobilize our newly earned knowledge of the specialization lectures in a project near from real work conditions.<br>\
+      For this project, we were tutored by one of our professor. He gave us objectives to reach and he advised us on project-related choices.\
+      We had to realize a digital twin of a a utomated and collaborative farm in a small village named Badevel (Doubs, France). \
+      A digital twin is a 3D reproduction of a place which can be explored from a digital device. The Badevel's farm is a connected \
+      farm, intended to grow plants in a plyful way with the help of multiple sensors and robots. The challenge of this digital twin \
+      was to represent the farm  while giving the possibility to look at the data in real time.<br>\
+      For this project, we did the following tasks:\
+      <ul>\
+        <li>\
+          Build specifications for the project.\
+        </li>\
+        <li>\
+          User Interface and User Experience design.\
+        </li>\
+        <li>\
+          3D Modeling of most of the volumes.\
+        </li>\
+        <li>\
+          Creation of the farm in Unity.\
+        </li>\
+        <li>\
+          Data Visualization inside the digital twin.\
+        </li>\
+        <li>\
+          Database link.\
+        </li>\
+        <li>\
+          Dynamic meteo system.\
+        </li>\
+      </ul>",
     },
   },
 };
