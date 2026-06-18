@@ -3,8 +3,8 @@
     <div class="widgets-container">
       <div class="home-page-item name">
         <div class="text-container">
-          <div class="smaller">Bonjour, nous sommes le</div>
-          {{ date }}
+          <div class="smaller">{{ $t("homePage.date.pre") }}</div>
+          {{ $d(date, "homeGreeting") }}
         </div>
       </div>
       <div class="home-page-item time">
@@ -31,7 +31,7 @@ export default {
   data() {
     return {
       time: new Date().toLocaleTimeString(),
-      date: this.getGoodDateFormat(new Date()),
+      date: new Date(),
     };
   },
   created() {
@@ -42,18 +42,7 @@ export default {
     getTime: function () {
       let cur_date = new Date();
       this.time = cur_date.toLocaleTimeString();
-      this.date = this.getGoodDateFormat(cur_date);
-    },
-    getGoodDateFormat: function (date) {
-      return (
-        DateConst.week.get(date.getDay()) +
-        " " +
-        date.getDate() +
-        " " +
-        DateConst.year.get(date.getMonth()) +
-        " " +
-        date.getFullYear()
-      );
+      this.date = cur_date;
     },
   },
 };

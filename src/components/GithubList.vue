@@ -15,8 +15,8 @@
         <a :href="project.html_url">{{ project.name.split("_").join(" ") }}</a>
       </div>
       <div class="date">
-        Dernière modification: <br />
-        {{ getGoodDateFormat(project.pushed_at) }}
+        {{ $t("homePage.githubProjects.lastModification") }}: <br />
+        {{ $d(new Date(project.pushed_at), "githubLastModified") }}
       </div>
     </div>
   </div>
@@ -42,19 +42,6 @@ export default {
     },
   },
   methods: {
-    getGoodDateFormat: function (date) {
-      let dateDate = new Date(date);
-      return (
-        DateConst.week_short.get(dateDate.getDay()) +
-        " " +
-        dateDate.getDate() +
-        " " +
-        DateConst.year_short.get(dateDate.getMonth()) +
-        " " +
-        dateDate.getFullYear()
-      );
-    },
-
     fetchGithubApi: async function () {
       this.loading = true;
       let response = await fetch(

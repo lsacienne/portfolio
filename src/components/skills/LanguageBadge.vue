@@ -17,11 +17,17 @@
       <div class="badge-back">
         <h1>{{ languageName }}</h1>
         <div class="description" ref="description">
-          <p ref="content" @click="switchDescriptionDisplay">
-            <slot></slot>
-          </p>
+          <p
+            ref="content"
+            @click="switchDescriptionDisplay"
+            v-html="descriptionContent"
+          ></p>
           <span class="shrink" @click="switchDescriptionDisplay">
-            {{ descShrinked ? "Lire la suite" : "Montrer moins" }}
+            {{
+              descShrinked
+                ? $t("skillsPage.skillBadge.readMore")
+                : $t("skillsPage.skillBadge.readLess")
+            }}
           </span>
         </div>
         <div class="thumbnails-container">
@@ -49,6 +55,9 @@ export default {
       type: Array,
     },
     imgSource: {
+      type: String,
+    },
+    descriptionContent: {
       type: String,
     },
   },

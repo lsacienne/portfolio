@@ -1,18 +1,18 @@
 <template>
   <div class="global-layout">
     <div class="window-container">
-      <MovingWindow window_title="Mes musiques préférées 🎵">
+      <MovingWindow :window_title="$t('hobbysPage.musics')">
         <MusicPlayer></MusicPlayer>
       </MovingWindow>
-      <MovingWindow window_title="Quelques origamis...">
+      <MovingWindow :window_title="$t('hobbysPage.handCraft')">
         <OrigamisViewer></OrigamisViewer>
       </MovingWindow>
-      <!-- 
+      <!--
                 <MovingWindow window_title="Mes jeux préférés 🎮">
                     <GameDisplayer></GameDisplayer>
                 </MovingWindow>
              -->
-      <MovingWindow window_title="Mes derniers livres lus 📚">
+      <MovingWindow :window_title="$t('hobbysPage.books')">
         <BabelioBooks></BabelioBooks>
       </MovingWindow>
     </div>
@@ -20,10 +20,10 @@
       <MovingWindow>
         <FeatherWidget></FeatherWidget>
       </MovingWindow>
-      <MovingWindow window_title="La modélisation 🐸">
+      <MovingWindow :window_title="$t('hobbysPage.modelisation')">
         <ModelisationFrog></ModelisationFrog>
       </MovingWindow>
-      <MovingWindow window_title="Work In Progress ⚠️"> </MovingWindow>
+      <MovingWindow :window_title="$t('hobbysPage.videoGames')"> </MovingWindow>
     </div>
   </div>
 </template>

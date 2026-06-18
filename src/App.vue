@@ -1,6 +1,6 @@
 <template>
   <main>
-    <h1>Bienvenue sur le portfolio de Alexandre Viala</h1>
+    <h1>{{ $t("app.title") }}</h1>
     <WebsiteNavigation />
     <router-view v-slot="{ Component }">
       <transition name="fade" mode="out-in">
