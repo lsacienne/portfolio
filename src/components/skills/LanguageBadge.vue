@@ -17,7 +17,11 @@
       <div class="badge-back">
         <h1>{{ languageName }}</h1>
         <div class="description" ref="description">
-          <p ref="content" @click="switchDescriptionDisplay" v-html="descriptionContent""></p>
+          <p
+            ref="content"
+            @click="switchDescriptionDisplay"
+            v-html="descriptionContent"
+          ></p>
           <span class="shrink" @click="switchDescriptionDisplay">
             {{
               descShrinked
