@@ -1,4 +1,6 @@
-export const datetimeFormats = {
+import { DatetimeFormat } from "../date-time-formats";
+
+export const datetimeFormats: DatetimeFormat = {
   homeGreeting: {
     weekday: "long",
     day: "numeric",
