@@ -23,7 +23,6 @@
 
 <script>
 import GithubList from "@/components/GithubList.vue";
-import DateConst from "@/assets/js/DateConst.js";
 import HomePagePresentation from "@/components/HomePagePresentation.vue";
 export default {
   name: "HomePageView",

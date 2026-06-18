@@ -8,10 +8,10 @@
         <OrigamisViewer></OrigamisViewer>
       </MovingWindow>
       <!--
-                <MovingWindow window_title="Mes jeux préférés 🎮">
-                    <GameDisplayer></GameDisplayer>
-                </MovingWindow>
-             -->
+        <MovingWindow window_title="Mes jeux préférés 🎮">
+            <GameDisplayer></GameDisplayer>
+        </MovingWindow>
+      -->
       <MovingWindow :window_title="$t('hobbysPage.books')">
         <BabelioBooks></BabelioBooks>
       </MovingWindow>

@@ -3,7 +3,7 @@ import { homePage } from "./home-page.js";
 import { projectsPage } from "./projects-page.js";
 import { hobbysPage } from "./hobbys-page.js";
 import { skillsPage } from "./skills-page.js";
-import { datetimeFormats } from "./date-time-formats.js";
+import { datetimeFormats } from "./date-time-formats.ts";
 
 export const fr = {
   translations: {

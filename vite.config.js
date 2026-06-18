@@ -1,8 +1,9 @@
 import { defineConfig } from "vite";
 import vue from "@vitejs/plugin-vue";
-import { resolve } from "path";
+import path from "path";
 import { templateCompilerOptions } from "@tresjs/core";
 export default defineConfig({
+  transpileDependencies: true,
   plugins: [
     vue({
       ...templateCompilerOptions,
@@ -10,10 +11,9 @@ export default defineConfig({
   ],
   resolve: {
     alias: {
-      "@": resolve(__dirname, "./src"),
+      "@": path.resolve(__dirname, "./src"),
     },
   },
-  transpileDependencies: true,
   base: process.env.NODE_ENV === "production" ? "/portfolio" : "",
   devServer: {
     proxy: {

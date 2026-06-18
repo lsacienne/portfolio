@@ -23,7 +23,6 @@
 </template>
 
 <script>
-import DateConst from "@/assets/js/DateConst";
 import SemipolarSpinner from "@/components/SemipolarSpinner.vue";
 
 export default {
