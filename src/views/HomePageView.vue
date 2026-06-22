@@ -8,7 +8,7 @@
         </div>
       </div>
       <div class="home-page-item time">
-        {{ time }}
+        <DynamicClock />
       </div>
       <div class="home-page-item github">
         <h1>Github :</h1>
@@ -24,9 +24,10 @@
 <script>
 import GithubList from "@/components/GithubList.vue";
 import HomePagePresentation from "@/components/HomePagePresentation.vue";
+import DynamicClock from "@/components/DynamicClock.vue";
 export default {
   name: "HomePageView",
-  components: { HomePagePresentation, GithubList },
+  components: { HomePagePresentation, GithubList, DynamicClock },
   data() {
     return {
       time: new Date().toLocaleTimeString(),
@@ -82,6 +83,11 @@ export default {
 
 .time {
   grid-area: b;
+  padding: 0;
+  align-items: flex-start;
+  justify-content: flex-start;
+  overflow: hidden;
+  border: 0.2rem solid whitesmoke;
 }
 
 .github {
